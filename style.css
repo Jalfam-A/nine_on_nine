@@ -107,4 +107,48 @@ body {
 	background-color: var(--nude);
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 70%;
+}
+
+.menu {
+	display: none;
+}
+
+.menu-menu-1-container {
+	width: 60%;
+}
+
+.show-nav {
+	display: flex;
+}
+
+
+
+
+@media screen and (min-width: 700px) {
+	
+
+/* Navigation */
+	.menu {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 10%;
+	}
+
+
+
+/* Hamburger Menu */
+
+.menu-toggle {
+	display: none;
+}
+
 }
