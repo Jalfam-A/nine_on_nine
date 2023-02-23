@@ -17,6 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+
 	<?php wp_head(); ?>
 </head>
 
@@ -46,7 +47,14 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'nine_on_nine' ); ?></button>
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php //esc_html_e( 'Primary Menu', 'nine_on_nine' ); ?></button> -->
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="true">
+				<svg viewBox="0 0 100 80" width="40" height="40">
+					<rect width="100" height="20"></rect>
+					<rect y="30" width="100" height="20"></rect>
+					<rect y="60" width="100" height="20"></rect>
+				</svg>
+			</button>
 			<?php
 			wp_nav_menu(
 				array(

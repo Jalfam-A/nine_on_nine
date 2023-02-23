@@ -22,7 +22,7 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'nine_on_nine' ), 'nine_on_nine', '<a href="http://underscores.me/">Underscores.me</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'nine_on_nine' ), 'nine_on_nine', 'by Lumikhaa Media (DMIT Students at NAIT)' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
