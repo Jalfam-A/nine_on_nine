@@ -63,6 +63,7 @@
 				)
 			);
 			?>
+			<!--new comment-->
 			<!--this is a comment-->
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
