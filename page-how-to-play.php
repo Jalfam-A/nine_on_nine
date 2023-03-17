@@ -11,9 +11,6 @@
 <body>
     <!-- CONTAINER -->
     <div class="">
-
-
-
     
         <!-- Breadcrumbs -->
         <div class="">
@@ -21,9 +18,6 @@
             <img src="" alt="Chevron Right" class="">
             <a href="" class="">How To Play</a>
         </div>
-
-
-
 
         <!-- PAGE TITLE & NAV -->
         <div class="">
@@ -34,9 +28,6 @@
                 <a href="" class="">The Point Zones</a>
             </div>
         </div>
-
-
-
 
         <!-- THE SETUP -->
         <div class="">
