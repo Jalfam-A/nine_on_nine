@@ -58,8 +58,7 @@
                 <div class="">
                     <h2 class="">Step 1</h2>
                     <h1 class="">Place the Board on level ground.</h1>
-                    <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
-                        challenging teams to reach 99 points by tossing bean pucks on the board.</p>
+                    <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play, challenging teams to reach 99 points by tossing bean pucks on the board.</p>
                 </div>
 
             </div>
