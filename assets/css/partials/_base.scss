@@ -1,14 +1,4 @@
-:root {
-	--dark-blue: #041E42;
-	--light-blue: #78A1BB;
-	--sky-blue: #47AED9;
-	--dark-orange: #FF7200;
-	--light-orange: #FFA903;
-	--green: #56AC5f;
-	--nude: #FDF7DD;
-}
-
-
+// BASE
 
 ul {
 	list-style: none;
@@ -16,13 +6,4 @@ ul {
 
 ul li {
 	text-decoration: none;
-}
-
-a {
-	text-decoration: none;
-	color: var(--dark-blue);
-}
-
-a:hover {
-	color: var(--green);
 }
