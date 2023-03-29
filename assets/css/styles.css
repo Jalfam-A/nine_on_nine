@@ -1,14 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Open+Sans&display=swap");
-ul {
-  list-style: none;
+:root {
+  --black: #070606;
+  --dark-blue: #041E42;
+  --light-blue: #78A1BB;
+  --sky-blue: #47AED9;
+  --dark-orange: #FF7200;
+  --light-orange: #FFA903;
+  --green: #56AC5f;
+  --nude: #FDF7DD;
 }
 
-ul li {
-  text-decoration: none;
+html {
+  font-size: 62.5%;
 }
 
 body {
-  font-size: 62.5%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--black);
+  background-color: var(--nude);
+}
+
+.container {
+  padding: 2%;
 }
 
 h1 {
@@ -32,12 +47,10 @@ p {
   font-size: 16px;
 }
 
-:root {
-  --dark-blue: #041E42;
-  --light-blue: #78A1BB;
-  --sky-blue: #47AED9;
-  --dark-orange: #FF7200;
-  --light-orange: #FFA903;
-  --green: #56AC5f;
-  --nude: #FDF7DD;
+ul {
+  list-style: none;
+}
+
+ul li {
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

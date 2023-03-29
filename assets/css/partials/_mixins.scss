@@ -4,7 +4,27 @@
 
 // Buttons, Links, Breakpoints
 
-body{
-    font-size: 62.5%;
-    
+@mixin break($point){
+    @if $point == small {
+        @media (min-width: 600px) {@content;}
+    }
+
+    @else if $point == med {
+        @media (min-width: 1000px) {@content;}
+    }
+    @else if $point == wide {
+        @media (min-width: 1200px) {@content;}
+    }
+
+}
+
+@mixin basic-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
 }
