@@ -30,7 +30,7 @@
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
+				if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
@@ -45,16 +45,19 @@
 				<p class="site-description"><?php echo $nine_on_nine_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
+		
+		<!-- hamburger icon button -->
+		<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</div>
 		<nav id="site-navigation" class="main-navigation">
 			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php //esc_html_e( 'Primary Menu', 'nine_on_nine' ); ?></button> -->
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="true">
-				<svg viewBox="0 0 100 80" width="40" height="40">
-					<rect width="100" height="20"></rect>
-					<rect y="30" width="100" height="20"></rect>
-					<rect y="60" width="100" height="20"></rect>
-				</svg>
-			</button>
+			
+
+
+
 			<?php
 			wp_nav_menu(
 				array(
@@ -63,7 +66,5 @@
 				)
 			);
 			?>
-			<!--new comment-->
-			<!--this is a comment-->
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
