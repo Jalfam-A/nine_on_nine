@@ -101,73 +101,116 @@ body {
 
 /**** COMPONENTS ****/
 
-/** Navigation **/
+
+/******* HEADER / Navigation *******/
+
 
 .site-header {
-	background-color: var(--nude);
+	background-color: white;
+	border-bottom: 1px solid #333;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .site-branding {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.main-navigation {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	width: 70%;
-}
-
-.menu {
-	display: none;
-}
-
-.menu-menu-1-container {
-	width: 60%;
-}
-
-.show-nav {
-	display: flex;
-}
-
-
-
-
-@media screen and (min-width: 700px) {
-	
-
-/* Navigation */
-
-	.site-header {
-		position: relative;
-	}
-
-	.menu {
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		margin-left: auto;
-	}
-
-.main-navigation {
-	position: absolute;
-	height: 100vh;
-	top: 0;
-	right: 0;
-	width: 100vh;
-	z-index: 100;
-	/* opacity: 0.7; */
-	background-color: #FDF7DD;
+	padding: 15px;
+	width: 10rem;
+	height: 6rem;
+  }
+  
+  .site-branding img {
+	  width: 100%;
+	  height: 100%;
+  }
+  
+  .site-title a {
+	color: #fff;
+	font-size: 24px;
+  }
+  
+  .menu-toggle {
+	/* background-color: transparent; */
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	margin-right: 15px;
+	height: 24px;
+	width: 2.5rem;
 	display: flex;
 	flex-direction: column;
-}
-
-
-
-
-/* Hamburger Menu */
-
-.menu-toggle {
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .icon-bar {
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-color: var(--dark-orange);
+	/* margin-bottom: 4px; */
+  }
+  
+  .main-navigation {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: #333;
 	display: none;
-}
+  }
+  
+  .main-navigation .menu {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .main-navigation .menu li {
+	margin: 0;
+  }
+  
+  .show-nav {
+	display: block;
+	/* height: calc(100vh); */
+	background-color: white;
+	font-size: xx-large;
+  }
 
-}
+  .show-nav .menu-item {
+	text-align: center;
+	padding: 5rem;
+  }
+
+  
+  @media (min-width: 768px) {
+	.site-branding {
+	  padding-right: 15px;
+	  padding-left: 15px;
+	}
+  
+	.menu-toggle {
+	  display: none;
+	}
+  
+	.main-navigation {
+	  position: static;
+	  background-color: transparent;
+	  display: flex;
+	  justify-content: flex-end;
+	}
+  
+	.main-navigation .menu {
+	  flex-direction: row;
+	}
+  
+	.main-navigation .menu li {
+	  margin-left: 15px;
+	  margin-right: 15px;
+	}
+  }
+  

@@ -3,5 +3,8 @@
 const navToggle = document.querySelector(".menu-toggle");
 
 navToggle.addEventListener('click', function(){
-    document.querySelector('.menu').classList.toggle('show-nav');
+
+    console.log("THIS HAS BEEN CLICKED")
+
+    document.querySelector('.main-navigation').classList.toggle('show-nav');
 });

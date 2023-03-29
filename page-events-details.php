@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+<?php
+/**
+ * This is the page-events-us.php file
+ *
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package nine_on_nine
+ * 
+ * 
+ * 
+ */
 
-    <title>Contact Us</title>
-</head>
-<body>
-    <header>
-        
-    </header>
+get_header();
+?>
+
+
     <section>
         <!--breadcrumbs here-->
         <div class="">
@@ -138,8 +143,7 @@
      
     
     </section>
-    <footer>
 
-    </footer>
-</body>
-</html>
+<?php
+get_sidebar();
+get_footer();

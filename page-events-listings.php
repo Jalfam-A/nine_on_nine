@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+<?php
+/**
+ * This is the page-events-listings-us.php file
+ *
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package nine_on_nine
+ * 
+ * 
+ * 
+ */
 
-    <title>About Us</title>
-</head>
-<body>
-    <header>
-        
-    </header>
+get_header();
+?>
+
+
     <section>
         <div class=""> 
             <div class=""> <!--top cards start-->
@@ -236,12 +241,11 @@
         
         
     </section>
-    <footer>
-
-    </footer>
-</body>
-</html>
 
 <!-- 
     Add comments to all html later
 -->
+
+<?php
+get_sidebar();
+get_footer();

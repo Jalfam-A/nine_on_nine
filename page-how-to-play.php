@@ -1,14 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+/**
+ * This is the page-how-to-play.php file
+ *
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package nine_on_nine
+ * 
+ * 
+ * 
+ */
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How To Play</title>
-</head>
+get_header();
+?>
 
-<body>
+
     <!-- CONTAINER -->
     <div class="">
         <!-- Breadcrumbs -->
@@ -200,7 +206,6 @@
 
     </div>
 
-
-</body>
-
-</html>
+<?php
+get_sidebar();
+get_footer();

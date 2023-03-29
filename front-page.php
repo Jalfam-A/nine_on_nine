@@ -1,12 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+/**
+ * This is the front-page.php file
+ *
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package nine_on_nine
+ */
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>9on9 - Homepage</title>
-</head>
+get_header();
+?>
+
 
 <body>
 
@@ -173,4 +177,5 @@
 
 </body>
 
-</html>
+<?php
+get_footer();
