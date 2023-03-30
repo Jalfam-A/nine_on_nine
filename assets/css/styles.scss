@@ -8,3 +8,11 @@
 
 @use 'partials/header';
 @use 'partials/footer';
+
+@use 'partials/pages/homepage';
+@use 'partials/pages/how-to-play';
+@use 'partials/pages/product-purchase';
+@use 'partials/pages/about';
+@use 'partials/pages/contact-us';
+@use 'partials/pages/event-details';
+@use 'partials/pages/event-list';

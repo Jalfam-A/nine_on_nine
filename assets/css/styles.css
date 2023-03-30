@@ -53,4 +53,32 @@ ul {
 
 ul li {
   text-decoration: none;
+}
+
+.test-homepage {
+  font-family: sans-serif;
+}
+
+.test-how-to-play {
+  font-family: sans-serif;
+}
+
+.test-product {
+  font-family: sans-serif;
+}
+
+.test-about {
+  font-family: sans-serif;
+}
+
+.test-contact {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.test-detail {
+  font-family: sans-serif;
+}
+
+.test-listing {
+  font-family: sans-serif;
 }/*# sourceMappingURL=styles.css.map */
