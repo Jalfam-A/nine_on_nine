@@ -1,4 +1,6 @@
+/* ========== TYPOGRAPHY - Dazz ========== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Open+Sans&display=swap");
+/* ========== mixins.scss - Dazz ========*/ /* ========== colors.scss - Donald ========*/
 :root {
   --black: #070606;
   --dark-blue: #041E42;
@@ -10,6 +12,7 @@
   --nude: #FDF7DD;
 }
 
+/* ========== base.scss - Dazz ========*/
 html {
   font-size: 62.5%;
 }
@@ -55,30 +58,37 @@ ul li {
   text-decoration: none;
 }
 
+/* ========== header.scss - Donald ========*/ /* ========== footer.scss - Donald ========*/ /* ========== HOMEPAGE - Donald ==========*/
 .test-homepage {
   font-family: sans-serif;
 }
 
+/* ========== HOW TO PLAY - Dazz =======*/
 .test-how-to-play {
   font-family: sans-serif;
 }
 
+/* ========== PRODUCT PURCAHSE - Donald ============*/
 .test-product {
   font-family: sans-serif;
 }
 
+/* ========== ABOUT US PAGE - Emmanoel ========== */
 .test-about {
   font-family: sans-serif;
 }
 
+/* ========== CONTACT US PAGE - Emmanoel ========*/
 .test-contact {
   font-family: "Courier New", Courier, monospace;
 }
 
+/* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
 .test-detail {
   font-family: sans-serif;
 }
 
+/* ========== EVENT LISTINGS PAGE - Emmanoel =======*/
 .test-listing {
   font-family: sans-serif;
 }/*# sourceMappingURL=styles.css.map */

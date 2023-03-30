@@ -1,6 +1,10 @@
+/* ========== TYPOGRAPHY - Dazz ========== */ 
+
+@use 'colors';
+@use 'mixins';
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Open+Sans&display=swap');
 
-// TYPOGRAPHY
 
 h1{
     font-family: 'Monsterrat Alternates', sans-serif;
