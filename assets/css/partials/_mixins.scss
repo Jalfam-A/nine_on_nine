@@ -82,3 +82,58 @@
 
   }
   
+
+/************* HOME PAGE (FRONT-PAGE) ******************/
+
+/* Mobile version */
+@media (max-width: 767px) {
+	.hero-banner {
+	  flex-direction: column;
+	  gap: 40px;
+	}
+	.hero-image {
+	  max-width: 100%;
+	}
+	.hero-message {
+	  max-width: 100%;
+	}
+	.hero-cta {
+	  flex-direction: column;
+	}
+	.hero-cta-buynow,
+	.hero-cta-howtoplay {
+	  margin-right: 0;
+	  margin-bottom: 8px;
+	  width: 100%;
+	}
+	.whats-in-the-box {
+	  padding: none;
+	}
+	.whats-in-the-box-images {
+	  flex-direction: column;
+	  gap: 40px;
+	}
+	.whats-in-the-box-image {
+	  width: 100%;
+	}
+  }
+  
+  /* Desktop version */
+//   @media (min-width: 768px) {
+// 	.hero-banner {
+// 	  padding-top: 5%;
+// 	}
+// 	.hero-image {
+// 	  max-width: 50%;
+// 	}
+// 	.hero-message {
+// 	  max-width: 50%;
+// 	}
+// 	.hero-cta {
+// 	  width: 50%;
+// 	}
+// 	.whats-in-the-box {
+// 	  padding: 5% 20% 5% 20%;
+// 	}
+//   }
+  
