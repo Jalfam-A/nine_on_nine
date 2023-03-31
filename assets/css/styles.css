@@ -224,8 +224,8 @@ footer {
     align-items: center;
   }
   .footer-socialmedia,
-.footer-nav,
-.get-in-touch {
+  .footer-nav,
+  .get-in-touch {
     width: unset;
     flex: 1;
   }
@@ -256,7 +256,7 @@ footer {
     flex-direction: column;
   }
   .hero-cta-buynow,
-.hero-cta-howtoplay {
+  .hero-cta-howtoplay {
     margin-right: 0;
     margin-bottom: 8px;
     width: 100%;
@@ -353,8 +353,7 @@ ul li {
 .hero-image img {
   width: 100%;
   height: 100%; /* Change from min-height to height */
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .hero-message {
@@ -512,8 +511,7 @@ ul li {
 .hero-image-flip img {
   width: 100%;
   height: 100%; /* Change from min-height to height */
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .hero-message-flip {
@@ -544,4 +542,6 @@ ul li {
 /* ========== EVENT LISTINGS PAGE - Emmanoel =======*/
 .test-listing {
   font-family: sans-serif;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
