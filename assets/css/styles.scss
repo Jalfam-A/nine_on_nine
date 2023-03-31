@@ -1,4 +1,6 @@
 // Order in cascading order
+@use 'partials/header'; // Donald
+@use 'partials/footer'; // Donald
 
 @use 'partials/base'; // Dazz
 @use 'partials/mixins'; // Dazz
@@ -6,8 +8,6 @@
 @use 'partials/typography'; // Dazz
 @use 'partials/colors'; // Dazz
 
-@use 'partials/header'; // Donald
-@use 'partials/footer'; // Donald
 
 @use 'partials/pages/homepage'; // Donald
 @use 'partials/pages/how-to-play'; // Dazz

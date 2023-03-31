@@ -27,3 +27,58 @@
     display: flex;
     flex-direction: column;
 }
+
+
+
+@media (min-width: 768px) {
+	.site-branding {
+	  padding-right: 15px;
+	  padding-left: 15px;
+	}
+  
+	.menu-toggle {
+	  display: none;
+	}
+  
+	.main-navigation {
+	  position: static;
+	  background-color: transparent;
+	  display: flex;
+	  justify-content: flex-end;
+	}
+  
+	.main-navigation .menu {
+	  flex-direction: row;
+	}
+  
+	.main-navigation .menu li {
+	  margin-left: 15px;
+	  margin-right: 15px;
+	}
+
+	.footer-site-info {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.footer-socialmedia,
+	.footer-nav,
+	.get-in-touch {
+		width: unset;
+		flex: 1;
+	}
+
+	.footer-socialmedia img {
+		width: 20rem;
+	}
+
+
+	#secondary-menu {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		gap: 5rem;
+	}
+
+  }
+  

@@ -1,63 +1,5 @@
 /* ========== TYPOGRAPHY - Dazz ========== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Open+Sans&display=swap");
-/* ========== mixins.scss - Dazz ========*/ /* ========== colors.scss - Donald ========*/
-:root {
-  --black: #070606;
-  --dark-blue: #041E42;
-  --light-blue: #78A1BB;
-  --sky-blue: #47AED9;
-  --dark-orange: #FF7200;
-  --light-orange: #FFA903;
-  --green: #56AC5f;
-  --nude: #FDF7DD;
-}
-
-/* ========== base.scss - Dazz ========*/
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--black);
-  background-color: white;
-}
-
-.container {
-  padding: 2%;
-}
-
-h1 {
-  font-family: "Monsterrat Alternates", sans-serif;
-  font-weight: bold;
-  font-size: 48px;
-}
-
-h2 {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 21px;
-}
-
-h3 {
-  font-family: "Monsterrat Alternates", sans-serif;
-  font-size: 44px;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li {
-  text-decoration: none;
-}
-
 /* ========== header.scss - Donald ========*/
 .site-header {
   background-color: white;
@@ -75,7 +17,6 @@ ul li {
   align-items: center;
   padding: 15px;
   width: 10rem;
-  height: 6rem;
 }
 
 .site-branding img {
@@ -163,6 +104,16 @@ ul li {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  flex: 1;
+}
+
+.footer-nav {
+  width: 100%;
+}
+
+.get-in-touch {
+  width: 100%;
 }
 
 .footer-site-info {
@@ -171,6 +122,7 @@ ul li {
   align-items: flex-start;
   gap: 1.5rem;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .get-in-touch a {
@@ -199,9 +151,246 @@ footer {
   flex-direction: column;
 }
 
+/* ========== mixins.scss - Dazz ========*/
+@media (min-width: 768px) {
+  .site-branding {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation {
+    position: static;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main-navigation .menu {
+    flex-direction: row;
+  }
+  .main-navigation .menu li {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .footer-site-info {
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer-socialmedia,
+  .footer-nav,
+  .get-in-touch {
+    width: unset;
+    flex: 1;
+  }
+  .footer-socialmedia img {
+    width: 20rem;
+  }
+  #secondary-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+/* ========== colors.scss - Donald ========*/
+:root {
+  --black: #070606;
+  --dark-blue: #041E42;
+  --light-blue: #78A1BB;
+  --sky-blue: #47AED9;
+  --dark-orange: #FF7200;
+  --light-orange: #FFA903;
+  --green: #56AC5f;
+  --nude: #FDF7DD;
+}
+
+/* ========== base.scss - Dazz ========*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--black);
+  background-color: white;
+}
+
+.container {
+  padding: 2%;
+}
+
+h1 {
+  font-family: "Monsterrat Alternates", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 21px;
+}
+
+h3 {
+  font-family: "Monsterrat Alternates", sans-serif;
+  font-size: 44px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  text-decoration: none;
+}
+
 /* ========== HOMEPAGE - Donald ==========*/
-.test-homepage {
-  font-family: sans-serif;
+.hero-banner {
+  display: flex;
+  align-items: center; /* Aligns children vertically */
+  justify-content: center; /* Centers children horizontally */
+  gap: 20px; /* Space between image and message */
+  width: 100%;
+  padding-top: 5%;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 50%;
+  overflow: hidden; /* Hide the overflowing part of the image */
+  display: flex; /* Add flex to center the image */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%; /* Change from min-height to height */
+  object-fit: cover;
+}
+
+.hero-message {
+  flex: 1; /* Take up equal space in the container */
+  max-width: 50%; /* Limit width to 50% */
+}
+
+/************ BUTTONS ************/
+/* Flex container for the buttons */
+.hero-cta {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Shared styles for both buttons */
+.hero-cta-buynow,
+.hero-cta-howtoplay {
+  flex: 1;
+  text-align: center;
+  margin-right: 8px;
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 50%;
+}
+
+/* Orange button styles */
+.hero-cta-buynow {
+  background-color: var(--dark-orange);
+  color: white;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* Text color for the second button */
+.hero-cta-howtoplay {
+  margin-right: 0; /* Remove the right margin from the second button */
+  color: var(--dark-orange); /* Set the text color to orange */
+}
+
+/* Pseudo-element for the black box under the orange button */
+.hero-cta-buynow::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 4px;
+  z-index: -1;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect under the orange box */
+  left: 8px; /* Position the black box to the right of the button */
+  top: 20%; /* Position the black box below the button */
+}
+
+/* Hover effect for the orange button */
+.hero-cta-buynow:hover {
+  transform: translateY(-4px); /* Move the orange button up */
+}
+
+/* Hover effect for the black box */
+.hero-cta-buynow:hover::before {
+  opacity: 1;
+}
+
+/************ WHAT'S IN THE BOX  ************/
+/* Flex container for the images */
+.whats-in-the-box-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Shared styles for the image containers */
+.whats-in-the-box-image {
+  width: 45%; /* Set a width for each image container */
+}
+
+/* Padding for the entire section */
+.whats-in-the-box {
+  padding: 5% 20% 5% 20%;
+}
+
+/* Intro text styles */
+.whats-in-the-box-text {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.whats-in-the-box-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.whats-in-the-box-subheading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.whats-in-the-box-description {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+/* Image styles */
+.whats-in-the-box-image-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.whats-in-the-box-image-file {
+  width: 100%;
 }
 
 /* ========== HOW TO PLAY - Dazz =======*/

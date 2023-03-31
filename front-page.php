@@ -15,14 +15,14 @@ get_header();
 <body>
 
     <!-- HERO BANNER -->
-    <div class="">
+    <div class="hero-banner">
         <!-- Hero Image -->
-        <div class="">
-            <img src="" alt="Image of 2 people playing 9on9">
+        <div class="hero-image">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/front-page/herobanner.jpg'); ?>" alt="Image of 2 people playing 9on9">
         </div>
 
         <!-- Hero Message -->
-        <div class="">
+        <div class="hero-message">
             <!-- Hero Text -->
             <div class="">
                 <h2 class="">A game for fun, movement, and skill!</h2>
@@ -33,33 +33,33 @@ get_header();
             </div>
 
             <!-- Hero CTAs -->
-            <div class="">
-                <a href="" class="">BUY NOW</a>
-                <a href="" class="">HOW TO PLAY <img src="" alt="Right Arrow"></a>
+            <div class="hero-cta">
+                <a href="" class="hero-cta-buynow">BUY NOW</a>
+                <a href="" class="hero-cta-howtoplay">HOW TO PLAY <img src="" alt="Right Arrow"></a>
             </div>
         </div>
     </div>
 
 
     <!-- WHAT'S IN THE BOX -->
-    <div class="">
+    <div class="whats-in-the-box">
         <!-- Intro Text -->
-        <div class="">
-            <h2 class="">What's in the box?</h2>
-            <h1 class="">Games can't get more fun than this.</h1>
-            <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
+        <div class="whats-in-the-box-text">
+            <h2 class="whats-in-the-box-heading">What's in the box?</h2>
+            <h1 class="whats-in-the-box-subheading">Games can't get more fun than this.</h1>
+            <p class="whats-in-the-box-description">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
                 challenging teams to reach 99 points by tossing bean pucks on the board.</p>
         </div>
 
         <!-- Images -->
-        <div class="">
-            <div class="">
-                <p class="">The Board</p>
-                <img src="" alt="Image of the Board" class="">
+        <div class="whats-in-the-box-images">
+            <div class="whats-in-the-box-image">
+                <p class="whats-in-the-box-image-title">The Board</p>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/front-page/theboard.png' ); ?>" alt="Image of the Board" class="whats-in-the-box-image-file">
             </div>
-            <div class="">
-                <p class="">The Bean Pucks</p>
-                <img src="" alt="Image of the Bean Pucks" class="">
+            <div class="whats-in-the-box-image">
+                <p class="whats-in-the-box-image-title">The Bean Pucks</p>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/front-page/thebeanpucks.jpg' ); ?>" alt="Image of the Bean Pucks" class="whats-in-the-box-image-file">
             </div>
         </div>
     </div>
