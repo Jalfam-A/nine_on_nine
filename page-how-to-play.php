@@ -38,13 +38,13 @@ get_header();
         <div class="">
             <h3>The Setup</h3>
             <div class="">
-                <a href="" class="">Step 1</a>
+                <a href="#step1" class="">Step 1</a>
                 <img src="" alt="Chevron Right" class="">
-                <a href="" class="">Step 3</a>
+                <a href="#step2" class="">Step 2</a>
                 <img src="" alt="Chevron Right" class="">
-                <a href="" class="">Step 2</a>
+                <a href="#step3" class="">Step 3</a>
                 <img src="" alt="Chevron Right" class="">
-                <a href="" class="">Step 4</a>
+                <a href="#step4" class="">Step 4</a>
             </div>
         </div>
 
@@ -52,15 +52,15 @@ get_header();
         <div class="">
 
             <!-- Setup - Step 1 -->
-            <div class="">
+            <div class="hero-banner steps" id="step1">
 
                 <!-- Step 1 - Image -->
-                <div class="">
-                    <img src="" alt="" class="">
+                <div class="hero-image">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
                 </div>
 
                 <!-- Step 1 - Message -->
-                <div class="">
+                <div class="hero-message">
                     <h2 class="">Step 1</h2>
                     <h1 class="">Place the Board on level ground.</h1>
                     <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play, challenging teams to reach 99 points by tossing bean pucks on the board.</p>
@@ -68,34 +68,35 @@ get_header();
 
             </div>
 
-
             <!-- Setup - Step 2 -->
-            <div class="">
+            <div class="hero-banner bg-blue steps" id="step2">
 
-                <!-- Step 2 - Image -->
-                <div class="">
-                    <img src="" alt="" class="">
-                </div>
+                
 
                 <!-- Step 2 - Message -->
-                <div class="">
+                <div class="hero-message">
                     <h2 class="">Step 2</h2>
                     <h1 class="">Create 2 teams. Each team gets 4 bean pucks.</h1>
                     <p class="">1 to 4 players each team. Select a colour for each team.</p>
+                </div>
+                
+                <!-- Step 2 - Image -->
+                <div class="hero-image">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
                 </div>
 
             </div>
 
             <!-- Setup - Step 3 -->
-            <div class="">
+            <div class="hero-banner steps" id="step3">
 
                 <!-- Step 3 - Image -->
-                <div class="">
-                    <img src="" alt="" class="">
+                <div class="hero-image">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
                 </div>
 
                 <!-- Step 3 - Message -->
-                <div class="">
+                <div class="hero-message">
                     <h2 class="">Step 3</h2>
                     <h1 class="">Determine who shoots first.</h1>
                     <p class="">1 to 4 players each team. Select a colour for each team.</p>
@@ -104,18 +105,18 @@ get_header();
             </div>
 
             <!-- Setup - Step 4 -->
-            <div class="">
-
-                <!-- Step 4 - Image -->
-                <div class="">
-                    <img src="" alt="" class="">
-                </div>
+            <div class="hero-banner bg-blue steps" id="step4">
 
                 <!-- Step 4 - Message -->
-                <div class="">
+                <div class="hero-message-flip">
                     <h2 class="">Step 4</h2>
                     <h1 class="">Create 2 teams. Each team gets 4 bean pucks.</h1>
                     <p class="">1 to 4 players each team. Select a colour for each team.</p>
+                </div>
+                
+                <!-- Step 4 - Image -->
+                <div class="hero-image">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
                 </div>
 
             </div>
@@ -128,15 +129,15 @@ get_header();
         <div class="">
 
             <!-- Scoring - Step 1 -->
-            <div class="">
+            <div class="hero-banner steps" id="">
 
                 <!-- Step 1 - Image -->
-                <div class="">
-                    <img src="" alt="" class="">
+                <div class="hero-image">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
                 </div>
 
                 <!-- Step 1 - Message -->
-                <div class="">
+                <div class="hero-message">
                     <h2 class="">Step 1</h2>
                     <h1 class="">Throw 1 bean puck at a time alternating teams until all have been thrown.</h1>
                     <p class="">This completes a round.</p>
@@ -148,19 +149,19 @@ get_header();
 
 
             <!-- Scoring - Step 2 -->
-            <div class="">
-
-                <!-- Step 2 - Image -->
-                <div class="">
-                    <img src="" alt="" class="">
-                </div>
+            <div class="hero-banner bg-blue steps" id="step4">
 
                 <!-- Step 2 - Message -->
-                <div class="">
+                <div class="hero-message">
                     <h2 class="">Step 2</h2>
                     <h1 class="">At the end of each round, each team adds their score to the previous round.</h1>
                     <p class="">The team with the most points after each round throws first in the next round. </p>
                     <p class="">If there is a tie, the winner from the previous round goes first.</p>
+                </div>
+
+                <!-- Step 2 - Image -->
+                <div class="hero-image">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
                 </div>
 
             </div>
