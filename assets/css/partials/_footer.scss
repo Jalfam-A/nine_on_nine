@@ -1,2 +1,63 @@
 /* ========== footer.scss - Donald ========*/
 
+
+
+.site-footer {
+	border-top: 1px solid #333;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);	
+	background-color: white;
+  }
+
+  .socialmediaicons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2.5rem;
+  }
+
+  .socialmediaicons svg {
+	width: 1rem;
+  }
+  
+
+.footer-socialmedia {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-site-info {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+}
+
+.get-in-touch a {
+	display: block;
+}
+
+.get-in-touch-contact {
+	margin-bottom: 1rem;
+}
+
+.get-in-touch-title {
+	font-weight: bold;
+}
+
+.footer-copywrite {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer {
+	padding: 5rem;
+}
+
+
+#secondary-menu {
+    flex-direction: column;
+}

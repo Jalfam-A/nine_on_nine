@@ -22,7 +22,7 @@ body {
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--black);
-  background-color: var(--nude);
+  background-color: white;
 }
 
 .container {
@@ -58,7 +58,148 @@ ul li {
   text-decoration: none;
 }
 
-/* ========== header.scss - Donald ========*/ /* ========== footer.scss - Donald ========*/ /* ========== HOMEPAGE - Donald ==========*/
+/* ========== header.scss - Donald ========*/
+.site-header {
+  background-color: white;
+  border-bottom: 1px solid #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-branding {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 10rem;
+  height: 6rem;
+}
+
+.site-branding img {
+  width: 100%;
+  height: 100%;
+}
+
+.site-title a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.menu-toggle {
+  /* background-color: transparent; */
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 15px;
+  height: 24px;
+  width: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-bar {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: var(--dark-orange);
+  /* margin-bottom: 4px; */
+}
+
+.main-navigation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  display: none;
+}
+
+.main-navigation .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-navigation .menu li {
+  margin: 0;
+}
+
+.show-nav {
+  display: block;
+  /* height: calc(100vh); */
+  background-color: white;
+  font-size: xx-large;
+}
+
+.show-nav .menu-item {
+  text-align: center;
+  padding: 5rem;
+}
+
+/* ========== footer.scss - Donald ========*/
+.site-footer {
+  border-top: 1px solid #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.socialmediaicons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.socialmediaicons svg {
+  width: 1rem;
+}
+
+.footer-socialmedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-site-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.get-in-touch a {
+  display: block;
+}
+
+.get-in-touch-contact {
+  margin-bottom: 1rem;
+}
+
+.get-in-touch-title {
+  font-weight: bold;
+}
+
+.footer-copywrite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  padding: 5rem;
+}
+
+#secondary-menu {
+  flex-direction: column;
+}
+
+/* ========== HOMEPAGE - Donald ==========*/
 .test-homepage {
   font-family: sans-serif;
 }
@@ -91,4 +232,6 @@ ul li {
 /* ========== EVENT LISTINGS PAGE - Emmanoel =======*/
 .test-listing {
   font-family: sans-serif;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
