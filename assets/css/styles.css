@@ -1,7 +1,6 @@
 /* ========== TYPOGRAPHY - Dazz ========== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Open+Sans&display=swap");
 /* ========= RESET.CSS ==========*/
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -353,7 +352,8 @@ ul li {
 .hero-image img {
   width: 100%;
   height: 100%; /* Change from min-height to height */
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero-message {
@@ -484,39 +484,59 @@ ul li {
   height: 100vh;
 }
 
-.hero-banner.bg-blue {
+.bg-blue {
   background-color: var(--dark-blue);
   color: white;
 }
 
-.hero-banner-flip {
-  display: flex;
-  align-items: center; /* Aligns children vertically */
-  justify-content: flex-end; /* Aligns children to the end horizontally */
-  gap: 20px; /* Space between image and message */
-  width: 100%;
-  padding-top: 5%;
+.bg-green {
+  background-color: var(--green);
+  color: white;
 }
 
-.hero-image-flip {
+.step-image-left,
+.step-image-right {
   flex: 1;
   max-width: 50%;
   overflow: hidden; /* Hide the overflowing part of the image */
   display: flex; /* Add flex to center the image */
   justify-content: center; /* Center the image horizontally */
   align-items: center; /* Center the image vertically */
-  margin-left: auto; /* Push image to the right */
 }
 
-.hero-image-flip img {
+.step-image-right img {
   width: 100%;
   height: 100%; /* Change from min-height to height */
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
-.hero-message-flip {
-  flex: 1; /* Take up equal space in the container */
-  max-width: 50%; /* Limit width to 50% */
+.step-image-left img {
+  width: 100%;
+  height: 100%; /* Change from min-height to height */
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.m-left {
+  margin-left: 2rem;
+}
+
+.m-right {
+  margin-right: 2rem;
+}
+
+.howtoplay-links a {
+  color: white;
+  margin-right: 2rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  display: inline-block;
 }
 
 /* ========== PRODUCT PURCAHSE - Donald ============*/
@@ -542,6 +562,4 @@ ul li {
 /* ========== EVENT LISTINGS PAGE - Emmanoel =======*/
 .test-listing {
   font-family: sans-serif;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
