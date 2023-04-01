@@ -352,8 +352,7 @@ ul li {
 .hero-image img {
   width: 100%;
   height: 100%; /* Change from min-height to height */
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .hero-message {
@@ -507,8 +506,7 @@ ul li {
 .step-image-right img {
   width: 100%;
   height: 100%; /* Change from min-height to height */
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
 }
@@ -516,8 +514,7 @@ ul li {
 .step-image-left img {
   width: 100%;
   height: 100%; /* Change from min-height to height */
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
@@ -562,4 +559,6 @@ ul li {
 /* ========== EVENT LISTINGS PAGE - Emmanoel =======*/
 .test-listing {
   font-family: sans-serif;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
