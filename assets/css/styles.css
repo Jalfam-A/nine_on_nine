@@ -268,9 +268,6 @@ footer {
     width: 100%;
   }
   /* Remove padding from the entire whats-in-the-box section */
-  .whats-in-the-box {
-    padding: none;
-  }
   /* Change the direction of the flexbox to column and increase the gap between the images in the whats-in-the-box section */
   .whats-in-the-box-images {
     flex-direction: column;
@@ -430,7 +427,6 @@ a:hover {
 
 .hero-image {
   flex: 1;
-  max-width: 50%;
   overflow: hidden; /* Hide the overflowing part of the image */
   display: flex; /* Add flex to center the image */
   justify-content: center; /* Center the image horizontally */
@@ -445,10 +441,15 @@ a:hover {
 
 .hero-message {
   flex: 1; /* Take up equal space in the container */
-  max-width: 50%; /* Limit width to 50% */
+  max-width: 80%; /* Limit width to 50% */
 }
 
 /************ WHAT'S IN THE BOX  ************/
+/* Remove padding from the entire whats-in-the-box section */
+.whats-in-the-box {
+  padding: none;
+}
+
 /* Flex container for the images */
 .whats-in-the-box-images {
   display: flex;
