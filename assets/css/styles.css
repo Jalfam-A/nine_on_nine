@@ -250,7 +250,6 @@ footer {
   /* Increase the max-width of the hero-image and hero-message to 100% */
   .hero-banner {
     flex-direction: column;
-    gap: 40px;
   }
   .hero-image {
     max-width: 100%;
@@ -296,7 +295,7 @@ footer {
   }
   /* Add padding to the whats-in-the-box section */
   .whats-in-the-box {
-    padding: 20rem 45rem 20rem 45rem;
+    padding: 8rem 25rem 8rem 25rem;
   }
   /* Navigation */
   .hero-cta-buynow-header {
@@ -448,11 +447,6 @@ ul li {
   width: 45%; /* Set a width for each image container */
 }
 
-/* Padding for the entire section */
-.whats-in-the-box {
-  padding: 10rem 15rem 10rem 15rem;
-}
-
 /* Intro text styles */
 .whats-in-the-box-text {
   text-align: center;
@@ -492,10 +486,17 @@ ul li {
   display: flex;
   flex-direction: column;
   color: white;
+  background-color: var(--dark-blue);
 }
 
 .event-feature-info {
   order: 2;
+  color: white;
+}
+
+.event-feature-info a {
+  color: white;
+  padding: 20px;
 }
 
 .event-feature-image {
@@ -521,6 +522,7 @@ ul li {
   right: -20px;
   top: 50%;
   transform: translateY(-50%);
+  width: 30rem;
 }
 
 .event-feature-info .event-feature-message {
@@ -574,7 +576,6 @@ ul li {
     order: 1;
     flex: 1;
     margin-right: 40px;
-    background-color: var(--dark-blue);
   }
   .event-feature-image {
     order: 2;

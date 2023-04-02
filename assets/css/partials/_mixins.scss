@@ -97,7 +97,7 @@
 	/* Increase the max-width of the hero-image and hero-message to 100% */
 	.hero-banner {
 	  flex-direction: column;
-	  gap: 40px;
+	//   gap: 40px;
 	}
 
 	.hero-image {
@@ -154,7 +154,8 @@
 
 	/* Add padding to the whats-in-the-box section */
 	.whats-in-the-box {
-	  padding: 20rem 45rem 20rem 45rem;
+	//   padding: 20rem 45rem 20rem 45rem;
+	padding: 8rem 25rem 8rem 25rem;
 	}
 
 	/* Navigation */

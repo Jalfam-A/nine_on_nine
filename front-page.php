@@ -139,16 +139,15 @@ get_header();
             <div class="event-feature-message">
                 <h2 class="">Latest Update</h2>
                 <h1 class="">9on9 Tournament</h1>
-                <p class="">This game is beginner friendly and for everyone! Let us show you how to play this game so
-                    you can start playing!</p>
+                <p class="">This game is beginner friendly and for everyone! Let us show you how to play this game so you can start playing!</p>
             </div>
             <!-- Event Feature Message Button -->
-            <div class="">
+            <!-- <div class=""> -->
                 <a href="#">
                     SEE EVENT DETAILS
                     <img src="" alt="Right Arrow">
                 </a>
-            </div>
+            <!-- </div> -->
         </div>
 
         <!-- Event Feature Image -->
