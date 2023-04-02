@@ -8,3 +8,52 @@ a {
 a:hover {
 	color: var(--green);
 }
+
+/***** FRONT PAGE BUTTONS*****/
+
+/* Flex container for the buttons */
+.hero-cta {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+/* Shared styles for both buttons */
+.hero-cta-buynow,
+.hero-cta-howtoplay,
+.button-styles {
+    flex: 1;
+    text-align: center;
+    margin-right: 8px;
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 50%;
+}
+
+/* Orange button styles */
+.hero-cta-buynow,
+.button-styles {
+    background-color: var(--dark-orange);
+    color: white;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Text color for the second button in FRONT PAGE */
+.hero-cta-howtoplay {
+    margin-right: 0; /* Remove the right margin from the second button */
+    color: var(--dark-orange); /* Set the text color to orange */
+}
+
+
+/* Hover effect for the orange button */
+.hero-cta-buynow:hover,
+.button-styles:hover  {
+    transform: translateY(-4px); /* Move the orange button up */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 9px 9px black; /* Shadow effect under the orange box */
+    color: white;
+}
