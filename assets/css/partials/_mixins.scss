@@ -31,6 +31,7 @@
 }
 
 
+/************* HEADER/FOOTER/NAVIGATION BAR ******************/
 
 @media (min-width: 768px) {
 	.site-branding {
@@ -57,6 +58,9 @@
 	  margin-left: 15px;
 	  margin-right: 15px;
 	}
+
+	
+
 
 	.footer-site-info {
 		flex-direction: row;
@@ -89,53 +93,75 @@
 
 /* Mobile version */
 @media (max-width: 767px) {
+
+	/* Increase the max-width of the hero-image and hero-message to 100% */
 	.hero-banner {
 	  flex-direction: column;
 	  gap: 40px;
 	}
+
 	.hero-image {
 	  max-width: 100%;
 	}
+
 	.hero-message {
 	  max-width: 100%;
 	}
+
+	/* Change the direction of the flexbox to column for the hero-cta and remove margin-right of the buttons */
 	.hero-cta {
 	  flex-direction: column;
 	}
+
 	.hero-cta-buynow,
 	.hero-cta-howtoplay {
 	  margin-right: 0;
 	  margin-bottom: 8px;
 	  width: 100%;
 	}
+
+	/* Remove padding from the entire whats-in-the-box section */
 	.whats-in-the-box {
 	  padding: none;
 	}
+
+	/* Change the direction of the flexbox to column and increase the gap between the images in the whats-in-the-box section */
 	.whats-in-the-box-images {
 	  flex-direction: column;
 	  gap: 40px;
 	}
+
+	/* Increase the width of the whats-in-the-box-image to 100% */
 	.whats-in-the-box-image {
 	  width: 100%;
 	}
+
   }
   
   /* Desktop version */
-//   @media (min-width: 768px) {
-// 	.hero-banner {
-// 	  padding-top: 5%;
-// 	}
-// 	.hero-image {
-// 	  max-width: 50%;
-// 	}
-// 	.hero-message {
-// 	  max-width: 50%;
-// 	}
-// 	.hero-cta {
-// 	  width: 50%;
-// 	}
-// 	.whats-in-the-box {
-// 	  padding: 5% 20% 5% 20%;
-// 	}
-//   }
+  @media (min-width: 768px) {
+	.hero-banner {
+	  padding-top: 5%;
+	}
+
+	/* Limit the max-width of the hero-image and hero-message to 50% */
+	.hero-image {
+	  max-width: 50%;
+	}
+	.hero-message {
+	  max-width: 50%;
+	}
+
+	/* Add padding to the whats-in-the-box section */
+	.whats-in-the-box {
+	  padding: 20rem 25rem 20rem 25rem;
+	}
+
+	/* Navigation */
+	.hero-cta-buynow-header {
+    	margin: 2rem 0 0 20rem;
+	} 
+
+
+  }
   

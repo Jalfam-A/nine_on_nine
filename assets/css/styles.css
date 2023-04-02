@@ -54,14 +54,16 @@ td, th {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 25px;
 }
 
-.site-branding {
+.site-branding-logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  width: 10rem;
+  padding: 25px;
+  width: 18rem;
+  height: 6rem;
 }
 
 .site-branding img {
@@ -71,17 +73,16 @@ td, th {
 
 .site-title a {
   color: #fff;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .menu-toggle {
-  /* background-color: transparent; */
   border: none;
   cursor: pointer;
   padding: 5px;
   margin-right: 15px;
-  height: 24px;
-  width: 2.5rem;
+  height: 5rem;
+  width: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -91,9 +92,9 @@ td, th {
 .icon-bar {
   display: block;
   width: 100%;
-  height: 5px;
+  height: 2rem;
   background-color: var(--dark-orange);
-  /* margin-bottom: 4px; */
+  margin-bottom: 5px;
 }
 
 .main-navigation {
@@ -112,6 +113,10 @@ td, th {
 
 .main-navigation .menu li {
   margin: 0;
+}
+
+.menu-menu-1-container li a {
+  font-size: large;
 }
 
 .show-nav {
@@ -197,6 +202,7 @@ footer {
 }
 
 /* ========== mixins.scss - Dazz ========*/
+/************* HEADER/FOOTER/NAVIGATION BAR ******************/
 @media (min-width: 768px) {
   .site-branding {
     padding-right: 15px;
@@ -241,6 +247,7 @@ footer {
 /************* HOME PAGE (FRONT-PAGE) ******************/
 /* Mobile version */
 @media (max-width: 767px) {
+  /* Increase the max-width of the hero-image and hero-message to 100% */
   .hero-banner {
     flex-direction: column;
     gap: 40px;
@@ -251,6 +258,7 @@ footer {
   .hero-message {
     max-width: 100%;
   }
+  /* Change the direction of the flexbox to column for the hero-cta and remove margin-right of the buttons */
   .hero-cta {
     flex-direction: column;
   }
@@ -260,18 +268,41 @@ footer {
     margin-bottom: 8px;
     width: 100%;
   }
+  /* Remove padding from the entire whats-in-the-box section */
   .whats-in-the-box {
     padding: none;
   }
+  /* Change the direction of the flexbox to column and increase the gap between the images in the whats-in-the-box section */
   .whats-in-the-box-images {
     flex-direction: column;
     gap: 40px;
   }
+  /* Increase the width of the whats-in-the-box-image to 100% */
   .whats-in-the-box-image {
     width: 100%;
   }
 }
 /* Desktop version */
+@media (min-width: 768px) {
+  .hero-banner {
+    padding-top: 5%;
+  }
+  /* Limit the max-width of the hero-image and hero-message to 50% */
+  .hero-image {
+    max-width: 50%;
+  }
+  .hero-message {
+    max-width: 50%;
+  }
+  /* Add padding to the whats-in-the-box section */
+  .whats-in-the-box {
+    padding: 20rem 25rem 20rem 25rem;
+  }
+  /* Navigation */
+  .hero-cta-buynow-header {
+    margin: 2rem 0 0 20rem;
+  }
+}
 /* ========== colors.scss - Donald ========*/
 :root {
   --black: #070606;
@@ -331,6 +362,7 @@ ul li {
 }
 
 /* ========== HOMEPAGE - Donald ==========*/
+/************ HERO BANNER  ************/
 .hero-banner {
   display: flex;
   align-items: center; /* Aligns children vertically */
@@ -365,6 +397,7 @@ ul li {
 .hero-cta {
   display: flex;
   justify-content: space-between;
+  padding: 1.5rem 0 1.5rem 0;
 }
 
 /* Shared styles for both buttons */
@@ -417,7 +450,7 @@ ul li {
 
 /* Padding for the entire section */
 .whats-in-the-box {
-  padding: 5% 20% 5% 20%;
+  padding: 10rem 15rem 10rem 15rem;
 }
 
 /* Intro text styles */

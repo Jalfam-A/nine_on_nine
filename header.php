@@ -27,7 +27,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'nine_on_nine' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<div class="site-branding site-branding-logo">
 			<?php
 			the_custom_logo();
 				if ( is_front_page() && is_home() ) :
@@ -53,18 +53,20 @@
 			<span class="icon-bar"></span>
 		</div>
 		<nav id="site-navigation" class="main-navigation">
-			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php //esc_html_e( 'Primary Menu', 'nine_on_nine' ); ?></button> -->
-			
-
-
-
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
+			<div class="menu-and-button-container">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+				?>
+				<!-- Buy Now button -->
+				<div class="">
+					<a href="#" class="hero-cta-buynow hero-cta-buynow-header">Buy Now</a>
+				</div>
+			</div>
 		</nav><!-- #site-navigation -->
+
 	</header><!-- #masthead -->

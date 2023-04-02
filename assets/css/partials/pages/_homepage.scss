@@ -1,8 +1,7 @@
 /* ========== HOMEPAGE - Donald ==========*/
 
-// .test-homepage{
-//     font-family: sans-serif;
-// }
+
+/************ HERO BANNER  ************/
 
 .hero-banner {
     display: flex;
@@ -40,7 +39,7 @@
 .hero-cta {
     display: flex;
     justify-content: space-between;
-    // width: 50%;
+    padding: 1.5rem 0 1.5rem 0;
 }
 
 /* Shared styles for both buttons */
@@ -98,7 +97,7 @@
 
 /* Padding for the entire section */
 .whats-in-the-box {
-    padding: 5% 20% 5% 20%;
+    padding: 10rem 15rem 10rem 15rem;
 }
 
 /* Intro text styles */

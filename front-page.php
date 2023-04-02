@@ -34,8 +34,8 @@ get_header();
 
             <!-- Hero CTAs -->
             <div class="hero-cta">
-                <a href="" class="hero-cta-buynow">BUY NOW</a>
-                <a href="" class="hero-cta-howtoplay">HOW TO PLAY <img src="" alt="Right Arrow"></a>
+                <a href="#" class="hero-cta-buynow">BUY NOW</a>
+                <a href="#" class="hero-cta-howtoplay">HOW TO PLAY <img src="" alt="Right Arrow"></a>
             </div>
         </div>
     </div>
