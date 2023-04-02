@@ -134,3 +134,112 @@
     width: 100%;
 }
 
+/**** EVENT FEATURE ****/
+
+.event-feature {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .event-feature-info {
+    order: 2;
+  }
+  
+  .event-feature-image {
+    order: 1;
+  }
+  .event-feature-message-details {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  
+  .event-feature-message-button {
+    text-align: center;
+  }
+  
+  .event-feature-message-button a {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .event-feature-message-button img {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .event-feature-info .event-feature-message {
+    padding: 20px;
+  }
+  
+  .event-feature-info .event-feature-message h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-feature-info .event-feature-message h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .event-feature-info .event-feature-message p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .event-feature-info .event-feature-message a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--dark-orange);
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .event-feature-info .event-feature-message img {
+    margin-left: 10px;
+  }
+  
+  .event-feature-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Desktop */
+@media (min-width: 768px) {
+    .event-feature {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 30rem;
+    }
+
+  
+    .event-feature-info {
+      order: 1;
+      flex: 1;
+      margin-right: 40px;
+      background-color: var(--dark-blue);
+    }
+  
+    .event-feature-image {
+      order: 2;
+      flex: 1;
+    }
+
+    .event-feature-image img {
+        width: 30rem;
+    }
+  
+    .event-feature-message-details {
+      text-align: left;
+    }
+  
+    .event-feature-message-button {
+      text-align: left;
+    }
+  }

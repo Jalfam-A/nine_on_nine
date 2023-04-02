@@ -132,11 +132,11 @@ get_header();
     </div>
 
     <!-- EVENT FEATURE - EDITABLE BY CLIENT -->
-    <div class="">
+    <div class="event-feature">
         <!-- Event Feature Info -->
-        <div class="">
+        <div class="event-feature-info">
             <!-- Event Feature Message Details-->
-            <div class="">
+            <div class="event-feature-message">
                 <h2 class="">Latest Update</h2>
                 <h1 class="">9on9 Tournament</h1>
                 <p class="">This game is beginner friendly and for everyone! Let us show you how to play this game so
@@ -144,7 +144,7 @@ get_header();
             </div>
             <!-- Event Feature Message Button -->
             <div class="">
-                <a href="">
+                <a href="#">
                     SEE EVENT DETAILS
                     <img src="" alt="Right Arrow">
                 </a>
@@ -152,8 +152,8 @@ get_header();
         </div>
 
         <!-- Event Feature Image -->
-        <div class="">
-            <img src="" alt="Image Related to the Event">
+        <div class="event-feature-image">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/css/img/front-page/latestevents.png' ); ?>" alt="Image Related to the Event">
         </div>
     </div>
 
