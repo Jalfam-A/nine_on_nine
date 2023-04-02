@@ -14,7 +14,7 @@
 get_header();
 ?>
 
-
+<body>
     <section>
         <!--breadcrumbs here-->
         <div class="pandemic-change-world-image">
@@ -49,7 +49,7 @@ get_header();
                 <h2>Meet the Team</h2>
             </div>
             <div class="meet-the-team-image">
-                <img src="<?php echo esc_url( get_template_directory_uri() .'/assets/img/about-us/jalfamteam.jpg' ); ?>" alt="an image showing the people behind JALFAM" class="meet-the-team-image-file"/>
+                <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/jalfamteam.jpg' ); ?>" alt="an image showing the people behind JALFAM" class="meet-the-team-image-file"/>
                 <figcaption>JALFAM</figcaption>
             </div>
             
@@ -116,6 +116,6 @@ get_header();
         
     
     </section>
-
+</body>
 <?php get_footer(); ?>
 
