@@ -95,10 +95,6 @@
     width: 45%; /* Set a width for each image container */
 }
 
-/* Padding for the entire section */
-.whats-in-the-box {
-    padding: 10rem 15rem 10rem 15rem;
-}
 
 /* Intro text styles */
 .whats-in-the-box-text {
@@ -140,10 +136,17 @@
     display: flex;
     flex-direction: column;
     color: white;
+    background-color: var(--dark-blue);
   }
   
   .event-feature-info {
     order: 2;
+    color: white;
+  }
+
+  .event-feature-info a {
+    color: white;
+    padding: 20px;
   }
   
   .event-feature-image {
@@ -168,6 +171,7 @@
     right: -20px;
     top: 50%;
     transform: translateY(-50%);
+    width: 30rem;
   }
   
   .event-feature-info .event-feature-message {
@@ -223,7 +227,6 @@
       order: 1;
       flex: 1;
       margin-right: 40px;
-      background-color: var(--dark-blue);
     }
   
     .event-feature-image {
