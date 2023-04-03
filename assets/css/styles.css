@@ -1,5 +1,5 @@
 /* ========== TYPOGRAPHY - Dazz ========== */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;700&family=Open+Sans:ital@1&display=swap");
 /* ========= RESET.CSS ==========*/
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -777,7 +777,7 @@ body {
 
 h1 {
   font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 48px;
 }
 
@@ -789,7 +789,7 @@ h2 {
 
 h3 {
   font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 44px;
 }
 
