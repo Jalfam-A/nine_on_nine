@@ -293,7 +293,7 @@ footer {
   }
   /* Makes the buttons direction row */
   .hero-cta {
-    flex-direction: row;
+    flex-direction: row !important;
   }
   .hero-cta-buynow,
   .hero-cta-howtoplay {
@@ -304,7 +304,7 @@ footer {
   /* Add padding to the whats-in-the-box section */
   .whats-in-the-box {
     padding: 8rem 25rem 8rem 25rem;
-    background-color: white;
+    background-color: white !important;
   }
   /* Navigation */
   .hero-cta-buynow-header {
@@ -408,7 +408,7 @@ body {
   width: 45%; /* Set a width for each image container */
 }
 
-/* Intro text styles */
+/* Text styles */
 .whats-in-the-box-text {
   text-align: center;
   margin-bottom: 32px;
@@ -439,7 +439,7 @@ body {
   width: 100%;
 }
 
-/**** TESTIMONIALS ****/
+/************ TESTIMONIALS ************/
 .testimonials {
   padding: 5rem;
 }
@@ -460,12 +460,11 @@ body {
   /* Testimonial image styles */
 }
 .testimonial-container .testimonial img {
-  width: 100%;
-  max-width: 100px;
+  max-width: 30%;
   margin-bottom: 1rem;
 }
 
-/**** EVENT FEATURE ****/
+/************ EVENT FEATURE ************/
 .event-feature {
   display: flex;
   flex-direction: column;
@@ -535,13 +534,12 @@ body {
   height: auto;
 }
 
-/* Desktop */
+/************* Desktop *************/
 @media (min-width: 768px) {
   .event-feature {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 30rem;
   }
   .event-feature .event-feature-info {
     order: 1;
@@ -553,7 +551,7 @@ body {
     flex: 1;
   }
   .event-feature .event-feature-image img {
-    width: 30rem;
+    width: 100%;
   }
   .event-feature .event-feature-message-details {
     text-align: left;
@@ -712,6 +710,7 @@ a:hover {
   text-decoration: none;
   font-weight: bold;
   border-radius: 4px;
+  width: 50%;
 }
 
 /* Orange button styles */

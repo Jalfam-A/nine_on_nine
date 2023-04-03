@@ -79,7 +79,7 @@ get_header();
     <div class="testimonial">
         <!-- Commentor -->
         <div class="">
-            <img src="" alt="Bean Puck Icon - Blue">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/css/img/front-page/puck-blue.png' ); ?>" alt="Bean Puck Icon - Blue">
             <h2>Kelsey</h2>
         </div>
         <!-- Comment -->
@@ -92,7 +92,7 @@ get_header();
     <div class="testimonial">
         <!-- Commentor -->
         <div class="">
-            <img src="" alt="Bean Puck Icon - Blue" class="">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/css/img/front-page/puck-green.png' ); ?>" alt="Bean Puck Icon - Blue" class="">
             <h2 class="">Kent</h2>
         </div>
         <!-- Comment -->
@@ -105,7 +105,7 @@ get_header();
     <div class="testimonial">
         <!-- Commentor -->
         <div class="">
-            <img src="" alt="Bean Puck Icon - Blue" class="">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/css/img/front-page/puck-blue.png' ); ?>" alt="Bean Puck Icon - Blue" class="">
             <h2 class="">Colt</h2>
         </div>
         <!-- Comment -->
@@ -118,7 +118,7 @@ get_header();
     <div class="testimonial">
         <!-- Commentor -->
         <div class="">
-            <img src="" alt="Bean Puck Icon - Blue" class="">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/css/img/front-page/puck-green.png' ); ?>" alt="Bean Puck Icon - Blue" class="">
             <h2 class="">Darlene</h2>
         </div>
         <!-- Comment -->

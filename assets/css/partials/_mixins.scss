@@ -146,7 +146,7 @@
 
 	/* Makes the buttons direction row */
 	.hero-cta {
-		flex-direction: row;
+		flex-direction: row !important;
 	}
 	
     .hero-cta-buynow,
@@ -160,7 +160,7 @@
 	/* Add padding to the whats-in-the-box section */
 	.whats-in-the-box {
 	padding: 8rem 25rem 8rem 25rem;
-	background-color: white;
+	background-color: white !important;
 	}
 
 	/* Navigation */
