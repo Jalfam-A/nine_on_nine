@@ -48,100 +48,91 @@
 	  background-color: transparent;
 	  display: flex;
 	  justify-content: flex-end;
-	}
-  
-	.main-navigation .menu {
-	  flex-direction: row;
-	}
-  
-	.main-navigation .menu li {
-	  margin-left: 15px;
-	  margin-right: 15px;
+	  
+	  .menu {
+		flex-direction: row;
+		
+		li {
+		  margin-left: 15px;
+		  margin-right: 15px;
+		}
+	  }
 	}
 
 	
-
-
 	.footer-site-info {
 		flex-direction: row;
 		align-items: center;
+		
+		.footer-socialmedia,
+		.footer-nav,
+		.get-in-touch {
+			width: unset;
+			flex: 1;
+		}
+		
+		.footer-socialmedia img {
+			width: 20rem;
+		}
 	}
-
-	.footer-socialmedia,
-	.footer-nav,
-	.get-in-touch {
-		width: unset;
-		flex: 1;
-	}
-
-	.footer-socialmedia img {
-		width: 20rem;
-	}
-
-
+	
 	#secondary-menu {
 		display: flex;
 		align-items: center;
 		flex-direction: row;
 		gap: 5rem;
 	}
+}
 
-  }
   
 
 /************* HOME PAGE (FRONT-PAGE) ******************/
 
 /* Mobile version */
 @media (max-width: 767px) {
-
 	/* Increase the max-width of the hero-image and hero-message to 100% */
 	.hero-banner {
 	  flex-direction: column;
-	//   gap: 40px;
+  
+	  .hero-image {
+		max-width: 100%;
+	  }
+  
+	  .hero-message {
+		max-width: 100%;
+	  }
 	}
-
-	.hero-image {
-	  max-width: 100%;
-	}
-
-	.hero-message {
-	  max-width: 100%;
-	}
-
+  
 	/* Change the direction of the flexbox to column for the hero-cta and remove margin-right of the buttons */
 	.hero-cta {
 	  flex-direction: column;
+  
+	  .hero-cta-buynow,
+	  .hero-cta-howtoplay {
+		margin-right: 0;
+		margin-bottom: 8px;
+		width: 100%;
+	  }
 	}
-
-	.hero-cta-buynow,
-	.hero-cta-howtoplay {
-	  margin-right: 0;
-	  margin-bottom: 8px;
-	  width: 100%;
-	}
-
-	/* Remove padding from the entire whats-in-the-box section */
-	// .whats-in-the-box {
-	//   padding: none;
-	// }
-
+  
 	/* Change the direction of the flexbox to column and increase the gap between the images in the whats-in-the-box section */
 	.whats-in-the-box-images {
 	  flex-direction: column;
 	  gap: 40px;
+  
+	  /* Increase the width of the whats-in-the-box-image to 100% */
+	  .whats-in-the-box-image {
+		width: 100%;
+	  }
 	}
-
-	/* Increase the width of the whats-in-the-box-image to 100% */
-	.whats-in-the-box-image {
-	  width: 100%;
-	}
-
   }
+  
   
   /* Desktop version */
   @media (min-width: 768px) {
 	.hero-banner {
 	  padding-top: 5%;
+	  padding-bottom: 5%;
 	}
 
 	/* Limit the max-width of the hero-image and hero-message to 50% */
@@ -150,18 +141,46 @@
 	}
 	.hero-message {
 	  max-width: 50%;
+	  padding: 3rem;
 	}
+
+	/* Makes the buttons direction row */
+	.hero-cta {
+		flex-direction: row;
+	}
+	
+    .hero-cta-buynow,
+    .hero-cta-howtoplay {
+        margin-right: 16px;
+        margin-bottom: 0;
+        width: auto;
+    }
+
 
 	/* Add padding to the whats-in-the-box section */
 	.whats-in-the-box {
-	//   padding: 20rem 45rem 20rem 45rem;
 	padding: 8rem 25rem 8rem 25rem;
+	background-color: white;
 	}
 
 	/* Navigation */
 	.hero-cta-buynow-header {
     	margin: 2rem 0 0 20rem;
 	} 
+
+	/**** TESTIMONIALS ****/
+
+    .testimonial-container {
+		flex-direction: row;
+	}
+		
+	.testimonial {
+		margin: 0 2rem;
+		margin-bottom: 0;
+	}
+
+
+
 
 
 

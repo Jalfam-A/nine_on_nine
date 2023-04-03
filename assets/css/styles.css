@@ -228,13 +228,13 @@ footer {
     flex-direction: row;
     align-items: center;
   }
-  .footer-socialmedia,
-  .footer-nav,
-  .get-in-touch {
+  .footer-site-info .footer-socialmedia,
+  .footer-site-info .footer-nav,
+  .footer-site-info .get-in-touch {
     width: unset;
     flex: 1;
   }
-  .footer-socialmedia img {
+  .footer-site-info .footer-socialmedia img {
     width: 20rem;
   }
   #secondary-menu {
@@ -251,30 +251,29 @@ footer {
   .hero-banner {
     flex-direction: column;
   }
-  .hero-image {
+  .hero-banner .hero-image {
     max-width: 100%;
   }
-  .hero-message {
+  .hero-banner .hero-message {
     max-width: 100%;
   }
   /* Change the direction of the flexbox to column for the hero-cta and remove margin-right of the buttons */
   .hero-cta {
     flex-direction: column;
   }
-  .hero-cta-buynow,
-  .hero-cta-howtoplay {
+  .hero-cta .hero-cta-buynow,
+  .hero-cta .hero-cta-howtoplay {
     margin-right: 0;
     margin-bottom: 8px;
     width: 100%;
   }
-  /* Remove padding from the entire whats-in-the-box section */
   /* Change the direction of the flexbox to column and increase the gap between the images in the whats-in-the-box section */
   .whats-in-the-box-images {
     flex-direction: column;
     gap: 40px;
+    /* Increase the width of the whats-in-the-box-image to 100% */
   }
-  /* Increase the width of the whats-in-the-box-image to 100% */
-  .whats-in-the-box-image {
+  .whats-in-the-box-images .whats-in-the-box-image {
     width: 100%;
   }
 }
@@ -282,6 +281,7 @@ footer {
 @media (min-width: 768px) {
   .hero-banner {
     padding-top: 5%;
+    padding-bottom: 5%;
   }
   /* Limit the max-width of the hero-image and hero-message to 50% */
   .hero-image {
@@ -289,14 +289,34 @@ footer {
   }
   .hero-message {
     max-width: 50%;
+    padding: 3rem;
+  }
+  /* Makes the buttons direction row */
+  .hero-cta {
+    flex-direction: row;
+  }
+  .hero-cta-buynow,
+  .hero-cta-howtoplay {
+    margin-right: 16px;
+    margin-bottom: 0;
+    width: auto;
   }
   /* Add padding to the whats-in-the-box section */
   .whats-in-the-box {
     padding: 8rem 25rem 8rem 25rem;
+    background-color: white;
   }
   /* Navigation */
   .hero-cta-buynow-header {
     margin: 2rem 0 0 20rem;
+  }
+  /**** TESTIMONIALS ****/
+  .testimonial-container {
+    flex-direction: row;
+  }
+  .testimonial {
+    margin: 0 2rem;
+    margin-bottom: 0;
   }
 }
 /* ========== colors.scss - Donald ========*/
@@ -328,136 +348,63 @@ body {
   padding: 2%;
 }
 
-h1 {
-  font-family: "Monsterrat Alternates", sans-serif;
-  font-weight: bold;
-  font-size: 48px;
-}
-
-h2 {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 21px;
-}
-
-h3 {
-  font-family: "Monsterrat Alternates", sans-serif;
-  font-size: 44px;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li {
-  text-decoration: none;
-}
-
-/* ========== buttons.scss - Dazz ========*/
-a {
-  text-decoration: none;
-  color: var(--dark-blue);
-}
-
-a:hover {
-  color: var(--green);
-}
-
-/***** FRONT PAGE BUTTONS*****/
-/* Flex container for the buttons */
-.hero-cta {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 0 1.5rem 0;
-}
-
-/* Shared styles for both buttons */
-.hero-cta-buynow,
-.hero-cta-howtoplay,
-.button-styles {
-  flex: 1;
-  text-align: center;
-  margin-right: 8px;
-  display: inline-block;
-  padding: 12px 24px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  width: 50%;
-}
-
-/* Orange button styles */
-.hero-cta-buynow,
-.button-styles {
-  background-color: var(--dark-orange);
-  color: white;
-  position: relative;
-  transition: transform 0.3s ease;
-}
-
-/* Text color for the second button in FRONT PAGE */
-.hero-cta-howtoplay {
-  margin-right: 0; /* Remove the right margin from the second button */
-  color: var(--dark-orange); /* Set the text color to orange */
-}
-
-/* Hover effect for the orange button */
-.hero-cta-buynow:hover,
-.button-styles:hover {
-  transform: translateY(-4px); /* Move the orange button up */
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  box-shadow: 9px 9px black; /* Shadow effect under the orange box */
-  color: white;
-}
-
 /* ========== HOMEPAGE - Donald ==========*/
 /************ HERO BANNER  ************/
 .hero-banner {
   display: flex;
-  align-items: center; /* Aligns children vertically */
-  justify-content: center; /* Centers children horizontally */
-  gap: 20px; /* Space between image and message */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   width: 100%;
   padding-top: 5%;
+  /* Styles for .hero-image */
+  /* Styles for .hero-message */
+  /* Styles for .hero-cta */
 }
-
-.hero-image {
+.hero-banner .hero-image {
   flex: 1;
-  overflow: hidden; /* Hide the overflowing part of the image */
-  display: flex; /* Add flex to center the image */
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Styles for img */
 }
-
-.hero-image img {
+.hero-banner .hero-image img {
   width: 100%;
-  height: 100%; /* Change from min-height to height */
+  height: 100%;
   object-fit: cover;
 }
-
-.hero-message {
-  flex: 1; /* Take up equal space in the container */
-  max-width: 80%; /* Limit width to 50% */
+.hero-banner .hero-message {
+  flex: 1;
+  max-width: 80%;
+}
+.hero-banner .hero-cta {
+  flex-direction: column;
+  /* Styles for buttons */
+}
+.hero-banner .hero-cta .hero-cta-buynow,
+.hero-banner .hero-cta .hero-cta-howtoplay {
+  margin-right: 0;
+  margin-bottom: 8px;
+  width: auto;
 }
 
 /************ WHAT'S IN THE BOX  ************/
 /* Remove padding from the entire whats-in-the-box section */
 .whats-in-the-box {
   padding: none;
+  background-color: var(--nude);
 }
 
 /* Flex container for the images */
 .whats-in-the-box-images {
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Center the images vertically */
+  /* Shared styles for the image containers */
 }
-
-/* Shared styles for the image containers */
-.whats-in-the-box-image {
+.whats-in-the-box-images .whats-in-the-box-image {
   width: 45%; /* Set a width for each image container */
 }
 
@@ -466,20 +413,17 @@ a:hover {
   text-align: center;
   margin-bottom: 32px;
 }
-
-.whats-in-the-box-heading {
+.whats-in-the-box-text .whats-in-the-box-heading {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 16px;
 }
-
-.whats-in-the-box-subheading {
+.whats-in-the-box-text .whats-in-the-box-subheading {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 16px;
 }
-
-.whats-in-the-box-description {
+.whats-in-the-box-text .whats-in-the-box-description {
   font-size: 18px;
   margin-bottom: 16px;
 }
@@ -495,6 +439,32 @@ a:hover {
   width: 100%;
 }
 
+/**** TESTIMONIALS ****/
+.testimonials {
+  padding: 5rem;
+}
+
+/* Flex container for the testimonials */
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem;
+  /* Individual testimonial styles */
+}
+.testimonial-container .testimonial {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  margin-bottom: 2rem;
+  max-width: 300px;
+  /* Testimonial image styles */
+}
+.testimonial-container .testimonial img {
+  width: 100%;
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
 /**** EVENT FEATURE ****/
 .event-feature {
   display: flex;
@@ -502,63 +472,30 @@ a:hover {
   color: white;
   background-color: var(--dark-blue);
 }
-
-.event-feature-info {
-  order: 2;
-  color: white;
-}
-
-.event-feature-info a {
-  color: white;
-  padding: 20px;
-}
-
-.event-feature-image {
+.event-feature .event-feature-info {
   order: 1;
+  color: white;
 }
-
-.event-feature-message-details {
-  margin: 0 0 20px;
-  text-align: center;
-}
-
-.event-feature-message-button {
-  text-align: center;
-}
-
-.event-feature-message-button a {
-  display: inline-block;
-  position: relative;
-}
-
-.event-feature-message-button img {
-  position: absolute;
-  right: -20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30rem;
-}
-
-.event-feature-info .event-feature-message {
+.event-feature .event-feature-info a {
+  color: white;
   padding: 20px;
 }
-
-.event-feature-info .event-feature-message h2 {
+.event-feature .event-feature-info .event-feature-message {
+  padding: 20px;
+}
+.event-feature .event-feature-info .event-feature-message h2 {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
-
-.event-feature-info .event-feature-message h1 {
+.event-feature .event-feature-info .event-feature-message h1 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
-
-.event-feature-info .event-feature-message p {
+.event-feature .event-feature-info .event-feature-message p {
   font-size: 1rem;
   margin-bottom: 20px;
 }
-
-.event-feature-info .event-feature-message a {
+.event-feature .event-feature-info .event-feature-message a {
   display: inline-flex;
   align-items: center;
   padding: 10px 20px;
@@ -567,12 +504,32 @@ a:hover {
   font-size: 1rem;
   text-decoration: none;
 }
-
-.event-feature-info .event-feature-message img {
+.event-feature .event-feature-info .event-feature-message a img {
   margin-left: 10px;
 }
-
-.event-feature-image img {
+.event-feature .event-feature-info .event-feature-message-details {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.event-feature .event-feature-info .event-feature-message-button {
+  text-align: center;
+}
+.event-feature .event-feature-info .event-feature-message-button a {
+  display: inline-block;
+  position: relative;
+}
+.event-feature .event-feature-info .event-feature-message-button a img {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30rem;
+}
+.event-feature .event-feature-image {
+  order: 2;
+  overflow: hidden; /* prevents image overflow */
+}
+.event-feature .event-feature-image img {
   display: block;
   width: 100%;
   height: auto;
@@ -586,22 +543,22 @@ a:hover {
     align-items: center;
     height: 30rem;
   }
-  .event-feature-info {
+  .event-feature .event-feature-info {
     order: 1;
     flex: 1;
     margin-right: 40px;
   }
-  .event-feature-image {
+  .event-feature .event-feature-image {
     order: 2;
     flex: 1;
   }
-  .event-feature-image img {
+  .event-feature .event-feature-image img {
     width: 30rem;
   }
-  .event-feature-message-details {
+  .event-feature .event-feature-message-details {
     text-align: left;
   }
-  .event-feature-message-button {
+  .event-feature .event-feature-message-button {
     text-align: left;
   }
 }
@@ -692,6 +649,93 @@ a:hover {
 /* ========== EVENT LISTINGS PAGE - Emmanoel =======*/
 .test-listing {
   font-family: sans-serif;
+}
+
+h1 {
+  font-family: "Monsterrat Alternates", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 21px;
+}
+
+h3 {
+  font-family: "Monsterrat Alternates", sans-serif;
+  font-size: 44px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  text-decoration: none;
+}
+
+/* ========== buttons.scss - Dazz ========*/
+a {
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
+a:hover {
+  color: var(--green);
+}
+
+/***** FRONT PAGE BUTTONS*****/
+/* Flex container for the buttons */
+.hero-cta {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+/* Shared styles for both buttons */
+.hero-cta-buynow,
+.hero-cta-howtoplay,
+.button-styles {
+  flex: 1;
+  text-align: center;
+  margin-right: 0px;
+  margin-bottom: 8px;
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Orange button styles */
+.hero-cta-buynow,
+.button-styles {
+  background-color: var(--dark-orange);
+  color: white;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* Text color for the second button in FRONT PAGE */
+.hero-cta-howtoplay {
+  margin-right: 0; /* Remove the right margin from the second button */
+  color: var(--dark-orange); /* Set the text color to orange */
+}
+
+/* Hover effect for the orange button */
+.hero-cta-buynow:hover,
+.button-styles:hover {
+  transform: translateY(-4px); /* Move the orange button up */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 9px 9px black; /* Shadow effect under the orange box */
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,75 +5,92 @@
 
 .hero-banner {
     display: flex;
-    align-items: center; /* Aligns children vertically */
-    justify-content: center; /* Centers children horizontally */
-    gap: 20px; /* Space between image and message */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
     padding-top: 5%;
-}
 
-.hero-image {
-    flex: 1;
-    // max-width: 50%;
-    overflow: hidden; /* Hide the overflowing part of the image */
-    display: flex; /* Add flex to center the image */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-}
+    /* Styles for .hero-image */
+    .hero-image {
+        flex: 1;
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-.hero-image img {
-    width: 100%;
-    height: 100%; /* Change from min-height to height */
-    object-fit: cover;
-}
+        /* Styles for img */
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 
-.hero-message {
-    flex: 1; /* Take up equal space in the container */
-    max-width: 80%; /* Limit width to 50% */
-}
+    /* Styles for .hero-message */
+    .hero-message {
+        flex: 1;
+        max-width: 80%;
+    }
 
+    /* Styles for .hero-cta */
+    .hero-cta {
+        flex-direction: column;
+
+        /* Styles for buttons */
+        .hero-cta-buynow,
+        .hero-cta-howtoplay {
+            margin-right: 0;
+            margin-bottom: 8px;
+            width: auto;
+        }
+    }
+}
 
 
 /************ WHAT'S IN THE BOX  ************/
 
+
 /* Remove padding from the entire whats-in-the-box section */
 .whats-in-the-box {
     padding: none;
-  }
+    background-color: var(--nude);
+}
 
 /* Flex container for the images */
 .whats-in-the-box-images {
     display: flex;
     justify-content: space-between;
-}
+    align-items: center; /* Center the images vertically */
 
-/* Shared styles for the image containers */
-.whats-in-the-box-image {
-    width: 45%; /* Set a width for each image container */
+    /* Shared styles for the image containers */
+    .whats-in-the-box-image {
+        width: 45%; /* Set a width for each image container */
+    }
 }
-
 
 /* Intro text styles */
 .whats-in-the-box-text {
     text-align: center;
     margin-bottom: 32px;
-}
 
-.whats-in-the-box-heading {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
+    .whats-in-the-box-heading {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
 
-.whats-in-the-box-subheading {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
+    .whats-in-the-box-subheading {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
 
-.whats-in-the-box-description {
-    font-size: 18px;
-    margin-bottom: 16px;
+    .whats-in-the-box-description {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
 }
 
 /* Image styles */
@@ -87,89 +104,123 @@
     width: 100%;
 }
 
-/**** EVENT FEATURE ****/
 
+/**** TESTIMONIALS ****/
+
+.testimonials {
+    padding: 5rem;
+}
+
+/* Flex container for the testimonials */
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+
+    /* Individual testimonial styles */
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
+        margin-bottom: 2rem;
+        max-width: 300px;
+
+        /* Testimonial image styles */
+        img {
+            width: 100%;
+            max-width: 100px;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+
+/**** EVENT FEATURE ****/
 .event-feature {
     display: flex;
     flex-direction: column;
     color: white;
     background-color: var(--dark-blue);
-  }
   
-  .event-feature-info {
-    order: 2;
-    color: white;
-  }
+    .event-feature-info {
+      order: 1;
+      color: white;
+  
+      a {
+        color: white;
+        padding: 20px;
+      }
+  
+      .event-feature-message {
+        padding: 20px;
+  
+        h2 {
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+        }
+  
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 20px;
+        }
+  
+        p {
+          font-size: 1rem;
+          margin-bottom: 20px;
+        }
+  
+        a {
+          display: inline-flex;
+          align-items: center;
+          padding: 10px 20px;
+          background-color: var(--dark-orange);
+          color: white;
+          font-size: 1rem;
+          text-decoration: none;
+  
+          img {
+            margin-left: 10px;
+          }
+        }
+      }
 
-  .event-feature-info a {
-    color: white;
-    padding: 20px;
+      .event-feature-message-details {
+        margin: 0 0 20px;
+        text-align: center;
+      }
+    
+      .event-feature-message-button {
+        text-align: center;
+    
+        a {
+          display: inline-block;
+          position: relative;
+    
+          img {
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30rem;
+          }
+        }
+      }
+    }
+  
+    .event-feature-image {
+      order: 2;
+      overflow: hidden; /* prevents image overflow */
+  
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  
   }
   
-  .event-feature-image {
-    order: 1;
-  }
-  .event-feature-message-details {
-    margin: 0 0 20px;
-    text-align: center;
-  }
-  
-  .event-feature-message-button {
-    text-align: center;
-  }
-  
-  .event-feature-message-button a {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .event-feature-message-button img {
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30rem;
-  }
-  
-  .event-feature-info .event-feature-message {
-    padding: 20px;
-  }
-  
-  .event-feature-info .event-feature-message h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .event-feature-info .event-feature-message h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .event-feature-info .event-feature-message p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  .event-feature-info .event-feature-message a {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: var(--dark-orange);
-    color: white;
-    font-size: 1rem;
-    text-decoration: none;
-  }
-  
-  .event-feature-info .event-feature-message img {
-    margin-left: 10px;
-  }
-  
-  .event-feature-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
+
   /* Desktop */
 @media (min-width: 768px) {
     .event-feature {
@@ -177,29 +228,30 @@
       flex-direction: row;
       align-items: center;
       height: 30rem;
-    }
 
-  
-    .event-feature-info {
-      order: 1;
-      flex: 1;
-      margin-right: 40px;
-    }
-  
-    .event-feature-image {
-      order: 2;
-      flex: 1;
-    }
+      .event-feature-info {
+        order: 1;
+        flex: 1;
+        margin-right: 40px;
+      }
 
-    .event-feature-image img {
-        width: 30rem;
+      .event-feature-image {
+        order: 2;
+        flex: 1;
+
+        img {
+          width: 30rem;
+        }
+      }
+
+      .event-feature-message-details {
+        text-align: left;
+      }
+
+      .event-feature-message-button {
+        text-align: left;
+      }
     }
-  
-    .event-feature-message-details {
-      text-align: left;
-    }
-  
-    .event-feature-message-button {
-      text-align: left;
-    }
-  }
+}
+
+

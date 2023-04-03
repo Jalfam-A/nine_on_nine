@@ -7,9 +7,6 @@
 
 @use 'partials/base'; // Dazz
 
-@use 'partials/typography'; // Dazz
-@use 'partials/colors'; // Dazz
-@use 'partials/buttons'; // Donald
 
 @use 'partials/pages/homepage'; // Donald
 @use 'partials/pages/how-to-play'; // Dazz
@@ -18,5 +15,10 @@
 @use 'partials/pages/contact-us'; // Emmanoel
 @use 'partials/pages/event-details'; // Emmanoel
 @use 'partials/pages/event-list'; // Emmanoel
+
+
+@use 'partials/typography'; // Dazz
+@use 'partials/colors'; // Dazz
+@use 'partials/buttons'; // Donald
 
 @use 'partials/mixins'; // Dazz

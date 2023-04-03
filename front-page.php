@@ -66,68 +66,68 @@ get_header();
 
 
     <!-- TESTIMONIALS - EDITABLE BY CLIENT-->
-    <div class="">
+    <div class="testimonials">
         <!-- Intro Text -->
         <div class="">
             <h2 class="">What is everyone saying about the game?</h2>
             <h1 class="">Testimonials</h1>
         </div>
 
-        <!-- Four-up Testimonials -->
+    <!-- Four-up Testimonials -->
+    <div class="testimonial-container">
+    <!-- Indv. Testimonial 1-->
+    <div class="testimonial">
+        <!-- Commentor -->
         <div class="">
-            <!-- Indv. Testimonial 1-->
-            <div class="">
-                <!-- Commentor -->
-                <div class="">
-                    <img src="" alt="Bean Puck Icon - Blue">
-                    <h2>Kelsey</h2>
-                </div>
-                <!-- Comment -->
-                <div class="">
-                    <p class="">The game 9 on 9 is so fun and the perfect amount of challenging!</p>
-                </div>
-            </div>
-
-            <!-- Indv. Testimonial 2-->
-            <div class="">
-                <!-- Commentor -->
-                <div class="">
-                    <img src="" alt="Bean Puck Icon - Blue" class="">
-                    <h2 class="">Kent</h2>
-                </div>
-                <!-- Comment -->
-                <div class="">
-                    <p class="">Our Family loves our 9 on-9 game.</p>
-                </div>
-            </div>
-
-            <!-- Indv. Testimonial 3-->
-            <div class="">
-                <!-- Commentor -->
-                <div class="">
-                    <img src="" alt="Bean Puck Icon - Blue" class="">
-                    <h2 class="">Colt</h2>
-                </div>
-                <!-- Comment -->
-                <div class="">
-                    <p class="">I like 9 on 9 because I have to think and use strategy to win.</p>
-                </div>
-            </div>
-
-            <!-- Indv. Testimonial 4-->
-            <div class="">
-                <!-- Commentor -->
-                <div class="">
-                    <img src="" alt="Bean Puck Icon - Blue" class="">
-                    <h2 class="">Darlene</h2>
-                </div>
-                <!-- Comment -->
-                <div class="">
-                    <p class="">9 ON 9 was one of the best games we ve invested in for our summer property.</p>
-                </div>
-            </div>
-
+            <img src="" alt="Bean Puck Icon - Blue">
+            <h2>Kelsey</h2>
         </div>
+        <!-- Comment -->
+        <div class="">
+            <p class="">The game 9 on 9 is so fun and the perfect amount of challenging!</p>
+        </div>
+    </div>
+
+    <!-- Indv. Testimonial 2-->
+    <div class="testimonial">
+        <!-- Commentor -->
+        <div class="">
+            <img src="" alt="Bean Puck Icon - Blue" class="">
+            <h2 class="">Kent</h2>
+        </div>
+        <!-- Comment -->
+        <div class="">
+            <p class="">Our Family loves our 9 on-9 game.</p>
+        </div>
+    </div>
+
+    <!-- Indv. Testimonial 3-->
+    <div class="testimonial">
+        <!-- Commentor -->
+        <div class="">
+            <img src="" alt="Bean Puck Icon - Blue" class="">
+            <h2 class="">Colt</h2>
+        </div>
+        <!-- Comment -->
+        <div class="">
+            <p class="">I like 9 on 9 because I have to think and use strategy to win.</p>
+        </div>
+    </div>
+
+    <!-- Indv. Testimonial 4-->
+    <div class="testimonial">
+        <!-- Commentor -->
+        <div class="">
+            <img src="" alt="Bean Puck Icon - Blue" class="">
+            <h2 class="">Darlene</h2>
+        </div>
+        <!-- Comment -->
+        <div class="">
+            <p class="">9 ON 9 was one of the best games we ve invested in for our summer property.</p>
+        </div>
+    </div>
+    </div>
+
 
     </div>
 
