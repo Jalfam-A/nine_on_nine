@@ -1,5 +1,6 @@
 /** HOW TO PLAY **/
 
+
 .page-title{
     display: flex;
     justify-content: center;
@@ -18,6 +19,10 @@
 .bg-green{
   background-color: var(--green);
   color: white;
+}
+
+.steps-breadcrumb{
+  text-align: center;
 }
 
 .step-image-left,
@@ -62,4 +67,24 @@
   font-size: 21px;
   font-weight: bold;
   display: inline-block;
+}
+
+.cta-hero-message{
+    flex: 1;
+    max-width: 80%;
+}
+
+.howtoplay-links a {
+ transition: text-stroke 0.3s ease-in-out; /* Add transition for smoother effect */
+}
+
+.howtoplay-links a {
+  color: white;
+  text-decoration: none;
+  transition: text-shadow 0.3s ease-in-out; /* Add transition for smoother effect */
+}
+
+.howtoplay-links a:hover {
+  color: white;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5); /* Add text-shadow only for :hover pseudo-class */
 }

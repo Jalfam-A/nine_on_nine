@@ -16,16 +16,16 @@ get_header();
 
 
     <!-- CONTAINER -->
-    <div class="">
+    <div class="mb-3">
         <!-- Breadcrumbs -->
-        <div class="">
+        <div class="container breadcrumbs">
             <a href="" class="">Home</a>
-            <img src="" alt="Chevron Right" class="">
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">
             <a href="" class="">How To Play</a>
         </div>
 
         <!-- PAGE TITLE & NAV -->
-        <div class="whats-in-the-box bg-green">
+        <div class="bg-green py-3">
             <div class="whats-in-the-box-text">
                 <h1 class="whats-in-the-box-heading">How To Play</h1>
                 <div class="howtoplay-links">
@@ -39,15 +39,16 @@ get_header();
 
         <!-- THE SETUP -->
         <div class="" id="setup">
-            <h3>The Setup</h3>
-            <div class="">
-                <a href="#step1" class="">Step 1</a>
-                <img src="" alt="Chevron Right" class="">
-                <a href="#step2" class="">Step 2</a>
-                <img src="" alt="Chevron Right" class="">
-                <a href="#step3" class="">Step 3</a>
-                <img src="" alt="Chevron Right" class="">
-                <a href="#step4" class="">Step 4</a>
+            <div class="whats-in-the-box-text my-3">
+                <h3 class="whats-in-the-box-heading">The Setup</h3>
+            </div>    
+        
+
+            <div class="steps-breadcrumb">
+                <a href="#step1" class="container">Step 1</a>
+                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">                <a href="#step2" class="container">Step 2</a>
+                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">                <a href="#step3" class="container">Step 3</a>
+                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">                <a href="#step4" class="container">Step 4</a>
             </div>
         </div>
 
@@ -126,10 +127,14 @@ get_header();
 
 
 
+
+
+
         <!-- SCORING STEPS -->
         <div class="" id="scoring">
-
-        <h2>The Scoring</h2>
+            <div class="whats-in-the-box-text my-3">
+                <h3 class="whats-in-the-box-heading">The Scoring</h3>
+            </div>
 
             <!-- Scoring - Step 1 -->
             <div class="hero-banner steps" id="">
@@ -175,35 +180,48 @@ get_header();
 
 
         <!-- THE POINT ZONES -->
-        <div class="" id="pointzones">
+        <div class="container" id="pointzones">
+            <div class="whats-in-the-box-text my-3">
+                <h3 class="whats-in-the-box-heading">The Point Zones</h3>
+            </div>
 
             <!-- Image of the board with labels -->
             <div class="">
-                <img src="" alt="" class="">
+                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/point-zones-board.png' ?>" alt="Image of the board with labels" class="">
             </div>
 
             <!-- Image of the scoring instructions and notes -->
-            <div class="">
-                <img src="" alt="" class="">
-                <img src="" alt="" class="">
+            <div class="hero-banner">
+                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/point-zones-label.png' ?>" alt="Labels for the board" class="step-image-left">
+                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/point-zones-notes.png' ?>" alt="Notes for the board" class="step-image-right">
             </div>
 
         </div>
 
 
         <!-- Buy Now CTA -->
-        <div class="">
+        <div class="hero-banner bg-blue container">
 
-            <!-- CTA Message -->
-            <div class="">
-                <h2 class="">A game for fun, movement and skill!</h2>
-                <h1 class="">9on9</h1>
-                <p class="">9on9 is an outdoor or indoor game where 2 teams, with 1 to 4 players per team, challenge each other to be the first team to get to 99 points exactly by tossing bean pucks on to the playing board.</p>
+            <!-- Hero Message -->
+            <div class="cta-hero-message">
+                <!-- Hero Text -->
+                <div class="">
+                    <p class="">A game for fun, movement, and skill!</p>
+                    <h3 class="">Games can't get more fun than this.</h3>
+                    <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
+                        challenging
+                        teams to reach 99 points by tossing bean pucks on the board.</p>
+                </div>
+
+                <!-- Hero CTAs -->
+                <div class="hero-cta mt-2">
+                    <a href="#" class="hero-cta-buynow ">BUY NOW</a>
+                </div>
             </div>
 
             <!-- CTA Image -->
-            <div class="">
-                <img src="" alt="" class="">
+            <div class="hero-image step-image-left step-image-right">
+                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
             </div>
         </div>
 

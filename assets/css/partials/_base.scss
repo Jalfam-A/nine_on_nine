@@ -19,3 +19,98 @@ body{
 .container{
 	padding: 2%;
 }
+
+/* ==== MARGIN ===== */
+
+/* Margin 1rem */
+
+.my-1{
+	margin: 1rem 0;
+}
+
+.mx-1{
+	margin: 0 1rem;
+}
+
+.mt-1{
+	margin-top: 1rem;
+}
+
+.mb-1{
+	margin-bottom: 1rem;
+}
+
+/* Margin 2rem */
+.my-2{
+	margin: 2rem 0;
+}
+
+.mx-2{
+	margin: 0 2rem;
+}
+
+.mt-2{
+	margin-top: 2rem;
+}
+
+.mb-2{
+	margin-bottom: 2rem;
+}
+
+/* Margin 3rem */
+.my-3{
+	margin: 3rem 0;
+}
+
+.mx-3{
+	margin: 0 3rem;
+}
+
+.mt-3{
+	margin-top: 3rem;
+}
+
+.mb-3{
+	margin-bottom: 3rem;
+}
+
+
+
+/* ===== PADDING ==== */
+
+/* Margin 1rem */
+
+.py-1{
+	padding: 1rem 0;
+}
+
+.px-1{
+	padding: 0 1rem;
+}
+
+/* Margin 2rem */
+.py-2{
+	padding: 2rem 0;
+}
+
+.px-2{
+	padding: 0 2rem;
+}
+
+/* Margin 3rem */
+.py-3{
+	padding: 3rem 0;
+}
+
+.px-3{
+	padding: 0 3rem;
+}
+
+/* ICONS */
+
+.icon{
+	color: var(--dark-orange);
+	height: 16px;
+	width: 16px;
+	vertical-align: text-bottom;
+}

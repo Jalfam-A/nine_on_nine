@@ -1,5 +1,5 @@
 /* ========== TYPOGRAPHY - Dazz ========== */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400;700&display=swap");
 /* ========= RESET.CSS ==========*/
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -348,6 +348,94 @@ body {
   padding: 2%;
 }
 
+/* ==== MARGIN ===== */
+/* Margin 1rem */
+.my-1 {
+  margin: 1rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+/* Margin 2rem */
+.my-2 {
+  margin: 2rem 0;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+/* Margin 3rem */
+.my-3 {
+  margin: 3rem 0;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+/* ===== PADDING ==== */
+/* Margin 1rem */
+.py-1 {
+  padding: 1rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+/* Margin 2rem */
+.py-2 {
+  padding: 2rem 0;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+/* Margin 3rem */
+.py-3 {
+  padding: 3rem 0;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+/* ICONS */
+.icon {
+  color: var(--dark-orange);
+  height: 16px;
+  width: 16px;
+  vertical-align: text-bottom;
+}
+
 /* ========== HOMEPAGE - Donald ==========*/
 /************ HERO BANNER  ************/
 .hero-banner {
@@ -582,6 +670,10 @@ body {
   color: white;
 }
 
+.steps-breadcrumb {
+  text-align: center;
+}
+
 .step-image-left,
 .step-image-right {
   flex: 1;
@@ -627,6 +719,26 @@ body {
   display: inline-block;
 }
 
+.cta-hero-message {
+  flex: 1;
+  max-width: 80%;
+}
+
+.howtoplay-links a {
+  transition: text-stroke 0.3s ease-in-out; /* Add transition for smoother effect */
+}
+
+.howtoplay-links a {
+  color: white;
+  text-decoration: none;
+  transition: text-shadow 0.3s ease-in-out; /* Add transition for smoother effect */
+}
+
+.howtoplay-links a:hover {
+  color: white;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5); /* Add text-shadow only for :hover pseudo-class */
+}
+
 /* ========== PRODUCT PURCAHSE - Donald ============*/
 .test-product {
   font-family: sans-serif;
@@ -653,23 +765,30 @@ body {
 }
 
 h1 {
-  font-family: "Monsterrat Alternates", sans-serif;
-  font-weight: bold;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
   font-size: 48px;
 }
 
 h2 {
   font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
   font-size: 21px;
 }
 
 h3 {
-  font-family: "Monsterrat Alternates", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
   font-size: 44px;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 16px;
 }
 

@@ -35,7 +35,7 @@ get_header();
             <!-- Hero CTAs -->
             <div class="hero-cta">
                 <a href="#" class="hero-cta-buynow">BUY NOW</a>
-                <a href="#" class="hero-cta-howtoplay">HOW TO PLAY <img src="" alt="Right Arrow"></a>
+                <a href="#" class="hero-cta-howtoplay">HOW TO PLAY <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/chevron.png'); ?>" alt="Right Arrow" class="icon"></a>
             </div>
         </div>
     </div>
