@@ -373,7 +373,8 @@ body {
 .hero-banner .hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hero-banner .hero-message {
   flex: 1;
@@ -594,7 +595,8 @@ body {
 .step-image-right img {
   width: 100%;
   height: 100%; /* Change from min-height to height */
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
 }
@@ -602,7 +604,8 @@ body {
 .step-image-left img {
   width: 100%;
   height: 100%; /* Change from min-height to height */
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
@@ -735,6 +738,4 @@ a:hover {
   transition: transform 0.3s ease, opacity 0.3s ease;
   box-shadow: 9px 9px black; /* Shadow effect under the orange box */
   color: white;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

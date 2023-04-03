@@ -155,22 +155,19 @@ get_header();
     </div>
 
     <!-- INSTAGRAM POSTS -->
-    <div class="">
+    <div class="instagram-container">
         <!-- Intro Text -->
-        <div class="">
-            <h2 class="">Recent Instagram Posts</h2>
-            <h1 class="">Follow Us on Social Media!</h1>
+        <div class="instagram-intro">
+            <h2>Recent Instagram Posts</h2>
+            <h1>Follow Us on Social Media!</h1>
         </div>
 
         <!-- Instagram Images -->
-        <div class="">
-            <img src="" alt="" class="">
-            <img src="" alt="" class="">
-            <img src="" alt="" class="">
-            <img src="" alt="" class="">
-            <img src="" alt="" class="">
+        <div class="instagram-plugin">
+            <?php get_sidebar(); ?>
         </div>
     </div>
+
 
 </body>
 
