@@ -623,6 +623,17 @@ body {
   height: auto;
 }
 
+/************ EVENT FEATURE ************/
+.instagram-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.instagram-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 /************* Desktop *************/
 @media (min-width: 768px) {
   .event-feature {
