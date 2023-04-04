@@ -824,9 +824,14 @@ figcaption {
 }
 
 /* ========== CONTACT US PAGE - Emmanoel ========*/
-input {
+.contact-form > input[type=text] {
   outline: none;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
   border: none;
+  border-bottom: 1px solid black;
 }
 
 /* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
