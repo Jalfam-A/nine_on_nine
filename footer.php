@@ -39,7 +39,7 @@
 			<div class="get-in-touch">
 				<a class="get-in-touch-title"  href="http://jalfama.web.dmitcapstone.ca/contact-us/"><p>Get In Touch With Us</p></a>
 				<a class="get-in-touch-contact" href="mailto:info@jalfamgamesinc.com">info@jalfamgamesinc.com</a>
-				<a class="get-in-touch-contact" href="tel:7801234567">(780)-123-4567</a>
+				<a class="get-in-touch-contact" href="tel:2042308771">(204)-230-8771</a>
 
 			</div>
 

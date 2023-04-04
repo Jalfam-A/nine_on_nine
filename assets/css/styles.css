@@ -681,6 +681,11 @@ body {
   color: white;
 }
 
+.bg-white {
+  background-color: white;
+  color: black;
+}
+
 .steps-breadcrumb {
   text-align: center;
 }
