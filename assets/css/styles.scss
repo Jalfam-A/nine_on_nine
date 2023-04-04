@@ -1,10 +1,24 @@
 // Order in cascading order
 
-@use 'partials/base';
-@use 'partials/mixins';
+@use 'partials/reset'; // Dazz
 
-@use 'partials/typography';
-@use 'partials/colors';
+@use 'partials/header'; // Donald
+@use 'partials/footer'; // Donald
 
-@use 'partials/header';
-@use 'partials/footer';
+@use 'partials/base'; // Dazz
+
+
+@use 'partials/pages/homepage'; // Donald
+@use 'partials/pages/how-to-play'; // Dazz
+@use 'partials/pages/product-purchase'; // Donald
+@use 'partials/pages/about'; // Emmanoel
+@use 'partials/pages/contact-us'; // Emmanoel
+@use 'partials/pages/event-details'; // Emmanoel
+@use 'partials/pages/event-list'; // Emmanoel
+
+
+@use 'partials/typography'; // Dazz
+@use 'partials/colors'; // Dazz
+@use 'partials/buttons'; // Donald
+
+@use 'partials/mixins'; // Dazz

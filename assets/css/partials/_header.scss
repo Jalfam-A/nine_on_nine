@@ -1,2 +1,89 @@
-// HEADER
+/* ========== header.scss - Donald ========*/
 
+
+
+.site-header {
+	background-color: white;
+	border-bottom: 1px solid #333;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px;
+  }
+  
+  .site-branding-logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px;
+	width: 18rem;
+	height: 6rem;
+  }
+  
+  .site-branding img {
+	  width: 100%;
+	  height: 100%;
+  }
+  
+  .site-title a {
+	color: #fff;
+	font-size: 36px;
+  }
+  
+  .menu-toggle {
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	margin-right: 15px;
+	height: 5rem;
+	width: 6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .icon-bar {
+	display: block;
+	width: 100%;
+	height: 2rem;
+	background-color: var(--dark-orange);
+	margin-bottom: 5px;
+  }
+  
+  .main-navigation {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	display: none;
+  }
+  
+  .main-navigation .menu {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .main-navigation .menu li {
+	margin: 0;
+  }
+
+  .menu-menu-1-container li a {
+	font-size: large;
+  }
+  
+  
+  .show-nav {
+	display: block;
+	/* height: calc(100vh); */
+	background-color: white;
+	font-size: xx-large;
+  }
+
+  .show-nav .menu-item {
+	text-align: center;
+	padding: 5rem;
+  }

@@ -14,13 +14,14 @@
 get_header();
 ?>
 
+<body>
     <section>
         <!--breadcrumbs here-->
-        <div class="">
-            <div><img src="" alt="an image of sign that say the world is temporarily closed" class=""/></div>
+        <div class="pandemic-change-world-image">
+            <div><img src="<?php echo esc_url( get_template_directory_uri() .'/assets/img/about-us/worldisclose.jpg' ); ?>" alt="an image of sign that say the world is temporarily closed" class="pandemic-change-world-image-file"/></div>
         
-    
-        <div>
+        <!--start of jalfam-text-->
+        <div class="jalfam-text">
             <div>
                 <h4>About JALFAM Games Inc.</h4>
             </div>
@@ -47,83 +48,29 @@ get_header();
             <div>
                 <h2>Meet the Team</h2>
             </div>
-            <div>
-                <img src="" alt="an image showing the people behind JALFAM" class=""/>
+            <div class="meet-the-team-image">
+                <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/jalfamteam.jpg' ); ?>" alt="an image showing the people behind JALFAM" class="meet-the-team-image-file"/>
                 <figcaption>JALFAM</figcaption>
             </div>
             
     
         
-        </div>
-
-        <div>
-            <div>
-                <h3>Check out our Events</h3>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="an image of senior citizens holding trophies from winning a game" class=""/>
-                </div>
-    
-                <div>
-                    <div>
-                        <h4>EVENT</h4>
-                    </div>
-    
-                    <div>
-                        <h3>9 on 9 Tournament - Seniors Edition</h3>
-                    </div>
-    
-                    <div>
-                        <p>Mon, Jan 30, 2023</p>
-                    </div>
-            
-                    <div>
-                        <p>See Event Details --></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <div>
-                    <img src="" alt=""/>
-                </div>
-    
-                <div>
-                    <div>
-                        <h4>EVENT</h4>
-                    </div>
-    
-                    <div>
-                        <h3>9 on 9 Tournament - Fundraiser</h3>
-                    </div>
-    
-                    <div>
-                        <p>Mon, Jan 30, 2023</p>
-                    </div>
-            
-                    <div>
-                        <p>See Event Details --></p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        </div> <!--end of jalfam text-->
         
         
         </div><!--end of top section-->
         
-        <div class=""> <!--check out our events section-->
-            <div class="">
-                <div class="">
+        <div class="about-us-lower-section"> <!--check out our events section-->
+            <div class="check-out-events-container"> 
+                <div class="check-out-events-title">
                     <h3>Check out our Events</h3>
                 </div>
-                <div class=""> <!--events content container-->
-                    <div class=""> <!--left event content container-->
-                        <div class="">
-                            <img src="" alt="an image of a man getting showered with water that is coming from a bucket for a fundraiser" class="">
+                <div class="check-out-events-content"> <!--events content container-->
+                    <div class="seniors-tournament-container"> <!--left event content container-->
+                        <div class="seniors-tournament-image">
+                            <img src="" alt="an image of a man getting showered with water that is coming from a bucket for a fundraiser" class="seniors-tournament-image-file">
                         </div>
-                        <div class=""> <!--text side of the left event container-->
+                        <div class="seniors-tournament-text"> <!--text side of the left event container-->
                             <div class="">
                                 <div class="">
                                     <h2>Event</h2>
@@ -169,5 +116,6 @@ get_header();
         
     
     </section>
-
+</body>
 <?php get_footer(); ?>
+
