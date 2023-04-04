@@ -15,22 +15,22 @@ get_header();
 ?>
 
 <body>
-    <section>
+    <div class="about-us-container">
         <!--breadcrumbs here-->
-        <div class="pandemic-change-world-image">
-            <div><img src="<?php echo esc_url( get_template_directory_uri() .'/assets/img/about-us/worldisclose.jpg' ); ?>" alt="an image of sign that say the world is temporarily closed" class="pandemic-change-world-image-file"/></div>
+        <div class="about-us-upper-section">
+            <div class="pandemic-change-world-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/about-us/worldisclose.jpg' ); ?>" alt="an image of sign that say the world is temporarily closed" class="pandemic-change-world-image-file"/></div>
         
         <!--start of jalfam-text-->
         <div class="jalfam-text">
             <div>
-                <h4>About JALFAM Games Inc.</h4>
+                <h2>About JALFAM Games Inc.</h2>
             </div>
             <div>
                 <h1>The pandemic changed the world.</h1>
             </div>
             
             
-            <div>
+            <div class="about-us-paragraph">
             <p>At JALFAM Games Inc., we recognized that Covid-19 had a significant impact on peoples mental and physical wellbeing. 
             We wanted to create something that could bring joy, movement, and a sense of community to people s lives. Thats why we developed 9on9, 
             a game that promotes fun, activity, and skill-building.</p>
@@ -46,7 +46,7 @@ get_header();
             </div>
 
             <div>
-                <h2>Meet the Team</h2>
+                <h3>Meet the Team</h3>
             </div>
             <div class="meet-the-team-image">
                 <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/jalfamteam.jpg' ); ?>" alt="an image showing the people behind JALFAM" class="meet-the-team-image-file"/>
@@ -67,8 +67,9 @@ get_header();
                 </div>
                 <div class="check-out-events-content"> <!--events content container-->
                     <div class="seniors-tournament-container"> <!--left event content container-->
+                    <!--<a href="#" class="seniors-tournament-link">-->
                         <div class="seniors-tournament-image">
-                            <img src="" alt="an image of a man getting showered with water that is coming from a bucket for a fundraiser" class="seniors-tournament-image-file">
+                            <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/senior-tournament-sm.jpg' ); ?>" alt="an image of a three older gentlement winning the senior tournament for 9 on 9." class="seniors-tournament-image-file">
                         </div>
                         <div class="seniors-tournament-text"> <!--text side of the left event container-->
                             <div class="">
@@ -79,20 +80,22 @@ get_header();
                                     <h3>9 on 9 Tournament - Seniors Edition</h3>
                                 </div>
                             </div>
-                            <div class="">
-                                <p>Mon, Jan 30, 2023</p>
+                            <div class="check-out-events-description">
+                                <p>This game is beginner friendly and for everyone! Let us show 
+                                    you how to play this game so you can start playing!</p>
                             </div>
-                            <div class="">
+                            <div class="see-event-arrow">
                                 <p>See Event Details</p>
                                 <svg></svg><!--arrow-->
                             </div>
                         </div>
+                    <!--</a>-->
                     </div>
-                    <div class=""> <!--right event content container-->
-                        <div class="">
-                            <img src="" alt="">
+                    <div class="fundraiser-tournament-container"> <!--right event content container-->
+                        <div class="fundraiser-tournament-image">
+                            <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/fundraiser-tournament-sm.jpg' ); ?>" alt="an image of a man getting showered with water that is coming from a bucket for a fundraiser" class="fundraiser-tournament-image-file">
                         </div>
-                        <div class=""> <!--text side of the right event container-->
+                        <div class="fundraiser-tournament-text"> <!--text side of the right event container-->
                             <div class="">
                                 <div class="">
                                     <h2>Event</h2>
@@ -101,10 +104,11 @@ get_header();
                                     <h3>9 on 9 Tournament - Fundraiser</h3>
                                 </div>
                             </div>
-                            <div class="">
-                                <p>Mon, Jan 30, 2023</p>
+                            <div class="check-out-events-description">
+                                <p>This game is beginner friendly and for everyone! Let us show 
+                                    you how to play this game so you can start playing!</p>
                             </div>
-                            <div class="">
+                            <div class="see-event-arrow">
                                 <p>See Event Details</p>
                                 <svg></svg><!--arrow-->
                             </div>
@@ -115,7 +119,7 @@ get_header();
         </div> <!--end of check out our events section-->
         
     
-    </section>
+    </div>
 </body>
 <?php get_footer(); ?>
 
