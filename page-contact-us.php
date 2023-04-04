@@ -17,9 +17,14 @@ get_header();
 
     <section>
         <!--breadcrumbs here-->
+        <div class="container breadcrumbs">
+            <a href="" class="">Home</a>
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">
+            <a href="" class="">Contact</a>
+        </div>
         
-        <div class="">
-            <div class="">
+        <div class="container contact">
+            <div class="mb-3">
                 <div class="">
                     <h1>Get in Touch</h1>
                 </div>
@@ -32,36 +37,43 @@ get_header();
                 <form>
                 <div class="">
                     <div class=""> <!--First name-->
-                        <label for="fname">First name</label>
+                        <label for="fname"><p>First name<p></label>
                         <input type="text" id="fname" name="fname" required>
                     </div>
+                    
                     <div class=""> <!--Last name-->
-                        <label for="lname">Last Name</label>
+                        <label for="lname"><p>Last Name</p></label>
                         <input type="text" id="lname" name="lname" required>
                     </div>
+
                     <div class=""> <!--Email Address-->
-                        <label for="email">Email Address</label>
+                        <label for="email"><p>Email Address</p></label>
                         <input type="email" id="email" name="email" required>
                     </div>
+
                     <div class=""> <!--Phone Number-->
-                        <label for="phone">Phone Number (optional)</label>
+                        <label for="phone"><p>Phone Number (optional)</p></label>
                         <input type="tel" id="phone" name="phone">
                     </div>
-                </div>
-                </form>
-                <form>
-                <div class="">
+
                     <div class="">
-                        <label for="subject">Subject</label>
+                        <label for="subject"><p>Subject</p></label>
                         <input type="text" id="subject" name="subject" required>
                     </div>
-                </form>
+                    
                     <div class="">
-                        <textarea></textarea>
+                        <label for="message"><p>Message</p></label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     </div>
-                <form>
+                </div>
+
+                <div class="">
+                    
+
+                    
+
                     <submit>Send Message</submit>
-                </form>
+
                 </div>
                 
         </div> <!--Form ends-->

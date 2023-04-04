@@ -1,5 +1,5 @@
 /* ========== TYPOGRAPHY - Dazz ========== */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;700&family=Open+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Open+Sans&display=swap");
 /* ========= RESET.CSS ==========*/
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -824,8 +824,9 @@ figcaption {
 }
 
 /* ========== CONTACT US PAGE - Emmanoel ========*/
-.test-contact {
-  font-family: "Courier New", Courier, monospace;
+input {
+  outline: none;
+  border: none;
 }
 
 /* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
@@ -846,7 +847,7 @@ h1 {
 
 h2 {
   font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 21px;
 }
 
