@@ -41,7 +41,7 @@ get_header();
                 </div> <!--event time,date,place,price end-->
                 <div class="">
                     <div class="event-details-title">
-                        <h1>9 on 9 Tournament</h1>
+                        <h3>9 on 9 Tournament</h3>
                     </div>
                     <div class="event-details-text-content">
                         <p>Before we announce the winner of this year's 9on9 Tournament we would like for you to read a bit of history of how this games started. Like many great games, 
