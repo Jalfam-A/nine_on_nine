@@ -178,3 +178,20 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+/*Register custom post type*/
+function wporg_custom_post_type() {
+	register_post_type('wporg_product',
+		array(
+			'labels'      => array(
+				'name'          => __( 'Products', 'textdomain' ),
+				'singular_name' => __( 'Product', 'textdomain' ),
+			),
+			'public'      => true,
+			'has_archive' => true,
+			'rewrite'     => array( 'slug' => 'events' ), // my custom slug
+		)
+	);
+}
+add_action('init', 'wporg_custom_post_type');
