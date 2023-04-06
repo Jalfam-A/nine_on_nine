@@ -24,9 +24,9 @@ $args = array{
     </div>
     <div class="chinese-new-years-text">
         <div>
-            <h2>EVENT</h2>
+            <h4>EVENT</h4>
 
-            <h3>9 on 9 Tournament - Chinese New Years</h3>
+            <h2>9 on 9 Tournament - Chinese New Years</h2>
             <div class ="chinese-new-years-description">
                 <p>Happy Chinese New Year! We welcome you to the 9 on 9 Tournament - Chinese New Year Edition. Hope you can all attend and have fun. All ages welcome!</p>
 
