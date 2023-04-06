@@ -25,8 +25,8 @@ get_header();
         <div class="hero-message">
             <!-- Hero Text -->
             <div class="">
-                <h2 class="">A game for fun, movement, and skill!</h2>
-                <h1 class="">Games can't get more fun than this.</h1>
+                <h4 class="">A game for fun, movement, and skill!</h4>
+                <h2 class="">Games can't get more fun than this.</h2>
                 <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
                     challenging
                     teams to reach 99 points by tossing bean pucks on the board.</p>
@@ -45,8 +45,8 @@ get_header();
     <div class="whats-in-the-box">
         <!-- Intro Text -->
         <div class="whats-in-the-box-text">
-            <h2 class="whats-in-the-box-heading">What's in the box?</h2>
-            <h1 class="whats-in-the-box-subheading">Games can't get more fun than this.</h1>
+            <h4 class="whats-in-the-box-heading">What's in the box?</h4>
+            <h2 class="whats-in-the-box-subheading">Games can't get more fun than this.</h2>
             <p class="whats-in-the-box-description">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
                 challenging teams to reach 99 points by tossing bean pucks on the board.</p>
         </div>
@@ -69,8 +69,8 @@ get_header();
     <div class="testimonials">
         <!-- Intro Text -->
         <div class="">
-            <h2 class="">What is everyone saying about the game?</h2>
-            <h1 class="">Testimonials</h1>
+            <h4 class="">What is everyone saying about the game?</h4>
+            <h2 class="">Testimonials</h2>
         </div>
 
     <!-- Four-up Testimonials -->
@@ -80,7 +80,7 @@ get_header();
         <!-- Commentor -->
         <div class="">
             <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/css/img/front-page/puck-blue.png' ); ?>" alt="Bean Puck Icon - Blue">
-            <h2>Kelsey</h2>
+            <h3>Kelsey</h3>
         </div>
         <!-- Comment -->
         <div class="">
@@ -93,7 +93,7 @@ get_header();
         <!-- Commentor -->
         <div class="">
             <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/css/img/front-page/puck-green.png' ); ?>" alt="Bean Puck Icon - Blue" class="">
-            <h2 class="">Kent</h2>
+            <h3 class="">Kent</h3>
         </div>
         <!-- Comment -->
         <div class="">
@@ -106,7 +106,7 @@ get_header();
         <!-- Commentor -->
         <div class="">
             <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/css/img/front-page/puck-blue.png' ); ?>" alt="Bean Puck Icon - Blue" class="">
-            <h2 class="">Colt</h2>
+            <h3 class="">Colt</h3>
         </div>
         <!-- Comment -->
         <div class="">
@@ -119,7 +119,7 @@ get_header();
         <!-- Commentor -->
         <div class="">
             <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/css/img/front-page/puck-green.png' ); ?>" alt="Bean Puck Icon - Blue" class="">
-            <h2 class="">Darlene</h2>
+            <h3 class="">Darlene</h3>
         </div>
         <!-- Comment -->
         <div class="">
@@ -137,8 +137,8 @@ get_header();
         <div class="event-feature-info">
             <!-- Event Feature Message Details-->
             <div class="event-feature-message">
-                <h2 class="">Latest Update</h2>
-                <h1 class="">9on9 Tournament</h1>
+                <h4 class="">Latest Update</h4>
+                <h2 class="">9on9 Tournament</h2>
                 <p class="">This game is beginner friendly and for everyone! Let us show you how to play this game so you can start playing!</p>
                 <!-- Event Feature Message Button -->
                 <a href="#" class="button-styles">
@@ -158,8 +158,8 @@ get_header();
     <div class="instagram-container">
         <!-- Intro Text -->
         <div class="instagram-intro">
-            <h2>Recent Instagram Posts</h2>
-            <h1>Follow Us on Social Media!</h1>
+            <h4>Recent Instagram Posts</h4>
+            <h2>Follow Us on Social Media!</h2>
         </div>
 
         <!-- Instagram Images -->
