@@ -17,13 +17,12 @@ get_header();
 
     <section>
         <!--breadcrumbs here-->
-        <div class="">
+        <div class="event-details-upper-container">
             <div class="">
-                <div class="">
-                    <h2>EVENT</h2>
-                </div>
-                <div class=""> <!--event time,date,place,price-->
-                    <div class=""> <!--time and date-->
+                <h2>EVENT</h2>
+            </div>
+                <div class="event-details-small-details"> <!--event time,date,place,price-->
+                    <div class="event-details-time-and-date"> <!--time and date-->
                         <div class="">
                             <p>11:00 AM</p>
                         </div>
@@ -31,7 +30,7 @@ get_header();
                             <p>Wed, Feb 22, 2023</p>
                         </div>
                     </div> <!--time and date end-->
-                    <div class=""> <!--place and price-->
+                    <div class="event-details-place-and-price"> <!--place and price-->
                         <div class="">
                             <p>SUB, University of Alberta</p>
                         </div>
@@ -41,21 +40,19 @@ get_header();
                     </div> <!--place and price end-->
                 </div> <!--event time,date,place,price end-->
                 <div class="">
-                    <div class="">
+                    <div class="event-details-title">
                         <h1>9 on 9 Tournament</h1>
                     </div>
-                    <div class="">
+                    <div class="event-details-text-content">
                         <p>Before we announce the winner of this year's 9on9 Tournament we would like for you to read a bit of history of how this games started. Like many great games, 
                             this all started from a couple of bored children wanting to play something different and fun. Curiosity started this game and this turned into creativity, 
                             then to an actual product. (Sorry if this information is incorrect, it would be nice to learn a more in-depth version of how this all started)</p>
                     </div>
                 </div>
+            <div class="event-details-main-image"> <!--main image-->
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/events-details-page/event-details-main-image.jpg' ); ?>" alt="an image of two people playing 9on9 in front of a cabin" class="event-details-main-image-file">
             </div>
-            <div class=""> <!--main image-->
-                <img src="" alt="">
-            </div>
-            <div class="">
-                <div class="">
+                <div class="event-details-text-content">
                     <p>In the end, after several hard-fought games, one team emerged as the victor. The players were thrilled with their win, but all
                         involved agreed that the tournament was a great success regardless of the outcome. It was a great opportunity for students to come
                         together, show off their skills, and have fun while doing it. The 9on9 tournament at SUB, University of Alberta was an unforgettable
@@ -85,10 +82,10 @@ get_header();
                 <svg></svg>
                 <p>Next Updates</p>
             </div>
-        </div>
+        </div><!--end of Previous and Next Updates button-->
 
-        <div class=""> <!--upcoming events section-->
-            <div class="">
+        <div class="event-details-lower-background"> <!--upcoming events section-->
+            <div class="event-details-lower-container">
                 <div class="">
                     <h3>Upcoming Events</h3>
                 </div>
@@ -145,5 +142,4 @@ get_header();
     </section>
 
 <?php
-get_sidebar();
 get_footer();
