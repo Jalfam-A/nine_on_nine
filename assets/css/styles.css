@@ -229,8 +229,8 @@ footer {
     align-items: center;
   }
   .footer-site-info .footer-socialmedia,
-.footer-site-info .footer-nav,
-.footer-site-info .get-in-touch {
+  .footer-site-info .footer-nav,
+  .footer-site-info .get-in-touch {
     width: unset;
     flex: 1;
   }
@@ -262,7 +262,7 @@ footer {
     flex-direction: column;
   }
   .hero-cta .hero-cta-buynow,
-.hero-cta .hero-cta-howtoplay {
+  .hero-cta .hero-cta-howtoplay {
     margin-right: 0;
     margin-bottom: 8px;
     width: 100%;
@@ -296,7 +296,7 @@ footer {
     flex-direction: row !important;
   }
   .hero-cta-buynow,
-.hero-cta-howtoplay {
+  .hero-cta-howtoplay {
     margin-right: 16px;
     margin-bottom: 0;
     width: auto;
@@ -837,6 +837,10 @@ figcaption {
 /* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
 .test-detail {
   font-family: sans-serif;
+}
+
+.event-details-upper-container {
+  padding: 2rem;
 }
 
 /* ========== EVENT LISTINGS PAGE - Emmanoel =======*/
