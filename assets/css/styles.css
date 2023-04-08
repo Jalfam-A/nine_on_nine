@@ -229,8 +229,8 @@ footer {
     align-items: center;
   }
   .footer-site-info .footer-socialmedia,
-.footer-site-info .footer-nav,
-.footer-site-info .get-in-touch {
+  .footer-site-info .footer-nav,
+  .footer-site-info .get-in-touch {
     width: unset;
     flex: 1;
   }
@@ -248,13 +248,20 @@ footer {
 /* Mobile version */
 @media (max-width: 767px) {
   /* Increase the max-width of the hero-image and hero-message to 100% */
-  .hero-banner {
+  .hero-banner,
+  .split-contact {
     flex-direction: column;
   }
-  .hero-banner .hero-image {
+  .hero-banner .hero-image,
+  .hero-banner .split-contact-left,
+  .split-contact .hero-image,
+  .split-contact .split-contact-left {
     max-width: 100%;
   }
-  .hero-banner .hero-message {
+  .hero-banner .hero-message,
+  .hero-banner .split-contact-right,
+  .split-contact .hero-message,
+  .split-contact .split-contact-right {
     max-width: 100%;
   }
   /* Change the direction of the flexbox to column for the hero-cta and remove margin-right of the buttons */
@@ -262,7 +269,7 @@ footer {
     flex-direction: column;
   }
   .hero-cta .hero-cta-buynow,
-.hero-cta .hero-cta-howtoplay {
+  .hero-cta .hero-cta-howtoplay {
     margin-right: 0;
     margin-bottom: 8px;
     width: 100%;
@@ -296,7 +303,7 @@ footer {
     flex-direction: row !important;
   }
   .hero-cta-buynow,
-.hero-cta-howtoplay {
+  .hero-cta-howtoplay {
     margin-right: 16px;
     margin-bottom: 0;
     width: auto;
@@ -444,9 +451,107 @@ body {
   vertical-align: text-bottom;
 }
 
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+a {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  text-decoration: none;
+}
+
+/* ========== buttons.scss - Dazz ========*/
+a {
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
+a:hover {
+  color: var(--green);
+}
+
+/***** FRONT PAGE BUTTONS*****/
+/* Flex container for the buttons */
+.hero-cta {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+/* Shared styles for both buttons */
+.hero-cta-buynow,
+.hero-cta-howtoplay,
+.button-styles,
+.form-submit {
+  flex: 1;
+  text-align: center;
+  margin-right: 0px;
+  margin-bottom: 8px;
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 50%;
+}
+
+/* Orange button styles */
+.hero-cta-buynow,
+.button-styles,
+.form-submit {
+  background-color: var(--dark-orange);
+  color: white;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* Text color for the second button in FRONT PAGE */
+.hero-cta-howtoplay {
+  margin-right: 0; /* Remove the right margin from the second button */
+  color: var(--dark-orange); /* Set the text color to orange */
+}
+
+/* Hover effect for the orange button */
+.hero-cta-buynow:hover,
+.button-styles:hover {
+  transform: translateY(-4px); /* Move the orange button up */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 9px 9px black; /* Shadow effect under the orange box */
+  color: white;
+}
+
 /* ========== HOMEPAGE - Donald ==========*/
 /************ HERO BANNER  ************/
-.hero-banner {
+.hero-banner,
+.split-contact {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -457,7 +562,10 @@ body {
   /* Styles for .hero-message */
   /* Styles for .hero-cta */
 }
-.hero-banner .hero-image {
+.hero-banner .hero-image,
+.hero-banner .split-contact-left,
+.split-contact .hero-image,
+.split-contact .split-contact-left {
   flex: 1;
   max-width: 100%;
   overflow: hidden;
@@ -466,22 +574,31 @@ body {
   align-items: center;
   /* Styles for img */
 }
-.hero-banner .hero-image img {
+.hero-banner .hero-image img,
+.hero-banner .split-contact-left img,
+.split-contact .hero-image img,
+.split-contact .split-contact-left img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.hero-banner .hero-message {
+.hero-banner .hero-message,
+.hero-banner .split-contact-right,
+.split-contact .hero-message,
+.split-contact .split-contact-right {
   flex: 1;
   max-width: 80%;
 }
-.hero-banner .hero-cta {
+.hero-banner .hero-cta,
+.split-contact .hero-cta {
   flex-direction: column;
   /* Styles for buttons */
 }
 .hero-banner .hero-cta .hero-cta-buynow,
-.hero-banner .hero-cta .hero-cta-howtoplay {
+.hero-banner .hero-cta .hero-cta-howtoplay,
+.split-contact .hero-cta .hero-cta-buynow,
+.split-contact .hero-cta .hero-cta-howtoplay {
   margin-right: 0;
   margin-bottom: 8px;
   width: auto;
@@ -767,6 +884,46 @@ body {
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5); /* Add text-shadow only for :hover pseudo-class */
 }
 
+/* ========== CONTACT US PAGE - Dazz ========*/
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form input[type=tel],
+.contact-form textarea {
+  font-size: 16px;
+  font-weight: normal;
+  outline: none;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.form-submit {
+  border: none;
+  margin-top: 3rem;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.contact-info a {
+  font-weight: bold;
+}
+
+.contact-form label {
+  font-weight: 100;
+  font-style: italic;
+}
+
+.split-contact-left {
+  justify-content: start;
+}
+
+.split-contact-right {
+  place-self: start;
+}
+
 /* ========== PRODUCT PURCAHSE - Donald ============*/
 .test-product {
   font-family: sans-serif;
@@ -835,17 +992,6 @@ figcaption {
   color: white;
 }
 
-/* ========== CONTACT US PAGE - Emmanoel ========*/
-.contact-form > input[type=text] {
-  outline: none;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 1px solid black;
-}
-
 /* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
 .test-detail {
   font-family: sans-serif;
@@ -858,99 +1004,4 @@ figcaption {
 /* ========== EVENT LISTINGS PAGE - Emmanoel =======*/
 .test-listing {
   font-family: sans-serif;
-}
-
-h2 {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-}
-
-h3 {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 700;
-  font-size: 44px;
-}
-
-h4 {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 400;
-  font-size: 21px;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-}
-
-a {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 16px;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li {
-  text-decoration: none;
-}
-
-/* ========== buttons.scss - Dazz ========*/
-a {
-  text-decoration: none;
-  color: var(--dark-blue);
-}
-
-a:hover {
-  color: var(--green);
-}
-
-/***** FRONT PAGE BUTTONS*****/
-/* Flex container for the buttons */
-.hero-cta {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 1.5rem 0 1.5rem 0;
-}
-
-/* Shared styles for both buttons */
-.hero-cta-buynow,
-.hero-cta-howtoplay,
-.button-styles {
-  flex: 1;
-  text-align: center;
-  margin-right: 0px;
-  margin-bottom: 8px;
-  display: inline-block;
-  padding: 12px 24px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  width: 50%;
-}
-
-/* Orange button styles */
-.hero-cta-buynow,
-.button-styles {
-  background-color: var(--dark-orange);
-  color: white;
-  position: relative;
-  transition: transform 0.3s ease;
-}
-
-/* Text color for the second button in FRONT PAGE */
-.hero-cta-howtoplay {
-  margin-right: 0; /* Remove the right margin from the second button */
-  color: var(--dark-orange); /* Set the text color to orange */
-}
-
-/* Hover effect for the orange button */
-.hero-cta-buynow:hover,
-.button-styles:hover {
-  transform: translateY(-4px); /* Move the orange button up */
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  box-shadow: 9px 9px black; /* Shadow effect under the orange box */
-  color: white;
 }/*# sourceMappingURL=styles.css.map */

@@ -16,8 +16,6 @@ get_header();
 
 <div class="container">
 
-    <div class="">
-
         <!-- BreadCrumbs -->
         <div class="breadcrumbs">
             <a href="" class="">Home</a>
@@ -26,131 +24,132 @@ get_header();
             <a href="" class="">Contact</a>
         </div>
 
-        <!-- Contact Form -->
-        <div class="contact">
+     <div class="split-contact">   
+        
+        <!-- Contact Form Left -->
+        <div class="split-contact-left">
 
-            <!-- Contact Form Intro -->
-            <div class="mb-3">
-                <h1>Get in Touch</h1>
-                <p>We would love to hear from you, so please get in touch with us if you have any inquiries or feedback.
-                </p>
-            </div>
-            <!-- End of Contact Form Into -->
+            <!-- Contact Form -->
+            <div class="contact mb-3">
+
+                <!-- Contact Form Intro -->
+                <div class="mb-3">
+                    <h2>Get in Touch</h2>
+                    <p>We would love to hear from you, so please get in touch with us if you have any inquiries or
+                        feedback.
+                    </p>
+                </div>
+                <!-- End of Contact Form Into -->
 
 
-            <!-- Contact Form Input -->
-            <div class="contact-form">
-                <form action="">
+                <!-- Contact Form Input -->
+                <div class="contact-form">
+                    <form action="">
 
-                    <!--First name-->
-                    <div class="">
-                        <label for="fname">
-                            <p>First name
+                        <!--First name-->
+                        <div class="mb-2">
+                            <p><label for="fname">First name</label>
                             <p>
-                        </label>
 
-                        <input type="text" id="fname" name="fname" required>
-                    </div>
+                                <input class="input" type="text" id="fname" name="fname" required>
+                        </div>
 
-                    <!--Last name-->
-                    <div class="">
-                        <label for="lname">
-                            <p>Last Name</p>
-                        </label>
+                        <!--Last name-->
+                        <div class="mb-2">
 
-                        <input type="text" id="lname" name="lname" required>
-                    </div>
+                            <p><label for="lname">Last Name</label></p>
 
-                    <!--Email Address-->
-                    <div class="">
-                        <label for="email">
-                            <p>Email Address</p>
-                        </label>
+                            <input type="text" id="lname" name="lname" required>
+                        </div>
 
-                        <input type="email" id="email" name="email" required>
+                        <!--Email Address-->
+                        <div class="mb-2">
 
-                    </div>
+                            <p><label for="email">Email Address</label></p>
 
-                    <!--Phone Number-->
-                    <div class="">
+                            <input type="email" id="email" name="email" required>
 
-                        <label for="phone">
-                            <p>Phone Number (optional)</p>
-                        </label>
+                        </div>
 
-                        <input type="tel" id="phone" name="phone">
+                        <!--Phone Number-->
+                        <div class="mb-2">
 
-                    </div>
+                            <p><label for="phone">Phone Number (optional)</label></p>
 
-                    <!-- Subject -->
-                    <div class="">
+                            <input type="tel" id="phone" name="phone">
 
-                        <label for="subject">
-                            <p>Subject</p>
-                        </label>
+                        </div>
 
-                        <input type="text" id="subject" name="subject" required>
+                        <!-- Subject -->
+                        <div class="mb-2">
 
-                    </div>
+                            <p><label for="subject">Subject</label></p>
 
-                    <!-- Message Text Area -->
-                    <div class="">
+                            <input type="text" id="subject" name="subject" required>
 
-                        <label for="message">
-                            <p>Message</p>
-                        </label>
+                        </div>
 
-                        <textarea name="message" id="message"></textarea>
+                        <!-- Message Text Area -->
+                        <div class="mb-2">
 
-                    </div>
+                            <p><label for="message">Message</label></p>
 
-                    <!-- Submit -->
-                    <input type="submit" name="submit" id="submit">
-                </form>
+                            <textarea name="message" id="message"></textarea>
+
+                        </div>
+
+                        <!-- Submit -->
+                        <input type="submit" class="form-submit" name="submit" id="submit">
+                    </form>
+
+                </div>
+                <!-- End of Contact Form Input -->
 
             </div>
-            <!-- End of Contact Form Input -->
-
+            <!-- End of Form -->
         </div>
-        <!-- End of Form -->
 
 
         <!-- Contact SideBar -->
-        <div class="">
+        <div class="split-contact-right">
 
             <!-- Contact Info -->
-            <div class="">
-                <h2>Contact Info</h2>
+            <div class="contact-info mb-3">
+                <h4 class="mb-2">Contact Info</h4>
 
-                <h3><a href="mailto:info@jalfamgamesinc.com">info@jalfamgamesinc.com</a></h3>
+                <p class="mb-2"><a href="mailto:info@jalfamgamesinc.com">info@jalfamgamesinc.com</a></p>
 
-                <h3><a href="tel: 780-123-4556">780-123-4556</a></h3>
+                <p class="mb-2"><a href="tel: 780-123-4556">780-123-4556</a></p>
             </div>
 
 
             <!--Social Media-->
-            <div class="">
-                <h2>Social Media</h2>
+            <div class="mb-3">
+                <h4 class="mb-2">Social Media</h4>
 
-                <div class="">
-                    <img src="" alt="" href="" />
+                <p class="mb-1">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/facebook-orange.png' ?>"
+                        class="icon" alt="" href="#" />
                     <a href="#">facebook.com/jalfamgamesinc</a>
-                </div>
+                </p>
 
-                <div class="">
-                    <img src="" alt="" />
+                <p class="mb-1">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/twitter-orange.png' ?>"
+                        class="icon" alt="" />
                     <a href="#">twitter.com/jafamgamesinc</a>
-                </div>
+                </p>
 
-                <div class="">
-                    <img src="" alt="" />
+                <p class="mb-1">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/instagram-orange.png' ?>"
+                        class="icon" alt="" />
                     <a href="#">instagram.com/jalfamgamesinc</a>
-                </div>
+                </p>
             </div>
 
         </div>
         <!-- Emd of Contact SideBar -->
+    </div>
 
-        <?php
+    <?php
 get_sidebar();
 get_footer();

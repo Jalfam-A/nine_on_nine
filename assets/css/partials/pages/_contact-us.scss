@@ -1,5 +1,10 @@
-/* ========== CONTACT US PAGE - Emmanoel ========*/
-.contact-form > input[type=text]{
+/* ========== CONTACT US PAGE - Dazz ========*/
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    font-size: 16px;
+    font-weight: normal;
     outline: none;
     width: 100%;
     padding: 12px 20px;
@@ -7,4 +12,28 @@
     box-sizing: border-box;
     border: none;
     border-bottom: 1px solid black;
+}
+
+.form-submit{
+    border: none;
+    margin-top: 3rem;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.contact-info a{
+    font-weight: bold;
+}
+
+.contact-form label{
+    font-weight: 100;
+    font-style: italic;
+}
+
+.split-contact-left{
+    justify-content: start;
+}
+
+.split-contact-right{
+    place-self: start;
 }

@@ -3,7 +3,8 @@
 
 /************ HERO BANNER  ************/
 
-.hero-banner {
+.hero-banner,
+.split-contact{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +13,8 @@
     padding-top: 5%;
 
     /* Styles for .hero-image */
-    .hero-image {
+    .hero-image,
+    .split-contact-left {
         flex: 1;
         max-width: 100%;
         overflow: hidden;
@@ -29,7 +31,8 @@
     }
 
     /* Styles for .hero-message */
-    .hero-message {
+    .hero-message,
+    .split-contact-right {
         flex: 1;
         max-width: 80%;
     }
