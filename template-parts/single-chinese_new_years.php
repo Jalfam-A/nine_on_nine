@@ -12,7 +12,7 @@ get_header();
 ?>
 <?php
 $args = array{
-    'post_type' => '9_on_9_tournament',
+    'post_type' => '9_on_9_chinese_tournament',
     'posts_per_page' => 1
 
 };
@@ -20,7 +20,7 @@ $args = array{
 
 <section class="9-on-9-tournament-chinese-new-years">
     <div>
-        <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/events-listing-page.jpg/chinese-new-year-image.jpg' ); ?>" alt="an image of the nine-on-nine board" class="chinese-new-years-image-file">
+        <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/events-listing-page/chinese-new-year-image.jpg' ); ?>" alt="an image of the nine-on-nine board" class="chinese-new-years-image-file">
     </div>
     <div class="chinese-new-years-text">
         <div>
