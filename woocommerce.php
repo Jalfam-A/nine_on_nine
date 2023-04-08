@@ -1,4 +1,4 @@
-<?php get_headers(); ?>
+<?php get_header(); ?>
 
 <main class="container">
 

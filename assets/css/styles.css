@@ -131,6 +131,26 @@ td, th {
   padding: 5rem;
 }
 
+.cart-icon svg {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.cart-info {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.buy-now-and-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 /* ========== footer.scss - Donald ========*/
 .site-footer {
   border-top: 1px solid #333;
@@ -823,6 +843,10 @@ a {
 }
 
 a:hover {
+  color: var(--green);
+}
+
+.cart-icon svg:hover {
   color: var(--green);
 }
 
