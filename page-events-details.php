@@ -41,7 +41,7 @@ get_header();
                 </div> <!--event time,date,place,price end-->
                 <div class="">
                     <div class="event-details-title">
-                        <h3>9 on 9 Tournament</h3>
+                        <h3>9 on 9 Tournament - Chinese New Years</h3>
                     </div>
                     <div class="event-details-text-content">
                         <p>Before we announce the winner of this year's 9on9 Tournament we would like for you to read a bit of history of how this games started. Like many great games, 
@@ -53,10 +53,7 @@ get_header();
                 <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/events-details-page/event-details-main-image.jpg' ); ?>" alt="an image of two people playing 9on9 in front of a cabin" class="event-details-main-image-file">
             </div>
                 <div class="event-details-text-content">
-                    <p>In the end, after several hard-fought games, one team emerged as the victor. The players were thrilled with their win, but all
-                        involved agreed that the tournament was a great success regardless of the outcome. It was a great opportunity for students to come
-                        together, show off their skills, and have fun while doing it. The 9on9 tournament at SUB, University of Alberta was an unforgettable
-                        event that will undoubtedly be talked about for years to come.</p>
+                    <p>Happy Chinese New Year! We welcome you to the 9 on 9 Tournament - Chinese New Year Edition. Hope you can all attend and have fun. All ages welcome!</p>
                 </div>
                 <div class="">
                     <p>In the end, after several hard-fought games, one team emerged as the victor. The players were thrilled with their win, but all
