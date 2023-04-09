@@ -22,7 +22,8 @@ a:hover {
 /* Shared styles for both buttons */
 .hero-cta-buynow,
 .hero-cta-howtoplay,
-.button-styles {
+.button-styles,
+.form-submit{
     flex: 1;
     text-align: center;
     margin-right: 0px;
@@ -37,7 +38,8 @@ a:hover {
 
 /* Orange button styles */
 .hero-cta-buynow,
-.button-styles {
+.button-styles,
+.form-submit{
     background-color: var(--dark-orange);
     color: white;
     position: relative;
@@ -53,7 +55,7 @@ a:hover {
 
 /* Hover effect for the orange button */
 .hero-cta-buynow:hover,
-.button-styles:hover  {
+.button-styles:hover {
     transform: translateY(-4px); /* Move the orange button up */
     transition: transform 0.3s ease, opacity 0.3s ease;
     box-shadow: 9px 9px black; /* Shadow effect under the orange box */
