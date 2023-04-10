@@ -2,6 +2,7 @@
 
 <main class="container">
 
+    <h1>TEST</h1>
     <?php woocommerce_content(); ?>
 
 </main>
