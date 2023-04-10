@@ -91,14 +91,17 @@
 /* Mobile version */
 @media (max-width: 767px) {
 	/* Increase the max-width of the hero-image and hero-message to 100% */
-	.hero-banner {
+	.hero-banner,
+	.split-contact {
 	  flex-direction: column;
   
-	  .hero-image {
+	  .hero-image,
+	  .split-contact-left {
 		max-width: 100%;
 	  }
   
-	  .hero-message {
+	  .hero-message,
+	  .split-contact-right {
 		max-width: 100%;
 	  }
 	}
