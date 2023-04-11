@@ -229,8 +229,8 @@ footer {
     align-items: center;
   }
   .footer-site-info .footer-socialmedia,
-  .footer-site-info .footer-nav,
-  .footer-site-info .get-in-touch {
+.footer-site-info .footer-nav,
+.footer-site-info .get-in-touch {
     width: unset;
     flex: 1;
   }
@@ -249,19 +249,19 @@ footer {
 @media (max-width: 767px) {
   /* Increase the max-width of the hero-image and hero-message to 100% */
   .hero-banner,
-  .split-contact {
+.split-contact {
     flex-direction: column;
   }
   .hero-banner .hero-image,
-  .hero-banner .split-contact-left,
-  .split-contact .hero-image,
-  .split-contact .split-contact-left {
+.hero-banner .split-contact-left,
+.split-contact .hero-image,
+.split-contact .split-contact-left {
     max-width: 100%;
   }
   .hero-banner .hero-message,
-  .hero-banner .split-contact-right,
-  .split-contact .hero-message,
-  .split-contact .split-contact-right {
+.hero-banner .split-contact-right,
+.split-contact .hero-message,
+.split-contact .split-contact-right {
     max-width: 100%;
   }
   /* Change the direction of the flexbox to column for the hero-cta and remove margin-right of the buttons */
@@ -269,7 +269,7 @@ footer {
     flex-direction: column;
   }
   .hero-cta .hero-cta-buynow,
-  .hero-cta .hero-cta-howtoplay {
+.hero-cta .hero-cta-howtoplay {
     margin-right: 0;
     margin-bottom: 8px;
     width: 100%;
@@ -303,7 +303,7 @@ footer {
     flex-direction: row !important;
   }
   .hero-cta-buynow,
-  .hero-cta-howtoplay {
+.hero-cta-howtoplay {
     margin-right: 16px;
     margin-bottom: 0;
     width: auto;
@@ -1004,4 +1004,97 @@ figcaption {
 /* ========== EVENT LISTINGS PAGE - Emmanoel =======*/
 .test-listing {
   font-family: sans-serif;
+}
+
+.test-listing {
+  font-family: sans-serif;
+}
+
+.event-listing-top-cards img {
+  width: 45rem;
+}
+
+.event-details {
+  display: flex;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+.event-listing-page {
+  margin: 3rem;
+}
+
+.chinese-new-years-description {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.event-details {
+  margin-top: 1rem;
+}
+
+.link-to-event-detail-page {
+  margin-top: 3rem;
+}
+
+.details-second-row {
+  margin-left: 6rem;
+}
+
+.event-listing-bottom-cards {
+  margin-top: 7rem;
+}
+
+.four-hundred-games-image-file,
+.all-ages-welcome-file,
+.holiday-madness-file,
+.black-friday-sales-file,
+.seniors-edition-file,
+.fundraiser-file {
+  height: auto;
+  max-width: 20rem;
+}
+
+.bottom-card-one,
+.bottom-card-two,
+.bottom-card-three,
+.bottom-card-four,
+.bottom-card-five,
+.bottom-card-six {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.events-listing-bottom-cards-text {
+  margin-left: 1.5rem;
+}
+
+.event-listing-bottom-card-date {
+  margin-top: 1.5rem;
+}
+
+.third-card-listing,
+.fourth-card-listing {
+  margin-top: 5rem;
+}
+
+/*Media Query for desktop*/
+@media (min-width: 768px) {
+  .events-listing-top-cards-one,
+.events-listing-top-cards-two {
+    display: flex;
+  }
+  body {
+    background-color: lightblue;
+  }
 }/*# sourceMappingURL=styles.css.map */
