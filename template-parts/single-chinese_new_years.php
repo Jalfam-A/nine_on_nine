@@ -12,7 +12,7 @@ get_header();
 ?>
 <?php
 $args = array{
-    'post_type' => '9_on_9_chinese_tournament',
+    'post_type' => 'event_one',
     'posts_per_page' => 1
 
 };
