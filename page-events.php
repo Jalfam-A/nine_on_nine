@@ -36,24 +36,3 @@
     </div>
     
 <?php get_footer(); ?>
-
-
-<?php
-$args = array{
-    'post_type' => 'events_content'
-    'post_per_page' => -1,
-};
-
-&loop = new WP_Query($args);
-
-if($loop->have_post()) {
-    while ($loop->have_post()) {
-        $loop->the_post();
-
-        the_post_thumbnail('medium');
-        the_title();
-        the_excerpt();
-
-    }
-}
-?>
