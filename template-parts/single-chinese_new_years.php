@@ -12,7 +12,7 @@ get_header();
 ?>
 <?php
 $args = array{
-    'post_type' => 'event_one',
+    'post_type' => 'chinese_new_years',
     'posts_per_page' => 1
 
 };
