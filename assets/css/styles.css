@@ -131,6 +131,26 @@ td, th {
   padding: 5rem;
 }
 
+.cart-icon svg {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.cart-info {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.buy-now-and-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 /* ========== footer.scss - Donald ========*/
 .site-footer {
   border-top: 1px solid #333;
@@ -341,6 +361,7 @@ footer {
 /* ========== base.scss - Dazz ========*/
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -884,6 +905,11 @@ a:hover {
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5); /* Add text-shadow only for :hover pseudo-class */
 }
 
+/* ========== PRODUCT PURCAHSE - Donald ============*/
+.test-product {
+  font-family: sans-serif;
+}
+
 /* ========== CONTACT US PAGE - Dazz ========*/
 .contact-form input[type=text],
 .contact-form input[type=email],
@@ -922,11 +948,6 @@ a:hover {
 
 .split-contact-right {
   place-self: start;
-}
-
-/* ========== PRODUCT PURCAHSE - Donald ============*/
-.test-product {
-  font-family: sans-serif;
 }
 
 /* ========== ABOUT US PAGE - Emmanoel ========== */
@@ -978,9 +999,23 @@ figcaption {
   margin-top: 1rem;
 }
 
+
+.cart-icon svg:hover {
+  color: var(--green);
+}
+
+/***** FRONT PAGE BUTTONS*****/
+/* Flex container for the buttons */
+.hero-cta {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1.5rem 0 1.5rem 0;
+
 .seniors-tournament-image,
 .fundraiser-tournament-image {
   width: 100vw;
+
 }
 
 .seniors-tournament-image-file,
