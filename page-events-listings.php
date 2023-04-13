@@ -12,14 +12,16 @@
 
 <?php get_header(); ?>
 <!-- <h2>This is page-recipes.php </h2> -->
-
+<!--
 <div class="recipes-flex-container">
     <div class="recipes-container"></div>
         <h2>All Recipes</h2>
         
         <div class="flex-inner-container">
             <div class="flex-recipes">
+                
                 <?php
+                
                 $args = array(
                     'post_type'      => 'events',
                     'posts_per_page' => 16,
@@ -29,7 +31,7 @@
                     $loop->the_post();
                     get_template_part ('template-parts/content', 'events');
                 }
-                ?>
+                ?>*/
             </div>
         </div>
         
