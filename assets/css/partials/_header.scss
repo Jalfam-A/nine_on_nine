@@ -4,8 +4,6 @@
 
 .site-header {
 	background-color: white;
-	border-bottom: 1px solid #333;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -87,3 +85,26 @@
 	text-align: center;
 	padding: 5rem;
   }
+
+  
+  .cart-icon svg {
+	height: 24px;
+	width: 24px;
+	margin-right: 10px;
+	vertical-align: middle;
+  }
+
+  .cart-info {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+  }
+
+  .buy-now-and-cart {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+
+  }
+  
