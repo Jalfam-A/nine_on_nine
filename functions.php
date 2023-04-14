@@ -221,3 +221,18 @@ function wporg_custom_post_type() {
 }
 add_action('init', 'wporg_custom_post_type');
 
+// custom function to find the product ID by slug
+function get_product_id_by_slug( $slug ) {
+    $args = array(
+        'post_type' => 'product',
+        'name'      => $slug,
+        'post_status' => 'publish',
+        'numberposts' => 1
+    );
+    $products = get_posts( $args );
+    if( $products ) {
+        return $products[0]->ID;
+    } else {
+        return null;
+    }
+}

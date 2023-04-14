@@ -34,7 +34,7 @@ get_header();
 
             <!-- Hero CTAs -->
             <div class="hero-cta">
-                <a href="<?php echo get_permalink( wc_get_product_id_by_slug( '9on9-boardgame' ) ); ?>" class="hero-cta-buynow">BUY NOW</a>
+                <a href="<?php echo get_permalink( get_product_id_by_slug( '9on9-boardgame' ) ); ?>" class="hero-cta-buynow">BUY NOW</a>
                 <a href="http://jalfama.web.dmitcapstone.ca/how-to-play/" class="hero-cta-howtoplay">HOW TO PLAY <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/chevron.png'); ?>" alt="Right Arrow" class="icon"></a>
             </div>
         </div>
