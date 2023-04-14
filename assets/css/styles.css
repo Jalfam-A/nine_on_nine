@@ -148,10 +148,6 @@ td, th {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 100vh;
-  background-color: yellow;
 }
 
 .hero-cta-buynow {
