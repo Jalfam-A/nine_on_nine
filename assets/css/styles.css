@@ -144,22 +144,14 @@ td, th {
 }
 
 .buy-now-and-cart {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  text-align: center;
   gap: 2rem;
-  height: 30vh;
 }
 
-.hero-cta-buynow a {
-  text-align: center;
-}
-
-.cart-info {
-  text-align: center;
-  margin-top: 1rem;
-  margin-right: 3rem;
+.hero-cta-buynow {
+  display: block;
 }
 
 /* ========== footer.scss - Donald ========*/
@@ -355,9 +347,6 @@ footer {
   .testimonial {
     margin: 0 2rem;
     margin-bottom: 0;
-  }
-  .testimonials-headings {
-    padding-left: 35rem;
   }
 }
 /* ========== colors.scss - Donald ========*/
@@ -579,15 +568,14 @@ a:hover {
 }
 
 /* Hover effect for the orange button */
-@media (min-width: 768px) {
-  .hero-cta-buynow:hover,
+.hero-cta-buynow:hover,
 .button-styles:hover {
-    transform: translateY(-4px); /* Move the orange button up */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    box-shadow: 9px 9px black; /* Shadow effect under the orange box */
-    color: white;
-  }
+  transform: translateY(-4px); /* Move the orange button up */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 9px 9px black; /* Shadow effect under the orange box */
+  color: white;
 }
+
 /* ========== HOMEPAGE - Donald ==========*/
 /************ HERO BANNER  ************/
 .hero-banner,
@@ -648,7 +636,6 @@ a:hover {
 /* Remove padding from the entire whats-in-the-box section */
 .whats-in-the-box {
   padding: none;
-  padding-top: 15rem;
 }
 
 /* Flex container for the images */
@@ -701,9 +688,9 @@ a:hover {
 /*.testimonials {
   //padding: 5rem;
 }*/
-.testimonials-headings {
-  padding-top: 15rem;
-  margin-left: 3rem;
+.testimonials-headings h4,
+.testimonials-headings h2 {
+  margin-left: clamp(1rem, 10vw, 10rem);
 }
 
 /* Flex container for the testimonials */
@@ -711,7 +698,6 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   padding: 5rem;
-  margin-bottom: 15rem;
   /* Individual testimonial styles */
 }
 .testimonial-container .testimonial {
@@ -733,7 +719,6 @@ a:hover {
   flex-direction: column;
   color: white;
   background-color: var(--dark-blue);
-  margin-bottom: 15rem;
 }
 .event-feature .event-feature-info {
   order: 1;
@@ -804,7 +789,6 @@ a:hover {
 .instagram-container {
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 15rem;
 }
 
 .instagram-intro {
@@ -1075,6 +1059,65 @@ figcaption {
     margin: 0 auto;
   }
 }
+/* ========== CONTACT US PAGE - Emmanoel ========*/
+.test-contact {
+  font-family: "Courier New", Courier, monospace;
+>>>>>>>>> Temporary merge branch 2
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.about-us-upper-section {
+  padding: 2rem;
+}
+
+.about-us-lower-section {
+  margin-top: 7rem;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.check-out-events-title {
+  margin-right: 7rem;
+  margin-bottom: 3rem;
+}
+
+.check-out-events-description {
+  margin-top: 3rem;
+}
+
+.see-event-arrow {
+  color: var(--light-orange);
+  margin-top: 3rem;
+}
+
+.check-out-events-container {
+  padding: 2rem;
+}
+
+.seniors-tournament-text h2,
+.fundraiser-tournament-text h2 {
+  margin-top: 1rem;
+}
+
+.seniors-tournament-image,
+.fundraiser-tournament-image {
+  width: 100vw;
+}
+
+.seniors-tournament-image-file,
+.fundraiser-tournament-image-file {
+  width: 48rem;
+}
+
+.seniors-tournament-container a {
+  color: white;
+}
+
+/*Media Query*/
 /* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
 .test-detail {
   font-family: sans-serif;
@@ -1171,6 +1214,13 @@ h3 {
   margin-top: 5rem;
 }
 
+/*Media Query for desktop*/
+@media (min-width: 768px) {
+  .events-listing-top-cards-one,
+.events-listing-top-cards-two {
+    display: flex;
+  }
+}/*# sourceMappingURL=styles.css.map */
 /*Media Query for desktop*/
 @media (min-width: 768px) {
   .events-listing-top-cards-one,

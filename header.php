@@ -64,7 +64,7 @@
 				?>
 				<!-- Buy Now button and Cart-->
 				<div class="buy-now-and-cart">
-					<a href="#" class="hero-cta-buynow hero-cta-buynow-header">Buy Now</a>
+					<a href="<?php echo get_permalink( get_product_id_by_slug( '9on9-boardgame' ) ); ?>" class="hero-cta-buynow hero-cta-buynow-header">Buy Now</a>
 					<div class="cart-info">
 						<div class="cart-icon">
 							<a href="<?php echo wc_get_cart_url(); ?>">
