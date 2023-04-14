@@ -150,6 +150,10 @@ td, th {
   gap: 2rem;
 }
 
+.hero-cta-buynow {
+  display: block;
+}
+
 /* ========== footer.scss - Donald ========*/
 .site-footer {
   border-top: 1px solid #333;
@@ -632,7 +636,6 @@ a:hover {
 /* Remove padding from the entire whats-in-the-box section */
 .whats-in-the-box {
   padding: none;
-  background-color: var(--nude);
 }
 
 /* Flex container for the images */
@@ -645,6 +648,9 @@ a:hover {
 .whats-in-the-box-images .whats-in-the-box-image {
   width: 45%; /* Set a width for each image container */
 }
+.whats-in-the-box-images .whats-in-the-box-second-image {
+  padding-bottom: 1rem;
+}
 
 /* Text styles */
 .whats-in-the-box-text {
@@ -654,16 +660,17 @@ a:hover {
 .whats-in-the-box-text .whats-in-the-box-heading {
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin: 1rem;
 }
 .whats-in-the-box-text .whats-in-the-box-subheading {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .whats-in-the-box-text .whats-in-the-box-description {
   font-size: 18px;
-  margin-bottom: 16px;
+  margin: 1rem;
 }
 
 /* Image styles */
@@ -678,8 +685,12 @@ a:hover {
 }
 
 /************ TESTIMONIALS ************/
-.testimonials {
-  padding: 5rem;
+/*.testimonials {
+  //padding: 5rem;
+}*/
+.testimonials-headings h4,
+.testimonials-headings h2 {
+  margin-left: clamp(1rem, 10vw, 10rem);
 }
 
 /* Flex container for the testimonials */
@@ -719,13 +730,15 @@ a:hover {
 }
 .event-feature .event-feature-info .event-feature-message {
   padding: 20px;
+  /*.hero-text h4,
+  .testimonials-headings h4{
+    font-weight: 500;
+  }*/
 }
-.event-feature .event-feature-info .event-feature-message h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-.event-feature .event-feature-info .event-feature-message h1 {
-  font-size: 2rem;
+.event-feature .event-feature-info .event-feature-message .hero-text h2,
+.event-feature .event-feature-info .event-feature-message .testimonials-headings h2 {
+  font-size: 48px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 .event-feature .event-feature-info .event-feature-message p {
@@ -785,6 +798,10 @@ a:hover {
 
 /************* Desktop *************/
 @media (min-width: 768px) {
+  .homepage-container {
+    max-width: 1370px;
+    margin: 0 auto;
+  }
   .event-feature {
     display: flex;
     flex-direction: row;
@@ -1017,6 +1034,31 @@ figcaption {
 }
 
 /*Media Query*/
+@media (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 850px;
+    margin: auto;
+    background-color: white;
+  }
+  .about-us-upper-section {
+    margin: 0 auto;
+  }
+  .pandemic-change-world-image {
+    min-width: 100px;
+    max-width: 1000px;
+    align-items: center;
+  }
+  .pandemic-change-world-image img {
+    align-items: center;
+    margin: 0 auto;
+  }
+}
 /* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
 .test-detail {
   font-family: sans-serif;
