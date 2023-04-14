@@ -35,8 +35,8 @@ get_header();
 
             <!-- Hero CTAs -->
             <div class="hero-cta">
-                <a href="#" class="hero-cta-buynow">BUY NOW</a>
-                <a href="#" class="hero-cta-howtoplay">HOW TO PLAY <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/orange-right-arrow.png'); ?>" alt="Right Arrow" class="icon"></a>
+                <a href="<?php echo get_permalink( get_product_id_by_slug( '9on9-boardgame' ) ); ?>" class="hero-cta-buynow">BUY NOW</a>
+                <a href="http://jalfama.web.dmitcapstone.ca/how-to-play/" class="hero-cta-howtoplay">HOW TO PLAY <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/chevron.png'); ?>" alt="Right Arrow" class="icon"></a>
             </div>
         </div>
     </div>
@@ -136,6 +136,7 @@ get_header();
     <div class="event-feature">
         <!-- Event Feature Info -->
         <div class="event-feature-info">
+        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/front-page/homepage-tournament-image.jpg' ); ?>" alt="an image of people inside sport center" class="">
             <!-- Event Feature Message Details-->
             <div class="event-feature-message">
                 <h4 class="">Latest Update</h4>
@@ -144,7 +145,7 @@ get_header();
                 <!-- Event Feature Message Button -->
                 <a href="#" class="button-styles">
                     SEE EVENT DETAILS
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/orange-right-arrow.png'); ?>" alt="Right Arrow" class="icon">
+                    <img src="" alt="Right Arrow">
                 </a>
             </div>
         </div>
