@@ -484,6 +484,7 @@ body {
 .whats-in-the-box {
   padding: none;
   background-color: var(--nude);
+  margin: 1rem;
 }
 
 /* Flex container for the images */
