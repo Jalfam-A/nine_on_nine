@@ -648,6 +648,7 @@ a:hover {
 /* Remove padding from the entire whats-in-the-box section */
 .whats-in-the-box {
   padding: none;
+  padding-top: 15rem;
 }
 
 /* Flex container for the images */
@@ -701,6 +702,7 @@ a:hover {
   //padding: 5rem;
 }*/
 .testimonials-headings {
+  padding-top: 15rem;
   margin-left: 3rem;
 }
 
@@ -709,6 +711,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   padding: 5rem;
+  margin-bottom: 15rem;
   /* Individual testimonial styles */
 }
 .testimonial-container .testimonial {
@@ -730,6 +733,7 @@ a:hover {
   flex-direction: column;
   color: white;
   background-color: var(--dark-blue);
+  margin-bottom: 15rem;
 }
 .event-feature .event-feature-info {
   order: 1;
@@ -800,6 +804,7 @@ a:hover {
 .instagram-container {
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 15rem;
 }
 
 .instagram-intro {
