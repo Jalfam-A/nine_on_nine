@@ -119,7 +119,7 @@ get_header();
 
                 <p class="mb-2"><a href="mailto:info@jalfamgamesinc.com">info@jalfamgamesinc.com</a></p>
 
-                <p class="mb-2"><a href="tel: 780-123-4556">780-123-4556</a></p>
+                <p class="mb-2"><a href="tel: 780-123-4556">204-230-8771</a></p>
             </div>
 
 
@@ -151,5 +151,4 @@ get_header();
     </div>
 
     <?php
-get_sidebar();
 get_footer();
