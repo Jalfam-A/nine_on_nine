@@ -13,6 +13,7 @@ get_header();
 
 
 <body>
+    <section class="homepage-container">
 
     <!-- HERO BANNER -->
     <div class="hero-banner">
@@ -24,9 +25,9 @@ get_header();
         <!-- Hero Message -->
         <div class="hero-message">
             <!-- Hero Text -->
-            <div class="">
-                <h4 class="">A game for fun, movement, and skill!</h4>
-                <h2 class="">Games can't get more fun than this.</h2>
+            <div class="hero-text">
+                <h3 class="">A game for fun, movement, and skill!</h3>
+                <h2 class="">Games can't get more fun than this.</h1>
                 <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
                     challenging
                     teams to reach 99 points by tossing bean pucks on the board.</p>
@@ -57,7 +58,7 @@ get_header();
                 <p class="whats-in-the-box-image-title">The Board</p>
                 <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/front-page/theboard.png' ); ?>" alt="Image of the Board" class="whats-in-the-box-image-file">
             </div>
-            <div class="whats-in-the-box-image">
+            <div class="whats-in-the-box-image whats-in-the-box-second-image">
                 <p class="whats-in-the-box-image-title">The Bean Pucks</p>
                 <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/front-page/thebeanpucks.jpg' ); ?>" alt="Image of the Bean Pucks" class="whats-in-the-box-image-file">
             </div>
@@ -68,8 +69,8 @@ get_header();
     <!-- TESTIMONIALS - EDITABLE BY CLIENT-->
     <div class="testimonials">
         <!-- Intro Text -->
-        <div class="">
-            <h4 class="">What is everyone saying about the game?</h4>
+        <div class="testimonials-headings">
+            <h3 class="">What is everyone saying about the game?</h3>
             <h2 class="">Testimonials</h2>
         </div>
 
@@ -135,6 +136,7 @@ get_header();
     <div class="event-feature">
         <!-- Event Feature Info -->
         <div class="event-feature-info">
+        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/front-page/homepage-tournament-image.jpg' ); ?>" alt="an image of people inside sport center" class="">
             <!-- Event Feature Message Details-->
             <div class="event-feature-message">
                 <h4 class="">Latest Update</h4>
@@ -168,7 +170,7 @@ get_header();
         </div>
     </div>
 
-
+</section>
 </body>
 
 <?php
