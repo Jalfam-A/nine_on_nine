@@ -1059,6 +1059,65 @@ figcaption {
     margin: 0 auto;
   }
 }
+/* ========== CONTACT US PAGE - Emmanoel ========*/
+.test-contact {
+  font-family: "Courier New", Courier, monospace;
+>>>>>>>>> Temporary merge branch 2
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.about-us-upper-section {
+  padding: 2rem;
+}
+
+.about-us-lower-section {
+  margin-top: 7rem;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.check-out-events-title {
+  margin-right: 7rem;
+  margin-bottom: 3rem;
+}
+
+.check-out-events-description {
+  margin-top: 3rem;
+}
+
+.see-event-arrow {
+  color: var(--light-orange);
+  margin-top: 3rem;
+}
+
+.check-out-events-container {
+  padding: 2rem;
+}
+
+.seniors-tournament-text h2,
+.fundraiser-tournament-text h2 {
+  margin-top: 1rem;
+}
+
+.seniors-tournament-image,
+.fundraiser-tournament-image {
+  width: 100vw;
+}
+
+.seniors-tournament-image-file,
+.fundraiser-tournament-image-file {
+  width: 48rem;
+}
+
+.seniors-tournament-container a {
+  color: white;
+}
+
+/*Media Query*/
 /* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
 .test-detail {
   font-family: sans-serif;
@@ -1155,6 +1214,13 @@ h3 {
   margin-top: 5rem;
 }
 
+/*Media Query for desktop*/
+@media (min-width: 768px) {
+  .events-listing-top-cards-one,
+.events-listing-top-cards-two {
+    display: flex;
+  }
+}/*# sourceMappingURL=styles.css.map */
 /*Media Query for desktop*/
 @media (min-width: 768px) {
   .events-listing-top-cards-one,
