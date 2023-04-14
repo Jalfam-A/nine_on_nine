@@ -15,7 +15,7 @@ get_header();
 ?>
 
 <body>
-    <div class="about-us-container">
+    <section class="about-us-container">
         <!--breadcrumbs here-->
         <div class="about-us-upper-section">
             <div class="pandemic-change-world-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/about-us/worldisclose.jpg' ); ?>" alt="an image of sign that say the world is temporarily closed" class="pandemic-change-world-image-file"/></div>
