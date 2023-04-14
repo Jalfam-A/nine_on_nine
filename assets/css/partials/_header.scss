@@ -100,13 +100,20 @@
   }
 
   .buy-now-and-cart {
-	display: flex;
+	display: block;
 	align-items: center;
 	justify-content: space-between;
+	text-align: center;
 	gap: 2rem;
+	height: 30vh;
 
   }
-  .hero-cta-buynow{
-	display: block;
+  .hero-cta-buynow a{
+	text-align: center;
+  }
+  .cart-info{
+	text-align: center;
+	margin-top: 1rem;
+	margin-right: 3rem;
   }
   

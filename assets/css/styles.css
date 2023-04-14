@@ -144,14 +144,22 @@ td, th {
 }
 
 .buy-now-and-cart {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
   gap: 2rem;
+  height: 30vh;
 }
 
-.hero-cta-buynow {
-  display: block;
+.hero-cta-buynow a {
+  text-align: center;
+}
+
+.cart-info {
+  text-align: center;
+  margin-top: 1rem;
+  margin-right: 3rem;
 }
 
 /* ========== footer.scss - Donald ========*/
@@ -347,6 +355,9 @@ footer {
   .testimonial {
     margin: 0 2rem;
     margin-bottom: 0;
+  }
+  .testimonials-headings {
+    padding-left: 35rem;
   }
 }
 /* ========== colors.scss - Donald ========*/
@@ -568,14 +579,15 @@ a:hover {
 }
 
 /* Hover effect for the orange button */
-.hero-cta-buynow:hover,
+@media (min-width: 768px) {
+  .hero-cta-buynow:hover,
 .button-styles:hover {
-  transform: translateY(-4px); /* Move the orange button up */
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  box-shadow: 9px 9px black; /* Shadow effect under the orange box */
-  color: white;
+    transform: translateY(-4px); /* Move the orange button up */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 9px 9px black; /* Shadow effect under the orange box */
+    color: white;
+  }
 }
-
 /* ========== HOMEPAGE - Donald ==========*/
 /************ HERO BANNER  ************/
 .hero-banner,
@@ -688,9 +700,8 @@ a:hover {
 /*.testimonials {
   //padding: 5rem;
 }*/
-.testimonials-headings h4,
-.testimonials-headings h2 {
-  margin-left: clamp(1rem, 10vw, 10rem);
+.testimonials-headings {
+  margin-left: 3rem;
 }
 
 /* Flex container for the testimonials */

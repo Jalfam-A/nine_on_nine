@@ -117,9 +117,8 @@
 /*.testimonials {
   //padding: 5rem;
 }*/
-.testimonials-headings h4,
-.testimonials-headings h2{
-margin-left: clamp(1rem, 10vw, 10rem)
+.testimonials-headings{
+  margin-left: 3rem;
 }
 
 /* Flex container for the testimonials */

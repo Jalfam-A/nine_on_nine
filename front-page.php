@@ -136,7 +136,6 @@ get_header();
     <div class="event-feature">
         <!-- Event Feature Info -->
         <div class="event-feature-info">
-        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/front-page/homepage-tournament-image.jpg' ); ?>" alt="an image of people inside sport center" class="">
             <!-- Event Feature Message Details-->
             <div class="event-feature-message">
                 <h4 class="">Latest Update</h4>
