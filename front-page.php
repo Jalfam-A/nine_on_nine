@@ -13,6 +13,7 @@ get_header();
 
 
 <body>
+    <section class="homepage-container">
 
     <!-- HERO BANNER -->
     <div class="hero-banner">
@@ -57,7 +58,7 @@ get_header();
                 <p class="whats-in-the-box-image-title">The Board</p>
                 <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/front-page/theboard.png' ); ?>" alt="Image of the Board" class="whats-in-the-box-image-file">
             </div>
-            <div class="whats-in-the-box-image">
+            <div class="whats-in-the-box-image whats-in-the-box-second-image">
                 <p class="whats-in-the-box-image-title">The Bean Pucks</p>
                 <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/front-page/thebeanpucks.jpg' ); ?>" alt="Image of the Bean Pucks" class="whats-in-the-box-image-file">
             </div>
@@ -135,6 +136,7 @@ get_header();
     <div class="event-feature">
         <!-- Event Feature Info -->
         <div class="event-feature-info">
+        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/front-page/homepage-tournament-image.jpg' ); ?>" alt="an image of people inside sport center" class="">
             <!-- Event Feature Message Details-->
             <div class="event-feature-message">
                 <h4 class="">Latest Update</h4>
@@ -168,7 +170,7 @@ get_header();
         </div>
     </div>
 
-
+</section>
 </body>
 
 <?php
