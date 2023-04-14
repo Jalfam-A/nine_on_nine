@@ -3,34 +3,34 @@
 @use 'colors';
 @use 'mixins';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;700&family=Open+Sans:ital@1&display=swap');
-
-h1{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Open+Sans&display=swap');
 
 h2{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 200;
-    font-size: 21px;
+    font-weight: 700;
+    font-size: 5rem;
 }
 
 h3{
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 700;    
-    font-size: 44px;
+    font-size: 3.5rem;
+}
+
+h4{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
 }
 
 p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1.5rem;
 }
 
 a{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 16px;
+    font-size: 2rem;
 }
 
 ul {
