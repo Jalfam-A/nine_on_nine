@@ -3,22 +3,24 @@
 
 /************ HERO BANNER  ************/
 
-.hero-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  padding-top: 5%;
+.hero-banner,
+.split-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding-top: 5%;
 
-  /* Styles for .hero-image */
-  .hero-image {
-      flex: 1;
-      max-width: 100%;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    /* Styles for .hero-image */
+    .hero-image,
+    .split-contact-left {
+        flex: 1;
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
       /* Styles for img */
       img {
@@ -28,11 +30,12 @@
       }
   }
 
-  /* Styles for .hero-message */
-  .hero-message {
-      flex: 1;
-      max-width: 80%;
-  }
+    /* Styles for .hero-message */
+    .hero-message,
+    .split-contact-right {
+        flex: 1;
+        max-width: 80%;
+    }
 
   /* Styles for .hero-cta */
   .hero-cta {
