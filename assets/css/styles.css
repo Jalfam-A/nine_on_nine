@@ -144,12 +144,11 @@ td, th {
 }
 
 .buy-now-and-cart {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
   gap: 2rem;
-  height: 30vh;
 }
 
 .hero-cta-buynow a {
@@ -715,7 +714,8 @@ a:hover {
 }
 .whats-in-the-box-text .whats-in-the-box-description {
   font-size: 18px;
-  margin: 1rem;
+  /*margin: 1rem;*/
+  margin: 5rem;
 }
 
 /* Image styles */
