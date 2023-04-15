@@ -4,6 +4,7 @@
 /************ HERO BANNER  ************/
 
 .hero-banner,
+.step-component,
 .split-contact{
     display: flex;
     align-items: center;
@@ -14,6 +15,7 @@
 
     /* Styles for .hero-image */
     .hero-image,
+    .step-image,
     .split-contact-left {
         flex: 1;
         max-width: 100%;
@@ -32,25 +34,26 @@
 
     /* Styles for .hero-message */
     .hero-message,
+    .step-message,
     .split-contact-right {
         flex: 1;
         max-width: 80%;
     }
 
-  /* Styles for .hero-cta */
-  .hero-cta {
-      flex-direction: column;
+    /* Styles for .hero-cta */
+    .hero-cta,
+    .step-cta {
+        flex-direction: column;
 
-      /* Styles for buttons */
-      .hero-cta-buynow,
-      .hero-cta-howtoplay {
-          margin-right: 0;
-          margin-bottom: 8px;
-          width: auto;
-          text-align: center;
-          align-items: center;
-      }
-  }
+        /* Styles for buttons */
+        .hero-cta-buynow,
+        .hero-cta-howtoplay {
+            margin-right: 0;
+            margin-bottom: 8px;
+            width: auto;
+        }
+    }
+
 }
 
 
@@ -163,7 +166,7 @@
   margin-bottom: 15rem;
 
   .event-feature-info {
-    order: 1;
+    order: 2;
     color: white;
 
     a {
@@ -230,7 +233,7 @@
   }
 
   .event-feature-image {
-    order: 2;
+    order: 1;
     overflow: hidden; /* prevents image overflow */
 
     img {

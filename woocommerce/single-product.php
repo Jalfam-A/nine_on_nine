@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying all single products
+ * The template for displaying product content in the single-product.php template
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/single-product.php.
  *
@@ -10,54 +10,50 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see         https://docs.woocommerce.com/document/template-structure/
- * @package     WooCommerce\Templates
- * @version     1.6.4
+ * @see     https://docs.woocommerce.com/document/template-structure/
+ * @package WooCommerce/Templates
+ * @version 3.6.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined('ABSPATH') || exit;
 
-get_header( 'shop' ); ?>
+get_header('shop');
 
-	<?php
-		/**
-		 * woocommerce_before_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-		 * @hooked woocommerce_breadcrumb - 20
-		 */
-		do_action( 'woocommerce_before_main_content' );
-	?>
+?>
 
-		<?php while ( have_posts() ) : ?>
-			<?php the_post(); ?>
+<main id="primary" class="site-main">
+  <div class="container">
+    <?php
+    while (have_posts()) :
+      the_post();
+      ?>
+      <div id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
+        <div class="single-product-content">
+          <div class="product-image-summary-wrap">
+            <div class="product-image">
+              <?php woocommerce_show_product_images(); ?>
+            </div>
+            <div class="product-summary">
+              <?php
+              woocommerce_template_single_title();
+              woocommerce_template_single_rating();
+              woocommerce_template_single_price();
+              woocommerce_template_single_excerpt();
+              woocommerce_template_single_add_to_cart();
+              woocommerce_template_single_meta();
+              woocommerce_template_single_sharing();
+              ?>
+            </div>
+          </div>
+          <div class="product-tabs">
+            <?php woocommerce_output_product_data_tabs(); ?>
+          </div>
+        </div>
+      </div>
 
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
-
-		<?php endwhile; // end of the loop. ?>
-
-	<?php
-		/**
-		 * woocommerce_after_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-		 */
-		do_action( 'woocommerce_after_main_content' );
-	?>
-
-	<?php
-		/**
-		 * woocommerce_sidebar hook.
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>
-
+    <?php endwhile; // end of the loop. ?>
+  </div>
+</main>
 
 <?php
-get_footer( 'shop' );
-
-/* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
+get_footer('shop');

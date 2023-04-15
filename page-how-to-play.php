@@ -18,7 +18,7 @@ get_header();
     <!-- CONTAINER -->
     <div class="mb-3">
         <!-- Breadcrumbs -->
-        <div class="container breadcrumbs">
+        <div class="step-container breadcrumbs">
             <a href="" class="">Home</a>
             <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">
             <a href="" class="">How To Play</a>
@@ -54,27 +54,27 @@ get_header();
 
                 <!-- STEPS breadcrumbs -->
                 <div class="steps-breadcrumb pt-3">
-                    <a href="#step1" class="container"><strong>Step 1</strong></a>
+                    <a href="#step1" class="step-container"><strong>Step 1</strong></a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step2" class="container">Step 2</a>
+                        alt="Chevron Right" class="icon"> <a href="#step2" class="step-container">Step 2</a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step3" class="container">Step 3</a>
+                        alt="Chevron Right" class="icon"> <a href="#step3" class="step-container">Step 3</a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step4" class="container">Step 4</a>
+                        alt="Chevron Right" class="icon"> <a href="#step4" class="step-container">Step 4</a>
                 </div>
                 
         
                 <!-- Step 1 -->
-                <div class="hero-banner center-vertical" >
+                <div class="step-component center-vertical" >
         
                     <!-- Step 1 - Image -->
-                    <div class="step-image-left">
+                    <div class="step-image step-image-left">
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>"
                             alt="">
                     </div>
         
                     <!-- Step 1 - Message -->
-                    <div class="hero-message m-right">
+                    <div class="step-message m-right">
                         <h4 class="">Step 1</h4>
                         <h2 class="">Place the Board on level ground.</h2>
                         <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
@@ -91,28 +91,28 @@ get_header();
                 <!-- STEPS breadcrumbs -->
                 <div class="steps-breadcrumb">
                     <div class="px-1 py-3 my-3">
-                        <a href="#step1" class="container bg-blue">Step 1</a>
+                        <a href="#step1" class="step-container bg-blue">Step 1</a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-blue"> <a href="#step2" class="container bg-blue"><strong>Step 2</strong></a>
+                            alt="Chevron Right" class="icon bg-blue"> <a href="#step2" class="step-container bg-blue"><strong>Step 2</strong></a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-blue"> <a href="#step3" class="container bg-blue">Step 3</a>
+                            alt="Chevron Right" class="icon bg-blue"> <a href="#step3" class="step-container bg-blue">Step 3</a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-blue"> <a href="#step4" class="container bg-blue">Step 4</a>
+                            alt="Chevron Right" class="icon bg-blue"> <a href="#step4" class="step-container bg-blue">Step 4</a>
                     </div>
                 </div>
                 
                 
-                <div class="hero-banner center-vertical">
+                <div class="step-component center-vertical">
                 
                     <!-- Step 2 - Message -->
-                    <div class="hero-message m-left">
+                    <div class="step-message m-left">
                         <h4 class="">Step 2</h4>
                         <h2 class="">Create 2 teams. Each team gets 4 bean pucks.</h2>
                         <p class="">1 to 4 players each team. Select a colour for each team.</p>
                     </div>
                 
                     <!-- Step 2 - Image -->
-                    <div class="step-image-right">
+                    <div class="step-image step-image-right">
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="">
                     </div>
                 
@@ -129,23 +129,23 @@ get_header();
 
                 <!-- STEPS breadcrumbs -->
                 <div class="steps-breadcrumb pt-3">
-                    <a href="#step1" class="container">Step 1</a>
+                    <a href="#step1" class="step-container">Step 1</a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step2" class="container">Step 2</a>
+                        alt="Chevron Right" class="icon"> <a href="#step2" class="step-container">Step 2</a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step3" class="container"><strong>Step 3</strong></a>
+                        alt="Chevron Right" class="icon"> <a href="#step3" class="step-container"><strong>Step 3</strong></a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step4" class="container">Step 4</a>
+                        alt="Chevron Right" class="icon"> <a href="#step4" class="step-container">Step 4</a>
                 </div>
 
-                <div class="hero-banner center-vertical">
+                <div class="step-component center-vertical">
                     <!-- Step 3 - Image -->
-                    <div class="hero-imag step-image-left">
+                    <div class="step-image step-image-left">
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" >
                     </div>
 
                     <!-- Step 3 - Message -->
-                    <div class="hero-message m-right">
+                    <div class="step-message m-right">
                         <h4 class="">Step 3</h4>
                         <h2 class="">Determine who shoots first.</h2>
                         <p class="">1 to 4 players each team. Select a colour for each team.</p>
@@ -164,27 +164,27 @@ get_header();
                 <!-- STEPS breadcrumbs -->
                 <div class="steps-breadcrumb">
                     <div class="px-1 py-3 my-3">
-                        <a href="#step1" class="container bg-green">Step 1</a>
+                        <a href="#step1" class="step-container bg-green">Step 1</a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-green"> <a href="#step2" class="container bg-green">Step 2</a>
+                            alt="Chevron Right" class="icon bg-green"> <a href="#step2" class="step-container bg-green">Step 2</a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-green"> <a href="#step3" class="container bg-green">Step 3</a>
+                            alt="Chevron Right" class="icon bg-green"> <a href="#step3" class="step-container bg-green">Step 3</a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-green"> <a href="#step4" class="container bg-green"><strong>Step 4</strong></a>
+                            alt="Chevron Right" class="icon bg-green"> <a href="#step4" class="step-container bg-green"><strong>Step 4</strong></a>
                     </div>
                 </div>
 
 
-                <div class="hero-banner center-vertical">
+                <div class="step-component center-vertical">
                     <!-- Step 4 - Message -->
-                    <div class="hero-message m-left">
+                    <div class="step-message m-left">
                         <h4 class="">Step 4</h4>
                         <h2 class="">Create 2 teams. Each team gets 4 bean pucks.</h2>
                         <p class="">1 to 4 players each team. Select a colour for each team.</p>
                     </div>
                     
                     <!-- Step 4 - Image -->
-                    <div class="hero-image step-image-right">
+                    <div class="step-image step-image-right">
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="">
                     </div>
                 </div>
@@ -212,20 +212,20 @@ get_header();
                 <!-- STEPS breadcrumbs -->
                 <div class="steps-breadcrumb">
                     <div class="px-1 py-3 my-3">
-                        <a href="#step5" class="container"><strong>Step 1</strong></a>
+                        <a href="#step5" class="step-container"><strong>Step 1</strong></a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                            alt="Chevron Right" class="icon"> <a href="#step6" class="container">Step 2</a>
+                            alt="Chevron Right" class="icon"> <a href="#step6" class="step-container">Step 2</a>
                     </div>
                 </div>
 
-                <div class="hero-banner center-vertical">
+                <div class="step-component center-vertical">
                     <!-- Step 1 - Image -->
-                    <div class="step-image-left">
+                    <div class="step-image step-image-left">
                         <img  src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="">
                     </div>
 
                     <!-- Step 1 - Message -->
-                    <div class="hero-message m-right">
+                    <div class="step-message m-right">
                         <h4 class="">Step 1</h4>
                         <h2 class="">Throw 1 bean puck at a time alternating teams until all have been thrown.</h2>
                         <p class="">This completes a round.</p>
@@ -245,17 +245,17 @@ get_header();
                 <!-- STEPS breadcrumbs -->
                 <div class="steps-breadcrumb">
                     <div class="px-1 py-3 my-3">
-                        <a href="#step5" class="container bg-blue">Step 1</a>
+                        <a href="#step5" class="step-container bg-blue">Step 1</a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-blue"> <a href="#step6" class="container bg-blue"><strong>Step 2</strong></a>
+                            alt="Chevron Right" class="icon bg-blue"> <a href="#step6" class="step-container bg-blue"><strong>Step 2</strong></a>
                     </div>
                 </div>
                 
                 
-                <div class="hero-banner center-vertical">
+                <div class="step-component center-vertical">
 
                     <!-- Step 2 - Message -->
-                    <div class="hero-message m-left">
+                    <div class="step-message m-left">
                         <h4 class="">Step 2</h4>
                         <h2 class="">At the end of each round, each team adds their score to the previous round.</h2>
                         <p class="">The team with the most points after each round throws first in the next round. </p>
@@ -263,7 +263,7 @@ get_header();
                     </div>
 
                     <!-- Step 2 - Image -->
-                    <div class="step-image-right">
+                    <div class="step-image step-image-right">
                         <img class="right-img" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" >
                     </div>
 
@@ -288,7 +288,7 @@ get_header();
             </div>
 
             <!-- Image of the scoring instructions and notes -->
-            <div class="hero-banner">
+            <div class="step-component">
                 <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/point-zones-label.png' ?>" alt="Labels for the board" class="step-image-left">
                 <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/point-zones-notes.png' ?>" alt="Notes for the board" class="step-image-right">
             </div>
@@ -297,7 +297,7 @@ get_header();
 
 
         <!-- Buy Now CTA -->
-        <div class="hero-banner bg-blue container">
+        <div class="step-component bg-blue container">
 
             <!-- Hero Message -->
             <div class="cta-hero-message">
@@ -317,7 +317,7 @@ get_header();
             </div>
 
             <!-- CTA Image -->
-            <div class="hero-image step-image-left step-image-right">
+            <div class="step-image step-image-left step-image-right">
                 <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
             </div>
         </div>
