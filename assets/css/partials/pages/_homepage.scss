@@ -47,6 +47,8 @@
           margin-right: 0;
           margin-bottom: 8px;
           width: auto;
+          text-align: center;
+          align-items: center;
       }
   }
 }
@@ -120,7 +122,10 @@
 }*/
 .testimonials-headings{
   padding-top: 15rem;
-  margin-left: 3rem;
+  margin-left: 1rem;
+}
+.testimonials-headings h2{
+  width: 2rem;
 }
 
 /* Flex container for the testimonials */

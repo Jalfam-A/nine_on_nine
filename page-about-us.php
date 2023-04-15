@@ -17,6 +17,11 @@ get_header();
 <body>
     <section class="about-us-container">
         <!--breadcrumbs here-->
+        <div class="container breadcrumbs">
+        <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Home</a>
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">
+            <a href="" class="">About Us</a>
+        </div>
         <div class="about-us-upper-section">
             <div class="pandemic-change-world-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/about-us/worldisclose.jpg' ); ?>" alt="an image of sign that say the world is temporarily closed" class="pandemic-change-world-image-file"/></div>
         
@@ -49,7 +54,7 @@ get_header();
                 <h3>Meet the Team</h3>
             </div>
             <div class="meet-the-team-image">
-                <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/jalfamteam.jpg' ); ?>" alt="an image showing the people behind JALFAM" class="meet-the-team-image-file">
+                <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/jalfam-team.png' ); ?>" alt="an image showing the people behind JALFAM" class="meet-the-team-image-file">
                 <figcaption>JALFAM</figcaption>
             </div>
             
