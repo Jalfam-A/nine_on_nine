@@ -80,6 +80,7 @@
 	background-color: white;
 	font-size: xx-large;
   }
+  
   .show-nav .menu-item {
 	text-align: center;
 	padding: 5rem;
@@ -100,17 +101,17 @@
   }
 
   .buy-now-and-cart {
-	display: block;
+	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	text-align: center;
 	gap: 2rem;
-	height: 30vh;
-
   }
+
   .hero-cta-buynow a{
 	text-align: center;
   }
+
   .cart-info{
 	text-align: center;
 	margin-top: 1rem;
