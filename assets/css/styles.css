@@ -344,6 +344,9 @@ footer {
     padding: 8rem 25rem 8rem 25rem;
     background-color: white !important;
   }
+  .whats-in-the-box-text {
+    padding-bottom: 3rem;
+  }
   /* Navigation */
   .hero-cta-buynow-header {
     margin: 2rem 0 0 20rem;
@@ -357,7 +360,7 @@ footer {
     margin-bottom: 0;
   }
   .testimonials-headings {
-    padding-left: 35rem;
+    padding-left: 7rem;
   }
 }
 /* ========== colors.scss - Donald ========*/
@@ -484,6 +487,7 @@ body {
   height: 16px;
   width: 16px;
   vertical-align: text-bottom;
+  padding-bottom: 0.7rem;
 }
 
 h2 {
@@ -642,6 +646,8 @@ a:hover {
   margin-right: 0;
   margin-bottom: 8px;
   width: auto;
+  text-align: center;
+  align-items: center;
 }
 
 /************ WHAT'S IN THE BOX  ************/
@@ -702,12 +708,12 @@ a:hover {
   //padding: 5rem;
 }*/
 .testimonials-headings {
-  text-align: left;
+  padding-top: 15rem;
+  margin-left: 1rem;
 }
 
-.testimonials-headings {
-  padding-top: 15rem;
-  margin-left: 3rem;
+.testimonials-headings h2 {
+  width: 2rem;
 }
 
 /* Flex container for the testimonials */
