@@ -248,8 +248,8 @@ footer {
     align-items: center;
   }
   .footer-site-info .footer-socialmedia,
-.footer-site-info .footer-nav,
-.footer-site-info .get-in-touch {
+  .footer-site-info .footer-nav,
+  .footer-site-info .get-in-touch {
     width: unset;
     flex: 1;
   }
@@ -268,19 +268,19 @@ footer {
 @media (max-width: 767px) {
   /* Increase the max-width of the hero-image and hero-message to 100% */
   .hero-banner,
-.split-contact {
+  .split-contact {
     flex-direction: column;
   }
   .hero-banner .hero-image,
-.hero-banner .split-contact-left,
-.split-contact .hero-image,
-.split-contact .split-contact-left {
+  .hero-banner .split-contact-left,
+  .split-contact .hero-image,
+  .split-contact .split-contact-left {
     max-width: 100%;
   }
   .hero-banner .hero-message,
-.hero-banner .split-contact-right,
-.split-contact .hero-message,
-.split-contact .split-contact-right {
+  .hero-banner .split-contact-right,
+  .split-contact .hero-message,
+  .split-contact .split-contact-right {
     max-width: 100%;
   }
   /* Change the direction of the flexbox to column for the hero-cta and remove margin-right of the buttons */
@@ -288,7 +288,7 @@ footer {
     flex-direction: column;
   }
   .hero-cta .hero-cta-buynow,
-.hero-cta .hero-cta-howtoplay {
+  .hero-cta .hero-cta-howtoplay {
     margin-right: 0;
     margin-bottom: 8px;
     width: 100%;
@@ -322,7 +322,7 @@ footer {
     flex-direction: row !important;
   }
   .hero-cta-buynow,
-.hero-cta-howtoplay {
+  .hero-cta-howtoplay {
     margin-right: 16px;
     margin-bottom: 0;
     width: auto;
@@ -575,6 +575,7 @@ a:hover {
 /* ========== HOMEPAGE - Donald ==========*/
 /************ HERO BANNER  ************/
 .hero-banner,
+.step-component,
 .split-contact {
   display: flex;
   align-items: center;
@@ -587,8 +588,13 @@ a:hover {
   /* Styles for .hero-cta */
 }
 .hero-banner .hero-image,
+.hero-banner .step-image,
 .hero-banner .split-contact-left,
+.step-component .hero-image,
+.step-component .step-image,
+.step-component .split-contact-left,
 .split-contact .hero-image,
+.split-contact .step-image,
 .split-contact .split-contact-left {
   flex: 1;
   max-width: 100%;
@@ -599,8 +605,13 @@ a:hover {
   /* Styles for img */
 }
 .hero-banner .hero-image img,
+.hero-banner .step-image img,
 .hero-banner .split-contact-left img,
+.step-component .hero-image img,
+.step-component .step-image img,
+.step-component .split-contact-left img,
 .split-contact .hero-image img,
+.split-contact .step-image img,
 .split-contact .split-contact-left img {
   width: 100%;
   height: 100%;
@@ -608,21 +619,38 @@ a:hover {
      object-fit: cover;
 }
 .hero-banner .hero-message,
+.hero-banner .step-message,
 .hero-banner .split-contact-right,
+.step-component .hero-message,
+.step-component .step-message,
+.step-component .split-contact-right,
 .split-contact .hero-message,
+.split-contact .step-message,
 .split-contact .split-contact-right {
   flex: 1;
   max-width: 80%;
 }
 .hero-banner .hero-cta,
-.split-contact .hero-cta {
+.hero-banner .step-cta,
+.step-component .hero-cta,
+.step-component .step-cta,
+.split-contact .hero-cta,
+.split-contact .step-cta {
   flex-direction: column;
   /* Styles for buttons */
 }
 .hero-banner .hero-cta .hero-cta-buynow,
 .hero-banner .hero-cta .hero-cta-howtoplay,
+.hero-banner .step-cta .hero-cta-buynow,
+.hero-banner .step-cta .hero-cta-howtoplay,
+.step-component .hero-cta .hero-cta-buynow,
+.step-component .hero-cta .hero-cta-howtoplay,
+.step-component .step-cta .hero-cta-buynow,
+.step-component .step-cta .hero-cta-howtoplay,
 .split-contact .hero-cta .hero-cta-buynow,
-.split-contact .hero-cta .hero-cta-howtoplay {
+.split-contact .hero-cta .hero-cta-howtoplay,
+.split-contact .step-cta .hero-cta-buynow,
+.split-contact .step-cta .hero-cta-howtoplay {
   margin-right: 0;
   margin-bottom: 8px;
   width: auto;
@@ -871,6 +899,39 @@ a:hover {
   border-bottom-right-radius: 2rem;
 }
 
+.step {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.step-image {
+  flex: 1;
+}
+
+.step-message {
+  flex: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Styles for screens smaller than 768px (e.g., mobile devices) */
+  .step-component {
+    flex-direction: column;
+  }
+  .step-image {
+    order: 1;
+  }
+  .step-message {
+    order: 2;
+  }
+  .center-vertical {
+    height: auto;
+  }
+  .step-image-left img,
+  .step-image-right img {
+    border-radius: 0;
+  }
+}
 .m-left {
   margin-left: 2rem;
 }
@@ -1116,7 +1177,7 @@ h3 {
 /*Media Query for desktop*/
 @media (min-width: 768px) {
   .events-listing-top-cards-one,
-.events-listing-top-cards-two {
+  .events-listing-top-cards-two {
     display: flex;
   }
 }/*# sourceMappingURL=styles.css.map */

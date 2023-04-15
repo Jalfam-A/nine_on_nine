@@ -60,6 +60,45 @@
   border-bottom-right-radius: 2rem;
 }
 
+.step {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.step-image {
+  flex: 1;
+}
+
+.step-message {
+  flex: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Styles for screens smaller than 768px (e.g., mobile devices) */
+  .step-component {
+    flex-direction: column;
+  }
+
+  .step-image {
+    order: 1;
+  }
+
+  .step-message {
+    order: 2;
+  }
+
+  .center-vertical{
+    height: auto;
+  }
+
+  .step-image-left img,
+  .step-image-right img{
+    border-radius: 0 ;
+  }
+}
+
+
 .m-left{
   margin-left: 2rem;
 }
@@ -97,10 +136,3 @@
   color: white;
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5); /* Add text-shadow only for :hover pseudo-class */
 }
-
-// Adds sticky from steps 1 - 4
-// .sticky {
-//   position: sticky;
-//   top: 0;
-//   z-index: 100;
-// }
