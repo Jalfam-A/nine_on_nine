@@ -1,0 +1,97 @@
+// // Global WooCommerce Container
+// .woocommerce {
+//     padding: 2rem;
+//   }
+  
+//   // Product Page
+//   .woocommerce.single-product {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+  
+//   // Product Images
+//   .woocommerce div.product div.images {
+//     width: 100%;
+//     max-width: 45%;
+//     margin-right: 2rem;
+//   }
+  
+//   // Product Summary
+//   .woocommerce div.product div.summary {
+//     width: 100%;
+//     max-width: 45%;
+//   }
+  
+//   // Product Title
+//   .woocommerce div.product h1.product_title {
+//     font-size: 2.5rem;
+//     margin-bottom: 1rem;
+//     font-weight: 600;
+//     color: #333;
+//   }
+  
+//   // Product Price
+//   .woocommerce div.product p.price {
+//     font-size: 1.8rem;
+//     font-weight: bold;
+//     color: #5a5a5a;
+//     margin-bottom: 2rem;
+//   }
+  
+//   // Add to Cart Button
+//   .woocommerce div.product form.cart {
+//     display: flex;
+//     flex-direction: column;
+//     margin-bottom: 2rem;
+//   }
+  
+//   .woocommerce div.product form.cart .button {
+//     background-color: #333;
+//     color: #fff;
+//     border: none;
+//     padding: 1rem 2rem;
+//     cursor: pointer;
+//     margin-bottom: 1rem;
+//   }
+  
+//   .woocommerce div.product form.cart .button:hover {
+//     background-color: #555;
+//   }
+  
+//   // Product Tabs
+//   .woocommerce div.product .woocommerce-tabs {
+//     margin-top: 3rem;
+//     border-top: 1px solid #e5e5e5;
+//   }
+  
+//   .woocommerce div.product .woocommerce-tabs ul.tabs {
+//     display: flex;
+//     list-style: none;
+//     margin-top: 1rem;
+//     margin-bottom: 2rem;
+//   }
+  
+//   .woocommerce div.product .woocommerce-tabs ul.tabs li {
+//     margin-right: 1rem;
+//   }
+  
+//   .woocommerce div.product .woocommerce-tabs ul.tabs li a {
+//     font-size: 1.1rem;
+//     color: #333;
+//     text-decoration: none;
+//     font-weight: 600;
+//   }
+  
+//   // Responsive Design
+//   @media (max-width: 1024px) {
+//     .woocommerce div.product div.images,
+//     .woocommerce div.product div.summary {
+//       max-width: 100%;
+//     }
+  
+//     .woocommerce div.product div.images {
+//       margin-bottom: 2rem;
+//       margin-right: 0;
+//     }
+//   }
+  

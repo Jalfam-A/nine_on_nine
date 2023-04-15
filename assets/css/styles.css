@@ -144,10 +144,33 @@ td, th {
 }
 
 .buy-now-and-cart {
-  display: flex;
+  display: block;
+  display: block;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
+  text-align: center;
   gap: 2rem;
+  height: 30vh;
+  height: 30vh;
+}
+
+.hero-cta-buynow a {
+  text-align: center;
+}
+
+.cart-info {
+  text-align: center;
+  margin-top: 1rem;
+  margin-right: 3rem;
+.hero-cta-buynow a {
+  text-align: center;
+}
+
+.cart-info {
+  text-align: center;
+  margin-top: 1rem;
+  margin-right: 3rem;
 }
 
 /* ========== footer.scss - Donald ========*/
@@ -332,6 +355,9 @@ footer {
     padding: 8rem 25rem 8rem 25rem;
     background-color: white !important;
   }
+  .whats-in-the-box-text {
+    padding-bottom: 3rem;
+  }
   /* Navigation */
   .hero-cta-buynow-header {
     margin: 2rem 0 0 20rem;
@@ -343,6 +369,9 @@ footer {
   .testimonial {
     margin: 0 2rem;
     margin-bottom: 0;
+  }
+  .testimonials-headings {
+    padding-left: 7rem;
   }
 }
 /* ========== colors.scss - Donald ========*/
@@ -469,6 +498,7 @@ body {
   height: 16px;
   width: 16px;
   vertical-align: text-bottom;
+  padding-bottom: 0.7rem;
 }
 
 h2 {
@@ -564,14 +594,15 @@ a:hover {
 }
 
 /* Hover effect for the orange button */
-.hero-cta-buynow:hover,
-.button-styles:hover {
-  transform: translateY(-4px); /* Move the orange button up */
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  box-shadow: 9px 9px black; /* Shadow effect under the orange box */
-  color: white;
+@media (min-width: 768px) {
+  .hero-cta-buynow:hover,
+  .button-styles:hover {
+    transform: translateY(-4px); /* Move the orange button up */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 9px 9px black; /* Shadow effect under the orange box */
+    color: white;
+  }
 }
-
 /* ========== HOMEPAGE - Donald ==========*/
 /************ HERO BANNER  ************/
 .hero-banner,
@@ -654,13 +685,15 @@ a:hover {
   margin-right: 0;
   margin-bottom: 8px;
   width: auto;
+  text-align: center;
+  align-items: center;
 }
 
 /************ WHAT'S IN THE BOX  ************/
 /* Remove padding from the entire whats-in-the-box section */
 .whats-in-the-box {
   padding: none;
-  background-color: var(--nude);
+  padding-top: 15rem;
 }
 
 /* Flex container for the images */
@@ -673,6 +706,9 @@ a:hover {
 .whats-in-the-box-images .whats-in-the-box-image {
   width: 45%; /* Set a width for each image container */
 }
+.whats-in-the-box-images .whats-in-the-box-second-image {
+  padding-bottom: 1rem;
+}
 
 /* Text styles */
 .whats-in-the-box-text {
@@ -682,16 +718,17 @@ a:hover {
 .whats-in-the-box-text .whats-in-the-box-heading {
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin: 1rem;
 }
 .whats-in-the-box-text .whats-in-the-box-subheading {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .whats-in-the-box-text .whats-in-the-box-description {
   font-size: 18px;
-  margin-bottom: 16px;
+  margin: 1rem;
 }
 
 /* Image styles */
@@ -706,8 +743,16 @@ a:hover {
 }
 
 /************ TESTIMONIALS ************/
-.testimonials {
-  padding: 5rem;
+/*.testimonials {
+  //padding: 5rem;
+}*/
+.testimonials-headings {
+  padding-top: 15rem;
+  margin-left: 1rem;
+}
+
+.testimonials-headings h2 {
+  width: 2rem;
 }
 
 /* Flex container for the testimonials */
@@ -715,6 +760,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   padding: 5rem;
+  margin-bottom: 15rem;
   /* Individual testimonial styles */
 }
 .testimonial-container .testimonial {
@@ -736,6 +782,7 @@ a:hover {
   flex-direction: column;
   color: white;
   background-color: var(--dark-blue);
+  margin-bottom: 15rem;
 }
 .event-feature .event-feature-info {
   order: 1;
@@ -747,13 +794,15 @@ a:hover {
 }
 .event-feature .event-feature-info .event-feature-message {
   padding: 20px;
+  /*.hero-text h4,
+  .testimonials-headings h4{
+    font-weight: 500;
+  }*/
 }
-.event-feature .event-feature-info .event-feature-message h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-.event-feature .event-feature-info .event-feature-message h1 {
-  font-size: 2rem;
+.event-feature .event-feature-info .event-feature-message .hero-text h2,
+.event-feature .event-feature-info .event-feature-message .testimonials-headings h2 {
+  font-size: 48px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 .event-feature .event-feature-info .event-feature-message p {
@@ -804,6 +853,7 @@ a:hover {
 .instagram-container {
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 15rem;
 }
 
 .instagram-intro {
@@ -813,6 +863,10 @@ a:hover {
 
 /************* Desktop *************/
 @media (min-width: 768px) {
+  .homepage-container {
+    max-width: 1370px;
+    margin: 0 auto;
+  }
   .event-feature {
     display: flex;
     flex-direction: row;
@@ -1027,7 +1081,8 @@ a:hover {
 
 figcaption {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 15rem;
 }
 
 .about-us-upper-section {
@@ -1063,11 +1118,11 @@ figcaption {
   margin-top: 1rem;
 }
 
+/*
 .seniors-tournament-image,
-.fundraiser-tournament-image {
-  width: 100vw;
-}
-
+.fundraiser-tournament-image{
+    width: 100vw;
+}*/
 .seniors-tournament-image-file,
 .fundraiser-tournament-image-file {
   width: 48rem;
@@ -1078,6 +1133,39 @@ figcaption {
 }
 
 /*Media Query*/
+@media (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 850px;
+    margin: auto;
+    background-color: white;
+  }
+  .about-us-container .breadcrumbs {
+    margin-right: 60rem;
+  }
+  .about-us-upper-section,
+  .about-us-lower-section {
+    margin: 0 auto;
+  }
+  .pandemic-change-world-image {
+    min-width: 100px;
+    max-width: 1000px;
+    align-items: center;
+  }
+  .pandemic-change-world-image img {
+    align-items: center;
+    margin: 0 auto;
+  }
+  /*
+  .check-out-events-content{
+      display: flex;
+  }*/
+}
 /* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
 .test-detail {
   font-family: sans-serif;
@@ -1179,5 +1267,67 @@ h3 {
   .events-listing-top-cards-one,
   .events-listing-top-cards-two {
     display: flex;
+  }
+}
+/* Mobile styles */
+.error-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Full viewport height */
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.oops {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.error-number {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  .container {
+    max-width: 80%;
+  }
+  .oops {
+    font-size: 4rem;
+  }
+  .error-number {
+    font-size: 6rem;
+  }
+  .page-title {
+    font-size: 2rem;
+  }
+}
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 70%;
+  }
+  .oops {
+    font-size: 5rem;
+  }
+  .error-number {
+    font-size: 8rem;
+  }
+  .page-title {
+    font-size: 2.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */

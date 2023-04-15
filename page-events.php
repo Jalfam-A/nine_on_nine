@@ -11,14 +11,14 @@
 ?>
 
 <?php get_header(); ?>
-<!-- <h2>This is page-recipes.php </h2> -->
+<h2>This is page-events.php </h2>
 
-<div class="recipes-flex-container">
-    <div class="recipes-container"></div>
-        <h2>All Recipes</h2>
+<div class="events-flex-container">
+    <div class="events-container"></div>
+        <h2>Events</h2>
         
         <div class="flex-inner-container">
-            <div class="flex-recipes">
+            <div class="flex-events">
                 <?php
                 $args = array(
                     'post_type'      => 'events',
