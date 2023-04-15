@@ -1072,6 +1072,9 @@ figcaption {
     margin: auto;
     background-color: white;
   }
+  .about-us-container .breadcrumbs {
+    margin-right: 60rem;
+  }
   .about-us-upper-section {
     margin: 0 auto;
   }
