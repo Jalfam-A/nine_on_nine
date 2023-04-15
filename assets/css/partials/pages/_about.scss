@@ -10,7 +10,7 @@
 }
 figcaption{
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 1.5rem;
 }
 .about-us-upper-section{
     padding: 2rem;
@@ -38,10 +38,11 @@ figcaption{
 .fundraiser-tournament-text h2{
     margin-top: 1rem;
 }
+/*
 .seniors-tournament-image,
 .fundraiser-tournament-image{
-    width: 100vw;
-}
+    width: 90vw;
+}*/
 .seniors-tournament-image-file,
 .fundraiser-tournament-image-file{
     width: 48rem;
@@ -66,7 +67,8 @@ figcaption{
         margin-right: 60rem;
       }
     }
-    .about-us-upper-section{
+    .about-us-upper-section,
+    .about-us-lower-section{
       margin: 0 auto;
     }
     .pandemic-change-world-image{
