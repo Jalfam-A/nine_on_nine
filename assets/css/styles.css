@@ -145,13 +145,24 @@ td, th {
 
 .buy-now-and-cart {
   display: block;
+  display: block;
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  text-align: center;
   gap: 2rem;
+  height: 30vh;
   height: 30vh;
 }
 
+.hero-cta-buynow a {
+  text-align: center;
+}
+
+.cart-info {
+  text-align: center;
+  margin-top: 1rem;
+  margin-right: 3rem;
 .hero-cta-buynow a {
   text-align: center;
 }
@@ -344,6 +355,9 @@ footer {
     padding: 8rem 25rem 8rem 25rem;
     background-color: white !important;
   }
+  .whats-in-the-box-text {
+    padding-bottom: 3rem;
+  }
   /* Navigation */
   .hero-cta-buynow-header {
     margin: 2rem 0 0 20rem;
@@ -357,7 +371,7 @@ footer {
     margin-bottom: 0;
   }
   .testimonials-headings {
-    padding-left: 35rem;
+    padding-left: 7rem;
   }
 }
 /* ========== colors.scss - Donald ========*/
@@ -484,6 +498,7 @@ body {
   height: 16px;
   width: 16px;
   vertical-align: text-bottom;
+  padding-bottom: 0.7rem;
 }
 
 h2 {
@@ -642,6 +657,8 @@ a:hover {
   margin-right: 0;
   margin-bottom: 8px;
   width: auto;
+  text-align: center;
+  align-items: center;
 }
 
 /************ WHAT'S IN THE BOX  ************/
@@ -703,7 +720,11 @@ a:hover {
 }*/
 .testimonials-headings {
   padding-top: 15rem;
-  margin-left: 3rem;
+  margin-left: 1rem;
+}
+
+.testimonials-headings h2 {
+  width: 2rem;
 }
 
 /* Flex container for the testimonials */
@@ -999,7 +1020,8 @@ a:hover {
 
 figcaption {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 15rem;
 }
 
 .about-us-upper-section {
@@ -1035,11 +1057,11 @@ figcaption {
   margin-top: 1rem;
 }
 
+/*
 .seniors-tournament-image,
-.fundraiser-tournament-image {
-  width: 100vw;
-}
-
+.fundraiser-tournament-image{
+    width: 100vw;
+}*/
 .seniors-tournament-image-file,
 .fundraiser-tournament-image-file {
   width: 48rem;
@@ -1062,7 +1084,11 @@ figcaption {
     margin: auto;
     background-color: white;
   }
-  .about-us-upper-section {
+  .about-us-container .breadcrumbs {
+    margin-right: 60rem;
+  }
+  .about-us-upper-section,
+  .about-us-lower-section {
     margin: 0 auto;
   }
   .pandemic-change-world-image {
@@ -1074,6 +1100,10 @@ figcaption {
     align-items: center;
     margin: 0 auto;
   }
+  /*
+  .check-out-events-content{
+      display: flex;
+  }*/
 }
 /* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
 .test-detail {
