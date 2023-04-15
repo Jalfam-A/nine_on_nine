@@ -260,8 +260,8 @@ footer {
     align-items: center;
   }
   .footer-site-info .footer-socialmedia,
-.footer-site-info .footer-nav,
-.footer-site-info .get-in-touch {
+  .footer-site-info .footer-nav,
+  .footer-site-info .get-in-touch {
     width: unset;
     flex: 1;
   }
@@ -280,19 +280,19 @@ footer {
 @media (max-width: 767px) {
   /* Increase the max-width of the hero-image and hero-message to 100% */
   .hero-banner,
-.split-contact {
+  .split-contact {
     flex-direction: column;
   }
   .hero-banner .hero-image,
-.hero-banner .split-contact-left,
-.split-contact .hero-image,
-.split-contact .split-contact-left {
+  .hero-banner .split-contact-left,
+  .split-contact .hero-image,
+  .split-contact .split-contact-left {
     max-width: 100%;
   }
   .hero-banner .hero-message,
-.hero-banner .split-contact-right,
-.split-contact .hero-message,
-.split-contact .split-contact-right {
+  .hero-banner .split-contact-right,
+  .split-contact .hero-message,
+  .split-contact .split-contact-right {
     max-width: 100%;
   }
   /* Change the direction of the flexbox to column for the hero-cta and remove margin-right of the buttons */
@@ -300,7 +300,7 @@ footer {
     flex-direction: column;
   }
   .hero-cta .hero-cta-buynow,
-.hero-cta .hero-cta-howtoplay {
+  .hero-cta .hero-cta-howtoplay {
     margin-right: 0;
     margin-bottom: 8px;
     width: 100%;
@@ -334,7 +334,7 @@ footer {
     flex-direction: row !important;
   }
   .hero-cta-buynow,
-.hero-cta-howtoplay {
+  .hero-cta-howtoplay {
     margin-right: 16px;
     margin-bottom: 0;
     width: auto;
@@ -581,7 +581,7 @@ a:hover {
 /* Hover effect for the orange button */
 @media (min-width: 768px) {
   .hero-cta-buynow:hover,
-.button-styles:hover {
+  .button-styles:hover {
     transform: translateY(-4px); /* Move the orange button up */
     transition: transform 0.3s ease, opacity 0.3s ease;
     box-shadow: 9px 9px black; /* Shadow effect under the orange box */
@@ -1075,65 +1075,6 @@ figcaption {
     margin: 0 auto;
   }
 }
-/* ========== CONTACT US PAGE - Emmanoel ========*/
-.test-contact {
-  font-family: "Courier New", Courier, monospace;
->>>>>>>>> Temporary merge branch 2
-}
-
-figcaption {
-  text-align: center;
-  font-size: 0.75rem;
-}
-
-.about-us-upper-section {
-  padding: 2rem;
-}
-
-.about-us-lower-section {
-  margin-top: 7rem;
-  background-color: var(--dark-blue);
-  color: white;
-}
-
-.check-out-events-title {
-  margin-right: 7rem;
-  margin-bottom: 3rem;
-}
-
-.check-out-events-description {
-  margin-top: 3rem;
-}
-
-.see-event-arrow {
-  color: var(--light-orange);
-  margin-top: 3rem;
-}
-
-.check-out-events-container {
-  padding: 2rem;
-}
-
-.seniors-tournament-text h2,
-.fundraiser-tournament-text h2 {
-  margin-top: 1rem;
-}
-
-.seniors-tournament-image,
-.fundraiser-tournament-image {
-  width: 100vw;
-}
-
-.seniors-tournament-image-file,
-.fundraiser-tournament-image-file {
-  width: 48rem;
-}
-
-.seniors-tournament-container a {
-  color: white;
-}
-
-/*Media Query*/
 /* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
 .test-detail {
   font-family: sans-serif;
@@ -1233,14 +1174,69 @@ h3 {
 /*Media Query for desktop*/
 @media (min-width: 768px) {
   .events-listing-top-cards-one,
-.events-listing-top-cards-two {
+  .events-listing-top-cards-two {
     display: flex;
   }
-}/*# sourceMappingURL=styles.css.map */
-/*Media Query for desktop*/
+}
+/* Mobile styles */
+.error-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Full viewport height */
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.oops {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.error-number {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Tablet styles */
 @media (min-width: 768px) {
-  .events-listing-top-cards-one,
-.events-listing-top-cards-two {
-    display: flex;
+  .container {
+    max-width: 80%;
+  }
+  .oops {
+    font-size: 4rem;
+  }
+  .error-number {
+    font-size: 6rem;
+  }
+  .page-title {
+    font-size: 2rem;
+  }
+}
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 70%;
+  }
+  .oops {
+    font-size: 5rem;
+  }
+  .error-number {
+    font-size: 8rem;
+  }
+  .page-title {
+    font-size: 2.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */

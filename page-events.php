@@ -11,7 +11,7 @@
 ?>
 
 <?php get_header(); ?>
-<!-- <h2>This is page-recipes.php </h2> -->
+<h2>This is page-events.php </h2>
 
 <div class="events-flex-container">
     <div class="events-container"></div>
