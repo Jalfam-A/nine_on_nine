@@ -18,7 +18,7 @@ get_header();
     <!-- CONTAINER -->
     <div class="mb-3">
         <!-- Breadcrumbs -->
-        <div class="container breadcrumbs">
+        <div class="step-container breadcrumbs">
             <a href="" class="">Home</a>
             <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">
             <a href="" class="">How To Play</a>
@@ -54,13 +54,13 @@ get_header();
 
                 <!-- STEPS breadcrumbs -->
                 <div class="steps-breadcrumb pt-3">
-                    <a href="#step1" class="container"><strong>Step 1</strong></a>
+                    <a href="#step1" class="step-container"><strong>Step 1</strong></a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step2" class="container">Step 2</a>
+                        alt="Chevron Right" class="icon"> <a href="#step2" class="step-container">Step 2</a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step3" class="container">Step 3</a>
+                        alt="Chevron Right" class="icon"> <a href="#step3" class="step-container">Step 3</a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step4" class="container">Step 4</a>
+                        alt="Chevron Right" class="icon"> <a href="#step4" class="step-container">Step 4</a>
                 </div>
                 
         
@@ -91,13 +91,13 @@ get_header();
                 <!-- STEPS breadcrumbs -->
                 <div class="steps-breadcrumb">
                     <div class="px-1 py-3 my-3">
-                        <a href="#step1" class="container bg-blue">Step 1</a>
+                        <a href="#step1" class="step-container bg-blue">Step 1</a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-blue"> <a href="#step2" class="container bg-blue"><strong>Step 2</strong></a>
+                            alt="Chevron Right" class="icon bg-blue"> <a href="#step2" class="step-container bg-blue"><strong>Step 2</strong></a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-blue"> <a href="#step3" class="container bg-blue">Step 3</a>
+                            alt="Chevron Right" class="icon bg-blue"> <a href="#step3" class="step-container bg-blue">Step 3</a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-blue"> <a href="#step4" class="container bg-blue">Step 4</a>
+                            alt="Chevron Right" class="icon bg-blue"> <a href="#step4" class="step-container bg-blue">Step 4</a>
                     </div>
                 </div>
                 
@@ -129,13 +129,13 @@ get_header();
 
                 <!-- STEPS breadcrumbs -->
                 <div class="steps-breadcrumb pt-3">
-                    <a href="#step1" class="container">Step 1</a>
+                    <a href="#step1" class="step-container">Step 1</a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step2" class="container">Step 2</a>
+                        alt="Chevron Right" class="icon"> <a href="#step2" class="step-container">Step 2</a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step3" class="container"><strong>Step 3</strong></a>
+                        alt="Chevron Right" class="icon"> <a href="#step3" class="step-container"><strong>Step 3</strong></a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step4" class="container">Step 4</a>
+                        alt="Chevron Right" class="icon"> <a href="#step4" class="step-container">Step 4</a>
                 </div>
 
                 <div class="step-component center-vertical">
@@ -164,13 +164,13 @@ get_header();
                 <!-- STEPS breadcrumbs -->
                 <div class="steps-breadcrumb">
                     <div class="px-1 py-3 my-3">
-                        <a href="#step1" class="container bg-green">Step 1</a>
+                        <a href="#step1" class="step-container bg-green">Step 1</a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-green"> <a href="#step2" class="container bg-green">Step 2</a>
+                            alt="Chevron Right" class="icon bg-green"> <a href="#step2" class="step-container bg-green">Step 2</a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-green"> <a href="#step3" class="container bg-green">Step 3</a>
+                            alt="Chevron Right" class="icon bg-green"> <a href="#step3" class="step-container bg-green">Step 3</a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-green"> <a href="#step4" class="container bg-green"><strong>Step 4</strong></a>
+                            alt="Chevron Right" class="icon bg-green"> <a href="#step4" class="step-container bg-green"><strong>Step 4</strong></a>
                     </div>
                 </div>
 
@@ -212,9 +212,9 @@ get_header();
                 <!-- STEPS breadcrumbs -->
                 <div class="steps-breadcrumb">
                     <div class="px-1 py-3 my-3">
-                        <a href="#step5" class="container"><strong>Step 1</strong></a>
+                        <a href="#step5" class="step-container"><strong>Step 1</strong></a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                            alt="Chevron Right" class="icon"> <a href="#step6" class="container">Step 2</a>
+                            alt="Chevron Right" class="icon"> <a href="#step6" class="step-container">Step 2</a>
                     </div>
                 </div>
 
@@ -245,9 +245,9 @@ get_header();
                 <!-- STEPS breadcrumbs -->
                 <div class="steps-breadcrumb">
                     <div class="px-1 py-3 my-3">
-                        <a href="#step5" class="container bg-blue">Step 1</a>
+                        <a href="#step5" class="step-container bg-blue">Step 1</a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-blue"> <a href="#step6" class="container bg-blue"><strong>Step 2</strong></a>
+                            alt="Chevron Right" class="icon bg-blue"> <a href="#step6" class="step-container bg-blue"><strong>Step 2</strong></a>
                     </div>
                 </div>
                 
