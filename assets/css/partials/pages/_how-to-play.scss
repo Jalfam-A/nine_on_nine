@@ -74,6 +74,10 @@
   flex: 1;
 }
 
+.step-container{
+  padding: 0 2%;
+}
+
 @media only screen and (max-width: 767px) {
   /* Styles for screens smaller than 768px (e.g., mobile devices) */
   .step-component {
@@ -95,6 +99,14 @@
   .step-image-left img,
   .step-image-right img{
     border-radius: 0 ;
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+  /* Set the maximum width of the image to 650px */
+  img {
+    max-height: 500px;
   }
 }
 
