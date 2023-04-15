@@ -1,0 +1,74 @@
+/* Mobile styles */
+// html, body {
+//   height: 100%;
+//   margin: 0;
+// }
+
+.error-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Full viewport height */
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.oops {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.error-number {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .oops {
+    font-size: 4rem;
+  }
+
+  .error-number {
+    font-size: 6rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 70%;
+  }
+
+  .oops {
+    font-size: 5rem;
+  }
+
+  .error-number {
+    font-size: 8rem;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+}
