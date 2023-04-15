@@ -103,6 +103,14 @@
 }
 
 
+@media screen and (min-width: 1280px) {
+  /* Set the maximum width of the image to 650px */
+  img {
+    max-width: 650px;
+  }
+}
+
+
 .m-left{
   margin-left: 2rem;
 }

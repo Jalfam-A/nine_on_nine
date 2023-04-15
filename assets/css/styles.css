@@ -145,24 +145,13 @@ td, th {
 
 .buy-now-and-cart {
   display: block;
-  display: block;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  text-align: center;
   gap: 2rem;
   height: 30vh;
-  height: 30vh;
 }
 
-.hero-cta-buynow a {
-  text-align: center;
-}
-
-.cart-info {
-  text-align: center;
-  margin-top: 1rem;
-  margin-right: 3rem;
 .hero-cta-buynow a {
   text-align: center;
 }
@@ -685,8 +674,6 @@ a:hover {
   margin-right: 0;
   margin-bottom: 8px;
   width: auto;
-  text-align: center;
-  align-items: center;
 }
 
 /************ WHAT'S IN THE BOX  ************/
@@ -967,6 +954,10 @@ a:hover {
   flex: 1;
 }
 
+.step-container {
+  padding: 0 2%;
+}
+
 @media only screen and (max-width: 767px) {
   /* Styles for screens smaller than 768px (e.g., mobile devices) */
   .step-component {
@@ -984,6 +975,12 @@ a:hover {
   .step-image-left img,
   .step-image-right img {
     border-radius: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  /* Set the maximum width of the image to 650px */
+  img {
+    max-width: 650px;
   }
 }
 .m-left {
