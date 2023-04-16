@@ -21,7 +21,7 @@
             <div class="flex-events">
                 <?php
                 $args = array(
-                    'post_type'      => 'events',
+                    'post_type'      => 'upcoming-events',
                     'posts_per_page' => 16,
                 );
                 $loop = new WP_Query($args);
