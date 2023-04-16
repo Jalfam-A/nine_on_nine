@@ -17,6 +17,7 @@
                 <?php the_post_thumbnail( 'small' ); ?>  
                  <!-- get the page title -->
                  <?php the_title('<h3 class="entry-title">', '</h3>'); ?>
+                 
             </a>
         </article>
 </div>

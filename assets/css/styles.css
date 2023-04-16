@@ -584,15 +584,14 @@ a:hover {
 }
 
 /* Hover effect for the orange button */
-@media (min-width: 768px) {
-  .hero-cta-buynow:hover,
-  .button-styles:hover {
-    transform: translateY(-4px); /* Move the orange button up */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    box-shadow: 9px 9px black; /* Shadow effect under the orange box */
-    color: white;
-  }
+.hero-cta-buynow:hover,
+.button-styles:hover {
+  transform: translateY(-4px); /* Move the orange button up */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 9px 9px black; /* Shadow effect under the orange box */
+  color: white;
 }
+
 /* ========== HOMEPAGE - Donald ==========*/
 /************ HERO BANNER  ************/
 .hero-banner,
@@ -982,7 +981,7 @@ a:hover {
 @media screen and (min-width: 1280px) {
   /* Set the maximum width of the image to 650px */
   img {
-    max-width: 650px;
+    max-height: 500px;
   }
 }
 .m-left {
@@ -1165,7 +1164,7 @@ figcaption {
       display: flex;
   }*/
 }
-/* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
+/* ========== SINGLE EVENT PAGE - Emmanoel ==========*/
 .test-detail {
   font-family: sans-serif;
 }
@@ -1174,7 +1173,7 @@ figcaption {
   padding: 2rem;
 }
 
-/* ========== EVENT LISTINGS PAGE - Emmanoel =======*/
+/* ========== UPCOMING-EVENT PAGE - Emmanoel =======*/
 .test-listing {
   font-family: sans-serif;
 }
