@@ -44,9 +44,7 @@ get_header();
                         <h3>9 on 9 Tournament - Chinese New Years</h3>
                     </div>
                     <div class="event-details-text-content">
-                        <p>Before we announce the winner of this year's 9on9 Tournament we would like for you to read a bit of history of how this games started. Like many great games, 
-                            this all started from a couple of bored children wanting to play something different and fun. Curiosity started this game and this turned into creativity, 
-                            then to an actual product. (Sorry if this information is incorrect, it would be nice to learn a more in-depth version of how this all started)</p>
+                        <p>Before we announce the winner of this year's 9on9 Tournament we would like for you to read a bit of history of how this games started. Like many great games, this all started from a couple of bored children wanting to play something different and fun. Curiosity started this game and this turned into creativity, then to an actual product. (Sorry if this information is incorrect, it would be nice to learn a more in-depth version of how this all started)</p>
                     </div>
                 </div>
             <div class="event-details-main-image"> <!--main image-->
