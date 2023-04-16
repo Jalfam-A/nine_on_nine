@@ -584,15 +584,14 @@ a:hover {
 }
 
 /* Hover effect for the orange button */
-@media (min-width: 768px) {
-  .hero-cta-buynow:hover,
-  .button-styles:hover {
-    transform: translateY(-4px); /* Move the orange button up */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    box-shadow: 9px 9px black; /* Shadow effect under the orange box */
-    color: white;
-  }
+.hero-cta-buynow:hover,
+.button-styles:hover {
+  transform: translateY(-4px); /* Move the orange button up */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 9px 9px black; /* Shadow effect under the orange box */
+  color: white;
 }
+
 /* ========== HOMEPAGE - Donald ==========*/
 /************ HERO BANNER  ************/
 .hero-banner,
