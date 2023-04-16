@@ -120,12 +120,14 @@
   
 	/* Change the direction of the flexbox to column and increase the gap between the images in the whats-in-the-box section */
 	.whats-in-the-box-images {
-	  flex-direction: column;
+	  flex-direction: row;
 	  gap: 40px;
-  
+	  padding: 2rem;
+
 	  /* Increase the width of the whats-in-the-box-image to 100% */
 	  .whats-in-the-box-image {
 		width: 100%;
+		padding: 1rem;
 	  }
 	}
   }

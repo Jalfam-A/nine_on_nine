@@ -10,15 +10,27 @@
 ?>
 
 
-<!-- <h2>This is content recipe</h2> -->
-<div class="container recipe-container">
+<!-- <h2>Upcoming Events</h2> -->
+<div class="container upcoming-events-container">
         <article <?php post_class();?> id="post-<?php the_ID();?>" >
             <a href="<?php the_permalink(); ?>">
-                <?php the_post_thumbnail( 'small' ); ?>  
-                 <!-- get the page title -->
-                 <?php the_title('<h3 class="entry-title">', '</h3>'); ?>
+                <div class="">
+                    <!-- Get the Post thumbnail -->
+                    <?php the_post_thumbnail( 'large' ); ?>  
+                </div>
+                <div class="">
+                    <!-- get the post information -->
+                   <p> <?php the_title('<h3 class="entry-title">', '</h3>'); ?></p>
+                    <p><?php the_field('short_description'); ?></p>
+                    <p><?php the_field('event_time'); ?></p>
+                    <p><?php the_field('event_date'); ?></p>
+                    <p><?php the_field('event_location'); ?></p>
+                    <p>$ <?php the_field('price'); ?></p>
+                </div>
+                 <!-- <a href="#" class="see-event-details">SEE EVENT DETAILS <img src="<//?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/chevron.png'); ?>" alt="Right Arrow" class="icon"></a> -->
             </a>
         </article>
 </div>
+
 
 

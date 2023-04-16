@@ -306,12 +306,14 @@ footer {
   }
   /* Change the direction of the flexbox to column and increase the gap between the images in the whats-in-the-box section */
   .whats-in-the-box-images {
-    flex-direction: column;
+    flex-direction: row;
     gap: 40px;
+    padding: 2rem;
     /* Increase the width of the whats-in-the-box-image to 100% */
   }
   .whats-in-the-box-images .whats-in-the-box-image {
     width: 100%;
+    padding: 1rem;
   }
 }
 /* Desktop version */
@@ -582,15 +584,14 @@ a:hover {
 }
 
 /* Hover effect for the orange button */
-@media (min-width: 768px) {
-  .hero-cta-buynow:hover,
-  .button-styles:hover {
-    transform: translateY(-4px); /* Move the orange button up */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    box-shadow: 9px 9px black; /* Shadow effect under the orange box */
-    color: white;
-  }
+.hero-cta-buynow:hover,
+.button-styles:hover {
+  transform: translateY(-4px); /* Move the orange button up */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 9px 9px black; /* Shadow effect under the orange box */
+  color: white;
 }
+
 /* ========== HOMEPAGE - Donald ==========*/
 /************ HERO BANNER  ************/
 .hero-banner,
@@ -772,7 +773,7 @@ a:hover {
   margin-bottom: 15rem;
 }
 .event-feature .event-feature-info {
-  order: 1;
+  order: 2;
   color: white;
 }
 .event-feature .event-feature-info a {
@@ -827,7 +828,7 @@ a:hover {
   width: 30rem;
 }
 .event-feature .event-feature-image {
-  order: 2;
+  order: 1;
   overflow: hidden; /* prevents image overflow */
 }
 .event-feature .event-feature-image img {
@@ -980,7 +981,7 @@ a:hover {
 @media screen and (min-width: 1280px) {
   /* Set the maximum width of the image to 650px */
   img {
-    max-width: 650px;
+    max-height: 500px;
   }
 }
 .m-left {
@@ -1163,7 +1164,7 @@ figcaption {
       display: flex;
   }*/
 }
-/* ========== EVENT DETAILS PAGE - Emmanoel ==========*/
+/* ========== SINGLE EVENT PAGE - Emmanoel ==========*/
 .test-detail {
   font-family: sans-serif;
 }
@@ -1172,7 +1173,7 @@ figcaption {
   padding: 2rem;
 }
 
-/* ========== EVENT LISTINGS PAGE - Emmanoel =======*/
+/* ========== UPCOMING-EVENT PAGE - Emmanoel =======*/
 .test-listing {
   font-family: sans-serif;
 }
