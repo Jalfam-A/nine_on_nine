@@ -123,6 +123,7 @@ td, th {
   /* height: calc(100vh); */
   background-color: white;
   font-size: xx-large;
+  z-index: 1;
 }
 
 .show-nav .menu-item {
@@ -1028,10 +1029,10 @@ a:hover {
 }
 
 /* ========== CONTACT US PAGE - Dazz ========*/
-.wpforms-field-container input[type=text],
-.wpforms-field-container input[type=email],
-.wpforms-field-container input[type=tel],
-.wpforms-field-container textarea {
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form input[type=tel],
+.contact-form textarea {
   font-size: 16px;
   font-weight: normal;
   outline: none;
@@ -1043,7 +1044,7 @@ a:hover {
   border-bottom: 1px solid black;
 }
 
-.form-submit {
+.contact-form input[type=submit] {
   border: none;
   margin-top: 3rem;
   width: 100%;
