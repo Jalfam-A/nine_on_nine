@@ -447,6 +447,14 @@ body {
   margin-bottom: 3rem;
 }
 
+.ml-3 {
+  margin-left: 3rem;
+}
+
+.mr-3 {
+  margin-right: 3rem;
+}
+
 /* ===== PADDING ==== */
 /* Pddding 1rem */
 .py-1 {
@@ -892,6 +900,10 @@ a:hover {
   height: 100vh;
 }
 
+.step-component {
+  padding-bottom: 5%;
+}
+
 .center-vertical {
   height: 100%;
 }
@@ -966,6 +978,10 @@ a:hover {
   .step-component {
     flex-direction: column;
   }
+  .steps {
+    height: 100%;
+    padding-bottom: 3rem;
+  }
   .step-image {
     order: 1;
   }
@@ -975,9 +991,15 @@ a:hover {
   .center-vertical {
     height: auto;
   }
-  .step-image-left img,
-  .step-image-right img {
+  .step-image-left,
+  .step-image-right {
     border-radius: 0;
+    max-width: 100%;
+    height: 100%;
+  }
+  .buy-now {
+    width: 85%;
+    margin-bottom: 3rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1048,7 +1070,11 @@ a:hover {
   border: none;
   margin-top: 3rem;
   width: 100%;
+  padding: 1rem;
   border-radius: 20px;
+  background-color: var(--dark-orange);
+  color: white;
+  font-size: 2rem;
 }
 
 .contact-info a {
