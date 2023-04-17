@@ -236,3 +236,4 @@ function get_product_id_by_slug( $slug ) {
         return null;
     }
 }
+

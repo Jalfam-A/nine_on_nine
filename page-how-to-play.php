@@ -17,12 +17,16 @@ get_header();
 
     <!-- CONTAINER -->
     <div class="mb-3">
-        <!-- Breadcrumbs -->
-        <div class="step-container breadcrumbs">
-            <a href="" class="">Home</a>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">
-            <a href="" class="">How To Play</a>
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <div class="step-container breadcrumbs">
+                <a href="" class="">Home</a>
+                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">
+                <a href="" class="">How To Play</a>
+            </div>
         </div>
+
+        
 
         <!-- PAGE TITLE & NAV -->
         <div class="bg-green py-3">
