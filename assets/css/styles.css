@@ -1180,6 +1180,9 @@ figcaption {
 }
 
 /*content-events.php*/
+#upcoming-events {
+  padding-bottom: 5rem;
+}
 #upcoming-events .events-thumbnail {
   width: 70vw;
 }
@@ -1199,6 +1202,10 @@ figcaption {
 }
 
 /*page-upcoming-events.php*/
+.upcoming-events-inner-container {
+  margin-left: 5rem;
+}
+
 /* Mobile styles */
 .error-404 {
   display: flex;
