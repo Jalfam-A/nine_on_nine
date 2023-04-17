@@ -32,9 +32,9 @@
             </div>
         </div>
 
-        <div class="Inner-container">
-            <h2>Previous News and Events</h2>
-            <div class="">
+        <div class="inner-container">
+            <h3>Previous News and Events</h3>
+            <div class="previous-news-and-events-lg">
                 <?php
                 $args = array(
                     'post_type'      => 'upcoming-events',
