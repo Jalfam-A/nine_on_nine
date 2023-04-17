@@ -1180,27 +1180,24 @@ figcaption {
 }
 
 /*content-events.php*/
-#upcoming-events {
+#upcoming-events-container .upcoming-events {
   padding-bottom: 5rem;
 }
-#upcoming-events .upcoming-events {
-  padding-bottom: 5rem;
-}
-#upcoming-events .events-thumbnail {
+#upcoming-events-container .events-thumbnail {
   width: 70vw;
 }
-#upcoming-events .upcoming-events-title {
+#upcoming-events-container .upcoming-events-title {
   margin-top: 2rem;
 }
-#upcoming-events .upcoming-events-description {
+#upcoming-events-container .upcoming-events-description {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-#upcoming-events .time-date-location-price {
+#upcoming-events-container .time-date-location-price {
   display: flex;
   margin-bottom: 3rem;
 }
-#upcoming-events .location-price {
+#upcoming-events-container .location-price {
   margin-left: 5rem;
 }
 
@@ -1226,7 +1223,26 @@ figcaption {
   font-size: 2.5rem;
 }
 
+.events-flex-container {
+  margin-left: 3rem;
+}
+
 @media (min-width: 768px) {
+  #upcoming-events-container {
+    margin: 0;
+  }
+  #upcoming-events-container article {
+    display: flex;
+  }
+  #upcoming-events-container .upcoming-events-link {
+    width: 500px;
+  }
+  #upcoming-events-container .upcoming-events {
+    margin-left: 15rem;
+  }
+  #upcoming-events-container .events-thumbnail img {
+    width: 30vw;
+  }
   .previous-news-and-events-lg {
     display: flex;
     flex-wrap: wrap;
@@ -1237,10 +1253,9 @@ figcaption {
   }
   #previous-news-and-events .image-container {
     width: 20vw;
-    margin-right: 3rem;
+    margin-right: 2rem;
   }
   .events-flex-container {
-    max-width: 1370px;
     margin: 0 auto;
   }
 }
