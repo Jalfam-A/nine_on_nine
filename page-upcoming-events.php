@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        <div class="Inner-container">
+        <div class="inner-container">
             <h2>Previous News and Events</h2>
             <div class="">
                 <?php
