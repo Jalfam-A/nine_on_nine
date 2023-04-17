@@ -28,7 +28,7 @@
                         <p><?php the_field('event_time'); ?></p>
                         <p><?php the_field('event_date'); ?></p>
                         </div>
-                        <div>
+                        <div class="location-price">
                         <p><?php the_field('event_location'); ?></p>
                         <p>$ <?php the_field('price'); ?></p>
                         </div>
