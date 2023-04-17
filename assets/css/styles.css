@@ -1179,95 +1179,11 @@ figcaption {
   font-family: sans-serif;
 }
 
-.test-listing {
-  font-family: sans-serif;
-}
-
-.event-listing-top-cards img {
-  width: 45rem;
-}
-
-.event-details {
+/*content-events.php*/
+.time-date-location-price {
   display: flex;
 }
 
-h4 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 5rem;
-}
-
-h3 {
-  font-size: 2.3rem;
-}
-
-.event-listing-page {
-  margin: 3rem;
-}
-
-.chinese-new-years-description {
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-}
-
-.event-details {
-  margin-top: 1rem;
-}
-
-.link-to-event-detail-page {
-  margin-top: 3rem;
-}
-
-.details-second-row {
-  margin-left: 6rem;
-}
-
-.event-listing-bottom-cards {
-  margin-top: 7rem;
-}
-
-.four-hundred-games-image-file,
-.all-ages-welcome-file,
-.holiday-madness-file,
-.black-friday-sales-file,
-.seniors-edition-file,
-.fundraiser-file {
-  height: auto;
-  max-width: 20rem;
-}
-
-.bottom-card-one,
-.bottom-card-two,
-.bottom-card-three,
-.bottom-card-four,
-.bottom-card-five,
-.bottom-card-six {
-  display: flex;
-  margin-top: 1rem;
-}
-
-.events-listing-bottom-cards-text {
-  margin-left: 1.5rem;
-}
-
-.event-listing-bottom-card-date {
-  margin-top: 1.5rem;
-}
-
-.third-card-listing,
-.fourth-card-listing {
-  margin-top: 5rem;
-}
-
-/*Media Query for desktop*/
-@media (min-width: 768px) {
-  .events-listing-top-cards-one,
-  .events-listing-top-cards-two {
-    display: flex;
-  }
-}
 /* Mobile styles */
 .error-404 {
   display: flex;
