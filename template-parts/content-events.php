@@ -14,13 +14,14 @@
 <div class="container upcoming-events-container">
         <article <?php post_class();?> id="post-<?php the_ID();?>" >
             <a href="<?php the_permalink(); ?>">
-                <div class="">
+                <div class="events-thumbnail">
                     <!-- Get the Post thumbnail -->
                     <?php the_post_thumbnail( 'large' ); ?>  
                 </div>
                 <div class="">
                     <!-- get the post information -->
-                   <p> <?php the_title('<h3 class="entry-title">', '</h3>'); ?></p>
+                    <p><?php the_category(); ?></p>
+                    <p><?php the_title('<h3 class="entry-title">', '</h3>'); ?></p>
                     <p><?php the_field('short_description'); ?></p>
                     <p><?php the_field('event_time'); ?></p>
                     <p><?php the_field('event_date'); ?></p>
