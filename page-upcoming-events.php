@@ -33,7 +33,7 @@
         </div>
 
         <div class="inner-container">
-            <h2>Previous News and Events</h2>
+            <h3>Previous News and Events</h3>
             <div class="">
                 <?php
                 $args = array(
