@@ -13,7 +13,7 @@
   <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <a href="<?php the_permalink(); ?>">
       <div class="image-container">
-        <?php the_post_thumbnail('small'); ?>
+        <?php the_post_thumbnail('thumbnail'); ?>
       </div>
       <div class="info-container">
         <!-- get the page title and event time -->
