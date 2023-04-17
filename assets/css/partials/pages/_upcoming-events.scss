@@ -4,24 +4,28 @@
     font-family: sans-serif;
 }
 /*content-events.php*/
-.time-date-location-price{
-  margin-top: 2rem;
-  display: flex;
-}
 #upcoming-events{
+  .events-thumbnail{
+    width: 70vw;
+  }
   .upcoming-events-title{
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   .upcoming-events-description{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .time-date-location-price{
     display: flex;
+    margin-bottom: 3rem;
   }
   .location-price{
     margin-left: 5rem;
   }
+}
+/*page-upcoming-events.php*/
+.upcoming-events-inner-container{
+
 }
 
 
