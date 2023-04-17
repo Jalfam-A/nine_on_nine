@@ -18,12 +18,16 @@
                     <!-- Get the Post thumbnail -->
                     <?php the_post_thumbnail( 'large' ); ?>  
                 </div>
-                <div class="">
+                <div id="upcoming-events">
                     <!-- get the post information -->
                     <p><?php the_category(); ?></p>
-                    <p><?php the_title('<h3 class="entry-title">', '</h3>'); ?></p>
-                    <p><?php the_field('short_description'); ?></p>
-                    <div class="time-date-location-price" id="time-date-location-price">
+                    <div class="upcoming-events-title">
+                        <p><?php the_title('<h3 class="entry-title">', '</h3>'); ?></p>
+                    </div>
+                    <div class="upcoming-events-description">
+                        <p><?php the_field('short_description'); ?></p>
+                    </div> 
+                    <div class="time-date-location-price">
                         <div>
                         <p><?php the_field('event_time'); ?></p>
                         <p><?php the_field('event_date'); ?></p>
