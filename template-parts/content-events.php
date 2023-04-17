@@ -37,7 +37,7 @@
                         <p>$ <?php the_field('price'); ?></p>
                         </div>
                     </div>
-                    <a href="<?php the_permalink(); ?>" class="see-event-details">SEE EVENT DETAILS <img src="<//?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/orange-right-arrow.png'); ?>" alt="Right Arrow" class="icon"></a>
+                    <p><a href="<?php the_permalink(); ?>" class="see-event-details">SEE EVENT DETAILS <img src="<//?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/orange-right-arrow.png'); ?>" alt="Right Arrow" class="icon"></a></p>
                 </div>
                  <!--  -->
             </a>
