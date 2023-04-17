@@ -236,8 +236,6 @@ get_header();
                     </div>
                 </div>
 
-                
-
             </div>
 
 
@@ -298,6 +296,31 @@ get_header();
             </div>
 
         </div>
+
+            <!-- QR Code Section -->
+            <div class="steps">
+                <div class="step-component center-vertical">
+                    <!-- Step 1 - Image -->
+                    <div class="step-image step-image-left">
+                        <img class="mr-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-app-iphone.jpg' ?>" alt="">
+                    </div>
+
+                    <!-- Step 1 - Message -->
+                    <div class="step-message m-right">
+                        <h4 class="">Scorekeeping made simple! </h4>
+                        <h2 class="">Our app tracks points for any game, indoors or outdoors.</h2>
+                        <p class="">Download now for hassle-free fun!</p>
+                        
+                        <!-- Hero CTAs -->
+                        <div class="hero-cta mt-2">
+                            <a href="#" class="hero-cta-buynow ">Download App</a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
 
 
         <!-- Buy Now CTA -->
