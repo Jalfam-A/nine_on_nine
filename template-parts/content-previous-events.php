@@ -17,6 +17,7 @@
       </div>
       <div class="info-container">
         <!-- get the page title and event time -->
+        <p><?php the_category(); ?></p>
         <?php the_title('<h3 class="entry-title">', '</h3>'); ?>
         <p><?php the_field('event_time'); ?></p>
       </div>
