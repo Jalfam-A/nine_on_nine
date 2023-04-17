@@ -509,7 +509,8 @@ h4 {
   font-size: 3rem;
 }
 
-p {
+p,
+.wpforms-field-label {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
 }
@@ -1027,10 +1028,10 @@ a:hover {
 }
 
 /* ========== CONTACT US PAGE - Dazz ========*/
-.contact-form input[type=text],
-.contact-form input[type=email],
-.contact-form input[type=tel],
-.contact-form textarea {
+.wpforms-field-container input[type=text],
+.wpforms-field-container input[type=email],
+.wpforms-field-container input[type=tel],
+.wpforms-field-container textarea {
   font-size: 16px;
   font-weight: normal;
   outline: none;
