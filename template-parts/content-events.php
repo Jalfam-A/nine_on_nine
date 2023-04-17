@@ -13,7 +13,7 @@
 <!-- <h2>Upcoming Events</h2> -->
 <div class="container upcoming-events-container" id="upcoming-events-container">
         <article <?php post_class();?> id="post-<?php the_ID();?>" >
-            <a href="<?php the_permalink(); ?>">
+            <a class="upcoming-events-link" href="<?php the_permalink(); ?>">
                 <div class="events-thumbnail">
                     <!-- Get the Post thumbnail -->
                     <?php the_post_thumbnail( 'large' ); ?>  

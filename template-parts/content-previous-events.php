@@ -13,7 +13,7 @@
   <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     
     <div id="previous-news-and-events">
-    <a href="<?php the_permalink(); ?>">
+      <a href="<?php the_permalink(); ?>">
         <div class="image-container">
           <?php the_post_thumbnail( array(300, 300)); ?>
         </div>
@@ -25,7 +25,12 @@
           <?php the_title('<h3 class="entry-title">', '</h3>'); ?>
           <p><?php the_field('event_date'); ?></p>
         </div>
-      </div>
-    </a>
+        <div class="block-hover">
+            
+        </div>
+      </a>
+    </div>
+       
+    
   </article>
 </div>
