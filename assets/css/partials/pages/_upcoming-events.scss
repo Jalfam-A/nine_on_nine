@@ -7,6 +7,12 @@
 .time-date-location-price{
   display: flex;
 }
+#time-date-location-price{
+  display: flex;
+  .location-price{
+    margin-left: 5rem;
+  }
+}
 
 
   
