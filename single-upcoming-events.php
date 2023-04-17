@@ -31,7 +31,7 @@ get_header();
         <!--breadcrumbs here-->
         <div class="event-details-upper-container">
             <div class="">
-                <h2>EVENT</h2>
+                <h5>EVENT</h5>
             </div>
                 <div class="event-details-small-details"> <!--event time,date,place,price-->
                     <div class="event-details-time-and-date"> <!--time and date-->
