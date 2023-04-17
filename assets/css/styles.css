@@ -1180,93 +1180,84 @@ figcaption {
   font-family: sans-serif;
 }
 
-.test-listing {
-  font-family: sans-serif;
+/*content-events.php*/
+#upcoming-events-container .upcoming-events {
+  padding-bottom: 5rem;
+}
+#upcoming-events-container .events-thumbnail {
+  width: 70vw;
+}
+#upcoming-events-container .upcoming-events-title {
+  margin-top: 2rem;
+}
+#upcoming-events-container .upcoming-events-description {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+#upcoming-events-container .time-date-location-price {
+  display: flex;
+  margin-bottom: 3rem;
+}
+#upcoming-events-container .location-price {
+  margin-left: 5rem;
 }
 
-.event-listing-top-cards img {
-  width: 45rem;
+/*page-upcoming-events.php*/
+.upcoming-events-inner-container {
+  margin-left: 5rem;
 }
 
-.event-details {
+/*content-previous-events.php*/
+#previous-news-and-events {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
 }
-
-h4 {
-  font-size: 2rem;
+#previous-news-and-events .image-container {
+  width: 40vw;
+}
+#previous-news-and-events .info-container {
+  width: 60vw;
+  margin-left: 2rem;
+}
+#previous-news-and-events .info-container h3 {
+  font-size: 2.5rem;
 }
 
-h2 {
-  font-size: 5rem;
+.events-flex-container {
+  margin-left: 3rem;
 }
 
-h3 {
-  font-size: 2.3rem;
-}
-
-.event-listing-page {
-  margin: 3rem;
-}
-
-.chinese-new-years-description {
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-}
-
-.event-details {
-  margin-top: 1rem;
-}
-
-.link-to-event-detail-page {
-  margin-top: 3rem;
-}
-
-.details-second-row {
-  margin-left: 6rem;
-}
-
-.event-listing-bottom-cards {
-  margin-top: 7rem;
-}
-
-.four-hundred-games-image-file,
-.all-ages-welcome-file,
-.holiday-madness-file,
-.black-friday-sales-file,
-.seniors-edition-file,
-.fundraiser-file {
-  height: auto;
-  max-width: 20rem;
-}
-
-.bottom-card-one,
-.bottom-card-two,
-.bottom-card-three,
-.bottom-card-four,
-.bottom-card-five,
-.bottom-card-six {
-  display: flex;
-  margin-top: 1rem;
-}
-
-.events-listing-bottom-cards-text {
-  margin-left: 1.5rem;
-}
-
-.event-listing-bottom-card-date {
-  margin-top: 1.5rem;
-}
-
-.third-card-listing,
-.fourth-card-listing {
-  margin-top: 5rem;
-}
-
-/*Media Query for desktop*/
 @media (min-width: 768px) {
-  .events-listing-top-cards-one,
-  .events-listing-top-cards-two {
+  #upcoming-events-container {
+    margin: 0;
+  }
+  #upcoming-events-container article {
     display: flex;
+  }
+  #upcoming-events-container .upcoming-events-link {
+    width: 500px;
+  }
+  #upcoming-events-container .upcoming-events {
+    margin-left: 15rem;
+  }
+  #upcoming-events-container .events-thumbnail img {
+    width: 30vw;
+  }
+  .previous-news-and-events-lg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .previous-news-and-events-container {
+    width: 40vw;
+  }
+  #previous-news-and-events .image-container {
+    width: 20vw;
+    margin-right: 2rem;
+  }
+  .events-flex-container {
+    margin: 0 auto;
   }
 }
 /* Mobile styles */
