@@ -5,10 +5,20 @@
 }
 /*content-events.php*/
 .time-date-location-price{
+  margin-top: 2rem;
   display: flex;
 }
-#time-date-location-price{
-  display: flex;
+#upcoming-events{
+  .upcoming-events-title{
+    margin-top: 3rem;
+  }
+  .upcoming-events-description{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .time-date-location-price{
+    display: flex;
+  }
   .location-price{
     margin-left: 5rem;
   }
