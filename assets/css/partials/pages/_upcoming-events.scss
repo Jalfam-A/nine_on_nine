@@ -6,7 +6,9 @@
 /*content-events.php*/
 #upcoming-events{
   padding-bottom: 5rem;
-
+  .upcoming-events{
+    padding-bottom: 5rem;
+  }
   .events-thumbnail{
     width: 70vw;
   }
@@ -25,9 +27,49 @@
     margin-left: 5rem;
   }
 }
+
 /*page-upcoming-events.php*/
 .upcoming-events-inner-container{
  margin-left: 5rem;
+}
+
+/*content-previous-events.php*/
+#previous-news-and-events{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  
+  .image-container{
+    width: 40vw;
+  }
+  .info-container{
+    width: 60vw;
+    margin-left: 2rem;
+    h3{
+      font-size: 2.5rem;
+    }
+  }
+}
+@media (min-width: 768px){
+
+  .previous-news-and-events-lg{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .previous-news-and-events-container{
+    width: 40vw;
+  }
+  #previous-news-and-events{
+    .image-container{
+      width: 20vw;
+      margin-right: 3rem;
+    }
+  }
+  .events-flex-container{
+    max-width: 1370px;
+    margin: 0 auto;
+  }
 }
 
 
