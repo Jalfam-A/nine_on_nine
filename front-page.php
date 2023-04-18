@@ -142,7 +142,7 @@ get_header();
                 <h2 class="">9on9 Tournament</h2>
                 <p class="">This game is beginner friendly and for everyone! Let us show you how to play this game so you can start playing!</p>
                 <!-- Event Feature Message Button -->
-                <a href="#" class="button-styles">
+                <a href="http://jalfama.web.dmitcapstone.ca/upcoming-events/" class="button-styles">
                     SEE EVENT DETAILS
                     <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/orange-right-arrow.png'); ?>" alt="Right Arrow" class="icon">
                 </a>
