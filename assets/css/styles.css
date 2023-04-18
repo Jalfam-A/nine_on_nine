@@ -123,6 +123,7 @@ td, th {
   /* height: calc(100vh); */
   background-color: white;
   font-size: xx-large;
+  z-index: 1;
 }
 
 .show-nav .menu-item {
@@ -446,6 +447,14 @@ body {
   margin-bottom: 3rem;
 }
 
+.ml-3 {
+  margin-left: 3rem;
+}
+
+.mr-3 {
+  margin-right: 3rem;
+}
+
 /* ===== PADDING ==== */
 /* Pddding 1rem */
 .py-1 {
@@ -509,7 +518,8 @@ h4 {
   font-size: 3rem;
 }
 
-p {
+p,
+.wpforms-field-label {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
 }
@@ -890,6 +900,10 @@ a:hover {
   height: 100vh;
 }
 
+.step-component {
+  padding-bottom: 5%;
+}
+
 .center-vertical {
   height: 100%;
 }
@@ -964,6 +978,10 @@ a:hover {
   .step-component {
     flex-direction: column;
   }
+  .steps {
+    height: 100%;
+    padding-bottom: 3rem;
+  }
   .step-image {
     order: 1;
   }
@@ -973,9 +991,15 @@ a:hover {
   .center-vertical {
     height: auto;
   }
-  .step-image-left img,
-  .step-image-right img {
+  .step-image-left,
+  .step-image-right {
     border-radius: 0;
+    max-width: 100%;
+    height: 100%;
+  }
+  .buy-now {
+    width: 85%;
+    margin-bottom: 3rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1042,11 +1066,15 @@ a:hover {
   border-bottom: 1px solid black;
 }
 
-.form-submit {
+.contact-form input[type=submit] {
   border: none;
   margin-top: 3rem;
   width: 100%;
+  padding: 1rem;
   border-radius: 20px;
+  background-color: var(--dark-orange);
+  color: white;
+  font-size: 2rem;
 }
 
 .contact-info a {
@@ -1178,93 +1206,84 @@ figcaption {
   font-family: sans-serif;
 }
 
-.test-listing {
-  font-family: sans-serif;
+/*content-events.php*/
+#upcoming-events-container .upcoming-events {
+  padding-bottom: 5rem;
+}
+#upcoming-events-container .events-thumbnail {
+  width: 70vw;
+}
+#upcoming-events-container .upcoming-events-title {
+  margin-top: 2rem;
+}
+#upcoming-events-container .upcoming-events-description {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+#upcoming-events-container .time-date-location-price {
+  display: flex;
+  margin-bottom: 3rem;
+}
+#upcoming-events-container .location-price {
+  margin-left: 5rem;
 }
 
-.event-listing-top-cards img {
-  width: 45rem;
+/*page-upcoming-events.php*/
+.upcoming-events-inner-container {
+  margin-left: 5rem;
 }
 
-.event-details {
+/*content-previous-events.php*/
+#previous-news-and-events {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
 }
-
-h4 {
-  font-size: 2rem;
+#previous-news-and-events .image-container {
+  width: 40vw;
+}
+#previous-news-and-events .info-container {
+  width: 60vw;
+  margin-left: 2rem;
+}
+#previous-news-and-events .info-container h3 {
+  font-size: 2.5rem;
 }
 
-h2 {
-  font-size: 5rem;
+.events-flex-container {
+  margin-left: 3rem;
 }
 
-h3 {
-  font-size: 2.3rem;
-}
-
-.event-listing-page {
-  margin: 3rem;
-}
-
-.chinese-new-years-description {
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-}
-
-.event-details {
-  margin-top: 1rem;
-}
-
-.link-to-event-detail-page {
-  margin-top: 3rem;
-}
-
-.details-second-row {
-  margin-left: 6rem;
-}
-
-.event-listing-bottom-cards {
-  margin-top: 7rem;
-}
-
-.four-hundred-games-image-file,
-.all-ages-welcome-file,
-.holiday-madness-file,
-.black-friday-sales-file,
-.seniors-edition-file,
-.fundraiser-file {
-  height: auto;
-  max-width: 20rem;
-}
-
-.bottom-card-one,
-.bottom-card-two,
-.bottom-card-three,
-.bottom-card-four,
-.bottom-card-five,
-.bottom-card-six {
-  display: flex;
-  margin-top: 1rem;
-}
-
-.events-listing-bottom-cards-text {
-  margin-left: 1.5rem;
-}
-
-.event-listing-bottom-card-date {
-  margin-top: 1.5rem;
-}
-
-.third-card-listing,
-.fourth-card-listing {
-  margin-top: 5rem;
-}
-
-/*Media Query for desktop*/
 @media (min-width: 768px) {
-  .events-listing-top-cards-one,
-  .events-listing-top-cards-two {
+  #upcoming-events-container {
+    margin: 0;
+  }
+  #upcoming-events-container article {
     display: flex;
+  }
+  #upcoming-events-container .upcoming-events-link {
+    width: 500px;
+  }
+  #upcoming-events-container .upcoming-events {
+    margin-left: 15rem;
+  }
+  #upcoming-events-container .events-thumbnail img {
+    width: 30vw;
+  }
+  .previous-news-and-events-lg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .previous-news-and-events-container {
+    width: 40vw;
+  }
+  #previous-news-and-events .image-container {
+    width: 20vw;
+    margin-right: 2rem;
+  }
+  .events-flex-container {
+    margin: 0 auto;
   }
 }
 /* Mobile styles */

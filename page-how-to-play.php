@@ -17,12 +17,16 @@ get_header();
 
     <!-- CONTAINER -->
     <div class="mb-3">
-        <!-- Breadcrumbs -->
-        <div class="step-container breadcrumbs">
-            <a href="" class="">Home</a>
-            <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">
-            <a href="" class="">How To Play</a>
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <div class="step-container breadcrumbs">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="">Home</a>
+                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">
+                <a href="" class="">How To Play</a>
+            </div>
         </div>
+
+        
 
         <!-- PAGE TITLE & NAV -->
         <div class="bg-green py-3">
@@ -31,7 +35,7 @@ get_header();
                 <div class="howtoplay-links">
                     <a href="#setup" class="whats-in-the-box-title">The Setup</a>
                     <a href="#scoring" class="whats-in-the-box-title">The Scoring</a>
-                    <a href="#pointzone" class="whats-in-the-box-title">The Point Zones</a>
+                    <a href="#pointzones" class="whats-in-the-box-title">The Point Zones</a>
                 </div>
                 
             </div>
@@ -68,9 +72,9 @@ get_header();
                 <div class="step-component center-vertical" >
         
                     <!-- Step 1 - Image -->
-                    <div class="step-image step-image-left">
-                        <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>"
-                            alt="">
+                    <div class="step-image step-image-left ml-2">
+                        <img class="mr-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-setup-1.jpg' ?>"
+                            alt="An image of the 9on9 board on a deck in front of a lake.">
                     </div>
         
                     <!-- Step 1 - Message -->
@@ -113,7 +117,7 @@ get_header();
                 
                     <!-- Step 2 - Image -->
                     <div class="step-image step-image-right">
-                        <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="">
+                        <img class="ml-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-setup-2.jpg' ?>" alt="">
                     </div>
                 
                 </div>
@@ -141,7 +145,7 @@ get_header();
                 <div class="step-component center-vertical">
                     <!-- Step 3 - Image -->
                     <div class="step-image step-image-left">
-                        <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" >
+                        <img class="mr-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-setup-3.jpg' ?>" alt="" >
                     </div>
 
                     <!-- Step 3 - Message -->
@@ -185,7 +189,7 @@ get_header();
                     
                     <!-- Step 4 - Image -->
                     <div class="step-image step-image-right">
-                        <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="">
+                        <img class="ml-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-step-4.jpg' ?>" alt="">
                     </div>
                 </div>
 
@@ -221,7 +225,7 @@ get_header();
                 <div class="step-component center-vertical">
                     <!-- Step 1 - Image -->
                     <div class="step-image step-image-left">
-                        <img  src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="">
+                        <img class="mr-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-scoring-1.jpeg' ?>" alt="">
                     </div>
 
                     <!-- Step 1 - Message -->
@@ -231,8 +235,6 @@ get_header();
                         <p class="">This completes a round.</p>
                     </div>
                 </div>
-
-                
 
             </div>
 
@@ -264,7 +266,7 @@ get_header();
 
                     <!-- Step 2 - Image -->
                     <div class="step-image step-image-right">
-                        <img class="right-img" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" >
+                        <img class="ml-3" class="right-img" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-scoring-2.jpg' ?>" alt="" >
                     </div>
 
                 </div>
@@ -295,9 +297,34 @@ get_header();
 
         </div>
 
+            <!-- QR Code Section -->
+            <div class="steps">
+                <div class="step-component center-vertical">
+                    <!-- Step 1 - Image -->
+                    <div class="step-image step-image-left">
+                        <img class="mr-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-app-iphone.jpg' ?>" alt="">
+                    </div>
+
+                    <!-- Step 1 - Message -->
+                    <div class="step-message m-right">
+                        <h4 class="">Scorekeeping made simple! </h4>
+                        <h2 class="">Our app tracks points for any game, indoors or outdoors.</h2>
+                        <p class="">Download now for hassle-free fun!</p>
+                        
+                        <!-- Hero CTAs -->
+                        <div class="hero-cta mt-2">
+                            <a href="#" class="hero-cta-buynow ">Download App</a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
 
         <!-- Buy Now CTA -->
-        <div class="step-component bg-blue container">
+        <div class="step-component bg-blue" id="pointzones">
 
             <!-- Hero Message -->
             <div class="cta-hero-message">
@@ -318,7 +345,7 @@ get_header();
 
             <!-- CTA Image -->
             <div class="step-image step-image-left step-image-right">
-                <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
+                <img class="buy-now" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
             </div>
         </div>
 
