@@ -54,7 +54,7 @@ get_header();
                 <h3>Meet the Team</h3>
             </div>
             <div class="meet-the-team-image">
-                <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/jalfam-team.png' ); ?>" alt="an image showing the people behind JALFAM" class="meet-the-team-image-file">
+                <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/jalfam-team-cropped.png' ); ?>" alt="an image showing the people behind JALFAM" class="meet-the-team-image-file">
                 <figcaption>JALFAM - John: left, Annette: center, and Leann: right.</figcaption>
             </div>
             
