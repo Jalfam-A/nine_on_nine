@@ -339,7 +339,7 @@ get_header();
 
                 <!-- Hero CTAs -->
                 <div class="hero-cta mt-2">
-                    <a href="#" class="hero-cta-buynow ">BUY NOW</a>
+                    <a href="<?php echo get_permalink( get_product_id_by_slug( '9on9-boardgame' ) ); ?>" class="hero-cta-buynow ">BUY NOW</a>
                 </div>
             </div>
 
