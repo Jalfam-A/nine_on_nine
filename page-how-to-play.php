@@ -324,28 +324,30 @@ get_header();
 
 
         <!-- Buy Now CTA -->
-        <div class="step-component bg-blue" id="pointzones">
-
-            <!-- Hero Message -->
-            <div class="cta-hero-message">
-                <!-- Hero Text -->
-                <div class="">
-                    <h4 class="">A game for fun, movement, and skill!</h4>
-                    <h2 class="">Games can't get more fun than this.</h2>
-                    <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
-                        challenging
-                        teams to reach 99 points by tossing bean pucks on the board.</p>
+        <div class="bg-blue" id="pointzones">
+            <div class="step-component">
+                <!-- Hero Message -->
+                <div class="cta-hero-message">
+                    <!-- Hero Text -->
+                    <div class="">
+                        <h4 class="">A game for fun, movement, and skill!</h4>
+                        <h2 class="">Games can't get more fun than this.</h2>
+                        <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
+                            challenging
+                            teams to reach 99 points by tossing bean pucks on the board.</p>
+                    </div>
+    
+                    <!-- Hero CTAs -->
+                    <div class="hero-cta mt-2">
+                        <a href="<?php echo get_permalink( get_product_id_by_slug( '9on9-boardgame' ) ); ?>" class="hero-cta-buynow ">BUY NOW</a>
+                    </div>
+                </div>
+    
+                <!-- CTA Image -->
+                <div class="step-image step-image-left step-image-right">
+                    <img class="buy-now" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
                 </div>
 
-                <!-- Hero CTAs -->
-                <div class="hero-cta mt-2">
-                    <a href="<?php echo get_permalink( get_product_id_by_slug( '9on9-boardgame' ) ); ?>" class="hero-cta-buynow ">BUY NOW</a>
-                </div>
-            </div>
-
-            <!-- CTA Image -->
-            <div class="step-image step-image-left step-image-right">
-                <img class="buy-now" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
             </div>
         </div>
 

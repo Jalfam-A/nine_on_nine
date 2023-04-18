@@ -13,6 +13,8 @@
 
 .step-component{
   padding-bottom: 5%;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
 }
 
 .center-vertical{
@@ -48,7 +50,7 @@
   align-items: center; /* Center the image vertically */
 }
 
-.step-image-right img {
+.step-image-right {
   width: 100%;
   height: 100%; /* Change from min-height to height */
   object-fit: cover;
@@ -56,7 +58,7 @@
   border-bottom-left-radius: 2rem;
 }
 
-.step-image-left img {
+.step-image-left {
   width: 100%;
   height: 100%; /* Change from min-height to height */
   object-fit: cover;
@@ -86,10 +88,12 @@
   /* Styles for screens smaller than 768px (e.g., mobile devices) */
   .step-component {
     flex-direction: column;
+    max-width: 1280px !important; // to limit size on desktops
+    margin: 0 auto;// to limit size on desktops
   }
 
   .steps{
-    height: 100%;
+    height: auto;
     padding-bottom: 3rem;
   }
 
@@ -111,6 +115,7 @@
     max-width: 100%;
     height: 100%;
   }
+
 
   .buy-now{
     width: 85%;
