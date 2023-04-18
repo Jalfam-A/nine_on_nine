@@ -10,27 +10,31 @@
 <!-- <h2>Previous News and Events</h2> -->
 
 <div class="container previous-news-and-events-container">
+<a href="<?php the_permalink(); ?>">
   <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     
     <div id="previous-news-and-events">
-      <a href="<?php the_permalink(); ?>">
+      
         <div class="image-container">
           <?php the_post_thumbnail( array(300, 300)); ?>
         </div>
-
+        
         <div class="info-container">
+        <a href="<?php the_permalink(); ?>">
           <!-- get the page title and event time -->
           <p><?php the_category(); ?></p>
           
-          <?php the_title('<h3 class="entry-title">', '</h3>'); ?>
-          <p><?php the_field('event_date'); ?></p>
+          <a class="previous-events-title" href="<?php the_permalink(); ?>"><?php the_title('<h3 class="entry-title">', '</h3>'); ?></a>
+          <a class="previous-events-date" href="<?php the_permalink(); ?>"><p><?php the_field('event_date'); ?></p></a>
+        </a>
         </div>
+        
         <div class="block-hover">
-            
         </div>
-      </a>
+      
     </div>
        
     
   </article>
+  </a>
 </div>
