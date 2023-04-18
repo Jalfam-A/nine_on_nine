@@ -61,8 +61,10 @@ td, th {
   justify-content: space-between;
   align-items: center;
   padding: 25px;
-  width: 18rem;
+  width: 22rem;
   height: 6rem;
+  padding-top: 4rem;
+  padding-left: 0;
 }
 
 .site-branding img {
@@ -1264,6 +1266,9 @@ figcaption {
 }
 #upcoming-events-container .location-price {
   margin-left: 5rem;
+}
+#upcoming-events-container span {
+  color: #FF7200;
 }
 
 /*page-upcoming-events.php*/
