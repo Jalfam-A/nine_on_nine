@@ -76,7 +76,7 @@ get_header();
         </div>
 
         <div class="inner-container event-details-lower-container">
-            <div class="current-events"><h3>Current Events</h3></div>
+            <div class="current-events"><h3>Upcoming Events</h3></div>
             <div class="event-details-lower-inner-container">
                 <?php
                 $args = array(

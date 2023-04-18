@@ -54,7 +54,7 @@ get_header();
                 <h3>Meet the Team</h3>
             </div>
             <div class="meet-the-team-image">
-                <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/jalfam-team.png' ); ?>" alt="an image showing the people behind JALFAM" class="meet-the-team-image-file">
+                <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/jalfam-team-cropped.png' ); ?>" alt="an image showing the people behind JALFAM" class="meet-the-team-image-file">
                 <figcaption>JALFAM - John: left, Annette: center, and Leann: right.</figcaption>
             </div>
             
@@ -66,13 +66,13 @@ get_header();
         </div><!--end of top section-->
         
         <div class="inner-container event-details-lower-container">
-            <div class="current-events"><h3>Current Events</h3></div>
+            <div class="current-events"><h3>Check out our Events</h3></div>
             <div class="event-details-lower-inner-container">
                 <?php
                 $args = array(
                     'post_type'      => 'upcoming-events',
                     'posts_per_page' => 2,
-                    'offset'         => 2, // Skip the first two posts
+                    
                     
                 );
                 $loop = new WP_Query($args);
