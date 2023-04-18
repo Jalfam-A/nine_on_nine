@@ -62,10 +62,10 @@
 @media (min-width: 768px){
   #upcoming-events-container{
     margin: 0;
-    article{
+    /*article{
       display: flex;
       width: 80vw;
-    }
+    }*/
     .upcoming-events-link{
       width: 500px;
     }
@@ -119,6 +119,13 @@
     margin: 0 auto;
   }
 }
-
+@media (min-width: 1200px){
+  #upcoming-events-container{
+    article{
+      display: flex;
+      width: 80vw;
+    }
+  }
+}
 
   
