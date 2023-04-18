@@ -1079,6 +1079,10 @@ a:hover {
   margin-bottom: 2.5rem;
 }
 
+.meet-the-team-image img {
+  max-height: 100%;
+}
+
 figcaption {
   text-align: center;
   font-size: 1.5rem;
@@ -1118,11 +1122,6 @@ figcaption {
   margin-top: 1rem;
 }
 
-/*
-.seniors-tournament-image,
-.fundraiser-tournament-image{
-    width: 100vw;
-}*/
 .seniors-tournament-image-file,
 .fundraiser-tournament-image-file {
   width: 48rem;
@@ -1175,6 +1174,71 @@ figcaption {
   padding: 2rem;
 }
 
+/*single-upcoming-events.php*/
+.single-event-container .breadcrumbs {
+  margin-left: 0;
+}
+
+/* CSS styles for page-events-us.php */
+.event-details-upper-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.event-details-upper-container h5 {
+  color: #333;
+  font-weight: bold;
+}
+
+.event-details-small-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.event-details-title {
+  margin-top: 50px;
+}
+
+.event-details-text-content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.event-details-main-image img {
+  width: 70rem;
+  height: auto;
+}
+
+.event-details-text-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.event-details-lower-container {
+  color: white;
+  background-color: var(--dark-blue);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100vw;
+}
+
+.event-details-lower-container a {
+  color: white;
+}
+
+.event-details-lower-container .current-events {
+  margin-left: 2rem;
+}
+
+@media (min-width: 768px) {
+  .event-details-lower-inner-container {
+    display: flex;
+    width: 100%;
+  }
+  .event-details-lower-container .current-events {
+    text-align: center;
+  }
+}
 /* ========== UPCOMING-EVENT PAGE - Emmanoel =======*/
 .test-listing {
   font-family: sans-serif;
@@ -1203,6 +1267,10 @@ figcaption {
 }
 
 /*page-upcoming-events.php*/
+.events-flex-container .breadcrumbs {
+  margin-left: 0;
+}
+
 /*content-previous-events.php*/
 #previous-news-and-events {
   padding-top: 2rem;
@@ -1213,7 +1281,7 @@ figcaption {
   width: 40vw;
 }
 #previous-news-and-events .info-container {
-  width: 60vw;
+  width: 40vw;
   margin-left: 2rem;
 }
 #previous-news-and-events .info-container h3 {
@@ -1253,6 +1321,7 @@ figcaption {
   }
   .previous-news-and-events-container {
     width: 40vw;
+    margin-left: 25rem;
   }
   #previous-news-and-events .image-container {
     width: 20vw;
@@ -1266,7 +1335,7 @@ figcaption {
   #previous-news-and-events .block-hover {
     width: 50px;
     height: 25vh;
-    background-color: darkblue;
+    background-color: #041E42;
     margin-left: 2rem;
   }
   .events-flex-container {
