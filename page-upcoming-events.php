@@ -13,7 +13,12 @@
 <?php get_header(); ?>
 <!-- <h2>This is page-events.php </h2> -->
 
-<div class="events-flex-container">
+<section class="events-flex-container">
+    <div class="container breadcrumbs">
+        <a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Home</a>
+            <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>" alt="Chevron Right" class="icon">
+        <a href="" class="">EVENTS LISTING</a>
+    </div>
     <div class="events-container">
         <div class="upcoming-events-container">
             <h2>Upcoming Events</h2>
@@ -50,6 +55,6 @@
             </div>
         </div>
     </div>
-</div>
+</section>
     
 <?php get_footer(); ?>
