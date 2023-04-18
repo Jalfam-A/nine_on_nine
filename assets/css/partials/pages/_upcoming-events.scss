@@ -28,7 +28,11 @@
 }
 
 /*page-upcoming-events.php*/
-
+.events-flex-container{
+  .breadcrumbs{
+    margin-left: 0;
+  }
+}
 /*content-previous-events.php*/
 #previous-news-and-events{
   padding-top: 2rem;
@@ -39,7 +43,7 @@
     width: 40vw;
   }
   .info-container{
-    width: 60vw;
+    width: 40vw;
     margin-left: 2rem;
     h3{
       font-size: 2.5rem;
@@ -84,6 +88,7 @@
 
   .previous-news-and-events-container{
     width: 40vw;
+    margin-left: 25rem;
   }
 
   #previous-news-and-events{
@@ -103,7 +108,7 @@
     .block-hover{
       width: 50px;
       height: 25vh;
-      background-color: darkblue;
+      background-color: #041E42;
       margin-left: 2rem;
     }
   }
