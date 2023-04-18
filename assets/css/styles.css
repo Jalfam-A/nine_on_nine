@@ -1083,6 +1083,8 @@ a:hover {
 
 .meet-the-team-image img {
   max-height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 figcaption {
