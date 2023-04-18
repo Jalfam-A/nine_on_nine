@@ -22,7 +22,7 @@
                     <!-- get the post information -->
                     <p><?php the_category(); ?></p>
                     <div class="upcoming-events-title">
-                        <p><?php the_title('<h3 class="entry-title">', '</h3>'); ?></p>
+                        <a href="<?php the_permalink(); ?>"><p><?php the_title('<h3 class="entry-title">', '</h3>'); ?></p></a>
                     </div>
                     <div class="upcoming-events-description">
                         <p><?php the_field('short_description'); ?></p>
