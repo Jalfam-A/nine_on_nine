@@ -9,7 +9,7 @@
 
 <!-- <h2>Previous News and Events</h2> -->
 
-<div class="container previous-news-and-events-container">
+<div class="container previous-news-and-events-container single-event-events-container">
 <a href="<?php the_permalink(); ?>">
   <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     
