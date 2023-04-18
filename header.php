@@ -15,6 +15,12 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>9on9 by JALFam | A game for fun, movement, and skill!</title>
+
+	<!-- SEO Marketing -->
+	<meta name="description" content="9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play, challenging teams to reach 99 points by tossing bean pucks on the board."/>
+	<meta name="keywords" content="games that you can play, game game games, games to play, games i can play, more games, games for fun, play game play game, team games, game team, best games, best team games, family games, family board games, indoor games, outdoor games, board games, fun games"/>
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 
