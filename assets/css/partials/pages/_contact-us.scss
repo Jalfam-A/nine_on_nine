@@ -18,7 +18,11 @@
     border: none;
     margin-top: 3rem;
     width: 100%;
+    padding: 1rem;
     border-radius: 20px;
+    background-color: var(--dark-orange);
+    color: white;
+    font-size: 2rem;
 }
 
 .contact-info a{
@@ -36,4 +40,8 @@
 
 .split-contact-right{
     place-self: start;
+}
+
+@media screen and (min-width: 1280px) {
+    
 }

@@ -17,7 +17,7 @@ get_header();
 
     <!-- BreadCrumbs -->
     <div class="breadcrumbs">
-        <a href="" class="">Home</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="">Home</a>
         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
             alt="Chevron Right" class="icon">
         <a href="" class="">Contact</a>
