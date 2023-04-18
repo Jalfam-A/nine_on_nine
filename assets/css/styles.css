@@ -1203,10 +1203,6 @@ figcaption {
 }
 
 /*page-upcoming-events.php*/
-.upcoming-events-inner-container {
-  margin-left: 5rem;
-}
-
 /*content-previous-events.php*/
 #previous-news-and-events {
   padding-top: 2rem;
@@ -1228,12 +1224,14 @@ figcaption {
   margin-left: 3rem;
 }
 
+/*media query*/
 @media (min-width: 768px) {
   #upcoming-events-container {
     margin: 0;
   }
   #upcoming-events-container article {
     display: flex;
+    width: 80vw;
   }
   #upcoming-events-container .upcoming-events-link {
     width: 500px;
@@ -1243,6 +1241,10 @@ figcaption {
   }
   #upcoming-events-container .events-thumbnail img {
     width: 30vw;
+  }
+  .events-container h2:first-child,
+  .events-container h3:first-child {
+    margin-left: 2rem;
   }
   .previous-news-and-events-lg {
     display: flex;
@@ -1255,6 +1257,17 @@ figcaption {
   #previous-news-and-events .image-container {
     width: 20vw;
     margin-right: 2rem;
+  }
+  #previous-news-and-events .info-container h3 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 0;
+  }
+  #previous-news-and-events .block-hover {
+    width: 50px;
+    height: 25vh;
+    background-color: darkblue;
+    margin-left: 2rem;
   }
   .events-flex-container {
     margin: 0 auto;
