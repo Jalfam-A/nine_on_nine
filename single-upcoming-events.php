@@ -82,7 +82,7 @@ get_header();
                 $args = array(
                     'post_type'      => 'upcoming-events',
                     'posts_per_page' => 2,
-                    'offset'         => 2, // Skip the first two posts
+                    
                     
                 );
                 $loop = new WP_Query($args);
