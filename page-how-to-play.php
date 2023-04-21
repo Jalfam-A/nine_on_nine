@@ -313,7 +313,7 @@ get_header();
                         
                         <!-- Hero CTAs -->
                         <div class="hero-cta mt-2">
-                            <a href="#" class="hero-cta-buynow ">Download App</a>
+                            <a href="https://apps.apple.com/ca/app/90n9/id6447753042" class="hero-cta-buynow ">Download App</a>
                         </div>
                     </div>
 
