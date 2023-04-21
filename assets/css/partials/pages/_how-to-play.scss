@@ -52,18 +52,25 @@
 
 .step-image-right {
   width: 100%;
-  height: 100%; /* Change from min-height to height */
+  height: 70%; 
   object-fit: cover;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
+
+  img {
+    border-radius: 20px 0 0 20px;
+  }
 }
 
 .step-image-left {
   width: 100%;
-  height: 100%; /* Change from min-height to height */
+  height: 70%; 
   object-fit: cover;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  img {
+    border-radius: 0 20px 20px 0;
+  }
 }
 
 .step {
