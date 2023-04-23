@@ -1433,4 +1433,53 @@ figcaption {
   .page-title {
     font-size: 2.5rem;
   }
+}
+.site-main > article {
+  padding: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.site-main > article .entry-header > h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.woocommerce table.shop_table_responsive tbody tr:first-child td:first-child, .woocommerce-page table.shop_table_responsive tbody tr:first-child td:first-child {
+  font-size: 2rem;
+}
+
+.woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td {
+  font-size: 1.5rem;
+}
+
+.woocommerce #content table.cart td.actions .button, .woocommerce table.cart td.actions .button, .woocommerce-page #content table.cart td.actions .button, .woocommerce-page table.cart td.actions .button {
+  background-color: var(--dark-orange);
+  color: white;
+  opacity: 1 !important;
+}
+
+.woocommerce #content table.cart td.actions .coupon, .woocommerce table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon, .woocommerce-page table.cart td.actions .coupon .button {
+  opacity: 0.9;
+}
+
+#add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
+  background-color: var(--green);
+}
+
+@media screen and (min-width: 1000px) {
+  .woocommerce {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+    width: 100%;
+  }
+  .woocommerce table.shop_table {
+    margin-top: 7.6rem;
+  }
+  .woocommerce-cart-form {
+    width: 150% !important;
+  }
 }/*# sourceMappingURL=styles.css.map */
