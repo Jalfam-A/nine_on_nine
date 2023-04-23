@@ -1280,115 +1280,96 @@ figcaption {
   }
 }
 /* ========== UPCOMING-EVENT PAGE - Emmanoel =======*/
-.test-listing {
-  font-family: sans-serif;
-}
-
 /*content-events.php*/
-#upcoming-events-container .upcoming-events {
-  padding-bottom: 5rem;
+.events-flex-container {
+  overflow-x: hidden;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  /** END .upcoming-events-container **/
 }
-#upcoming-events-container .events-thumbnail {
-  width: 70vw;
+.events-flex-container .upcoming-events-container {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  justify-content: left;
+  /** END .upcoming-events-inner-container **/
 }
-#upcoming-events-container .upcoming-events-title {
-  margin-top: 2rem;
+.events-flex-container .upcoming-events-container > h2 {
+  width: 100%;
+  font-size: 3.5rem;
 }
-#upcoming-events-container .upcoming-events-description {
-  margin-top: 2rem;
+.events-flex-container .upcoming-events-container .upcoming-events-inner-container {
+  /** END .container **/
+}
+.events-flex-container .upcoming-events-container .upcoming-events-inner-container .container {
+  max-width: 100% !important;
+  /** END article **/
+}
+.events-flex-container .upcoming-events-container .upcoming-events-inner-container .container > article {
+  /** END .upcoming-events **/
+}
+.events-flex-container .upcoming-events-container .upcoming-events-inner-container .container > article > a .events-thumbnail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: left;
+  width: 100%;
+  overflow: hidden;
+}
+.events-flex-container .upcoming-events-container .upcoming-events-inner-container .container > article > a .events-thumbnail img {
+  border-radius: 20px 0 20px 0;
+  width: 100%;
+}
+.events-flex-container .upcoming-events-container .upcoming-events-inner-container .container > article .upcoming-events {
   margin-bottom: 2rem;
 }
-#upcoming-events-container .time-date-location-price {
+.events-flex-container .upcoming-events-container .upcoming-events-inner-container .container > article .upcoming-events .upcoming-events-title {
   display: flex;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  justify-content: left;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
-#upcoming-events-container .location-price {
-  margin-left: 5rem;
+.events-flex-container .upcoming-events-container .upcoming-events-inner-container .container > article .upcoming-events .upcoming-events-description {
+  color: black;
+  margin-bottom: 1rem;
 }
-#upcoming-events-container span {
-  color: #FF7200;
-}
-
-/*page-upcoming-events.php*/
-.events-flex-container .breadcrumbs {
-  margin-left: 0;
-}
-
-/*content-previous-events.php*/
-#previous-news-and-events {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.events-flex-container .upcoming-events-container .upcoming-events-inner-container .container > article .upcoming-events .time-date-location-price {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  max-width: 300px;
 }
-#previous-news-and-events .image-container {
-  width: 40vw;
-}
-#previous-news-and-events .info-container {
-  width: 40vw;
-  margin-left: 2rem;
-}
-#previous-news-and-events .info-container h3 {
-  font-size: 2.5rem;
-}
-
-.events-flex-container {
-  margin-left: 3rem;
+.events-flex-container .upcoming-events-container .upcoming-events-inner-container .container > article .upcoming-events > a {
+  color: var(--dark-orange);
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-/*media query*/
-@media (min-width: 768px) {
-  #upcoming-events-container {
-    margin: 0;
-    /*article{
-      display: flex;
-      width: 80vw;
-    }*/
-  }
-  #upcoming-events-container .upcoming-events-link {
-    width: 500px;
-  }
-  #upcoming-events-container .upcoming-events {
-    margin-left: 15rem;
-  }
-  #upcoming-events-container .events-thumbnail img {
-    width: 30vw;
-  }
-  .events-container h2:first-child,
-  .events-container h3:first-child {
-    margin-left: 2rem;
-  }
-  .previous-news-and-events-lg {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .previous-news-and-events-container {
-    width: 40vw;
-    margin-left: 25rem;
-  }
-  #previous-news-and-events .image-container {
-    width: 20vw;
-    margin-right: 2rem;
-  }
-  #previous-news-and-events .info-container h3 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-left: 0;
-  }
-  #previous-news-and-events .block-hover {
-    width: 50px;
-    height: 25vh;
-    background-color: #041E42;
-    margin-left: 2rem;
-  }
+/** END .events-flex-container **/
+@media screen and (min-width: 745px) {
   .events-flex-container {
-    margin: 0 auto;
+    /** END .upcoming-events-inner-container **/
   }
-}
-@media (min-width: 1200px) {
-  #upcoming-events-container article {
+  .events-flex-container .upcoming-events-inner-container {
+    /** END .container **/
+  }
+  .events-flex-container .upcoming-events-inner-container .container {
+    /** END article **/
+  }
+  .events-flex-container .upcoming-events-inner-container .container > article {
     display: flex;
-    width: 80vw;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .events-flex-container .upcoming-events-inner-container .container > article > a {
+    display: block;
+    width: 50%;
+  }
+  .events-flex-container .upcoming-events-inner-container .container > article .upcoming-events {
+    width: 45%;
   }
 }
 /* Mobile styles */
@@ -1451,5 +1432,54 @@ figcaption {
   }
   .page-title {
     font-size: 2.5rem;
+  }
+}
+.site-main > article {
+  padding: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.site-main > article .entry-header > h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.woocommerce table.shop_table_responsive tbody tr:first-child td:first-child, .woocommerce-page table.shop_table_responsive tbody tr:first-child td:first-child {
+  font-size: 2rem;
+}
+
+.woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td {
+  font-size: 1.5rem;
+}
+
+.woocommerce #content table.cart td.actions .button, .woocommerce table.cart td.actions .button, .woocommerce-page #content table.cart td.actions .button, .woocommerce-page table.cart td.actions .button {
+  background-color: var(--dark-orange);
+  color: white;
+  opacity: 1 !important;
+}
+
+.woocommerce #content table.cart td.actions .coupon, .woocommerce table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon, .woocommerce-page table.cart td.actions .coupon .button {
+  opacity: 0.9;
+}
+
+#add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
+  background-color: var(--green);
+}
+
+@media screen and (min-width: 1000px) {
+  .woocommerce {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+    width: 100%;
+  }
+  .woocommerce table.shop_table {
+    margin-top: 7.6rem;
+  }
+  .woocommerce-cart-form {
+    width: 150% !important;
   }
 }/*# sourceMappingURL=styles.css.map */
