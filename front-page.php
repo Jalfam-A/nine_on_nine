@@ -26,7 +26,7 @@ get_header();
         <div class="hero-message">
             <!-- Hero Text -->
             <div class="hero-text">
-                <h3 class="">A game for fun, movement, and skill!</h3>
+                <h4 class="">A game for fun, movement, and skill!</h4>
                 <h2 class="">Games can't get more fun than this.</h1>
                 <p class="">9ON9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
                     challenging
@@ -46,8 +46,8 @@ get_header();
     <div class="whats-in-the-box">
         <!-- Intro Text -->
         <div class="whats-in-the-box-text">
-            <h4 class="whats-in-the-box-heading">What's in the box?</h4>
-            <h2 class="whats-in-the-box-subheading">Games can't get more fun than this.</h2>
+            <!--<h4 class="whats-in-the-box-heading">--><h4 class="">What's in the box?</h4>
+            <!--<h2 class="whats-in-the-box-subheading">--><h2 class="">Games can't get more fun than this.</h2>
             <p class="whats-in-the-box-description">Each box comes with: 1 game board (2-pieces), 4 green bean pucks, 4 blue bean pucks, Game Instructions.</p>
         </div>
 
@@ -161,7 +161,7 @@ get_header();
         <div class="event-feature-info">
             <!-- Event Feature Message Details-->
             <div class="event-feature-message">
-                <h4 class="">Latest Updates</h4>
+                <h5 class="latest-updates-text">Latest Updates</h5>
                 <h2 class="">9ON9 Events</h2>
                 <!-- <p class="">details on featured event</p> -->
                 <!-- Event Feature Message Button -->

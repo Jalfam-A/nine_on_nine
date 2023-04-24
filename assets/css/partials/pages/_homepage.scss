@@ -120,7 +120,7 @@
 
 /* Image styles */
 .whats-in-the-box-image-title {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: bold;
   margin-bottom: 16px;
 }
@@ -188,7 +188,9 @@
 
     .event-feature-message {
       padding: 20px;
-
+      .latest-updates-text{
+        font-size: 2rem;
+      }
       .hero-text h2,
       .testimonials-headings h2{
         font-size: 48px;

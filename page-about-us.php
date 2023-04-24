@@ -30,23 +30,15 @@ get_header();
             <div>
                 <h2>About JALFAM Games Inc.</h2>
             </div>
-            <div>
-                <h3>The pandemic changed the world.</h3>
-            </div>
             
             
             <div class="about-us-paragraph">
             <p>At JALFAM Games Inc., we recognized that Covid-19 had a significant impact on peoples mental and physical wellbeing. 
-            We wanted to create something that could bring joy, movement, and a sense of community to people s lives. Thats why we developed 9on9, 
+            We wanted to create something that could bring joy, movement, and a sense of community to people s lives. Thats why we developed 9ON9, 
             a game that promotes fun, activity, and skill-building.</p>
-    
-            <p>9on9 is a versatile game that can be played both indoors and outdoors, making it accessible to everyone. It involves two teams, 
-            each consisting of one to four players, who compete against each other to be the first team to reach exactly 99 points by tossing bean pucks 
-            onto a playing board. With its simple rules and fast-paced gameplay, 9on9 is a game that is easy to learn and suitable for all ages.</p>
             
             <p>Our goal at JALFAM Games Inc. is to create games that not only provide entertainment but also promote healthy 
-            lifestyles and social connection. We believe that through our games, we can contribute to the well-being of our players and 
-            help them overcome the challenges of these trying times. We invite you to join us in the world of 9on9 and experience the joy of movement, 
+            lifestyles and social connection. We invite you to join us in the world of 9ON9 and experience the joy of movement, 
             skill-building, and friendly competition.</p>      
             </div>
 
