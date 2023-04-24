@@ -54,6 +54,8 @@ td, th {
   align-items: center;
   justify-content: space-between;
   padding: 25px;
+  max-width: 1450px;
+  margin: 0 auto;
 }
 
 .site-branding-logo {
@@ -149,12 +151,13 @@ td, th {
 .buy-now-and-cart {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   text-align: center;
   gap: 2rem;
 }
 
-.hero-cta-buynow a {
+a.hero-cta-buynow {
   text-align: center;
 }
 
@@ -162,6 +165,10 @@ td, th {
   text-align: center;
   margin-top: 1rem;
   margin-right: 3rem;
+}
+
+.sr-only {
+  display: none;
 }
 
 /* ========== footer.scss - Donald ========*/
@@ -187,8 +194,11 @@ td, th {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   flex: 1;
+}
+
+.socialmediaicons > div a > svg {
+  width: 2rem !important;
 }
 
 .footer-nav {
@@ -230,19 +240,29 @@ footer {
   padding: 5rem;
 }
 
+.custom-logo-link {
+  max-width: 20rem !important;
+}
+
 #secondary-menu {
   flex-direction: column;
 }
 
 /* ========== mixins.scss - Dazz ========*/
 /************* HEADER/FOOTER/NAVIGATION BAR ******************/
-@media (min-width: 768px) {
+@media (min-width: 846px) {
   .site-branding {
     padding-right: 15px;
     padding-left: 15px;
   }
   .menu-toggle {
     display: none;
+  }
+  .buy-now-and-cart {
+    flex-direction: row !important;
+  }
+  .buy-now-and-cart {
+    flex-direction: row !important;
   }
   .main-navigation {
     position: static;
@@ -259,7 +279,9 @@ footer {
   }
   .footer-site-info {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start !important;
+    max-width: 1280px;
+    margin: 1rem auto;
   }
   .footer-site-info .footer-socialmedia,
   .footer-site-info .footer-nav,
@@ -272,8 +294,9 @@ footer {
   }
   #secondary-menu {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
+    font-size: 1rem;
     gap: 5rem;
   }
 }
@@ -353,7 +376,7 @@ footer {
   }
   /* Navigation */
   .hero-cta-buynow-header {
-    margin: 2rem 0 0 20rem;
+    margin-top: 1rem;
   }
   /**** TESTIMONIALS ****/
   .testimonial-container {
@@ -606,6 +629,16 @@ a:hover {
 
 /* ========== HOMEPAGE - Donald ==========*/
 /************ HERO BANNER  ************/
+.download-app {
+  height: unset !important;
+}
+.download-app .step-component {
+  height: unset !important;
+}
+.download-app .step-component .step-message .step-component-h2 {
+  font-size: 3rem !important;
+}
+
 .hero-banner,
 .step-component,
 .split-contact {
@@ -649,6 +682,7 @@ a:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0 20px 20px 0;
 }
 .hero-banner .hero-message,
 .hero-banner .step-message,
@@ -727,8 +761,7 @@ a:hover {
 }
 .whats-in-the-box-text .whats-in-the-box-description {
   font-size: 18px;
-  /*margin: 1rem;*/
-  margin: 5rem;
+  margin-top: 1rem;
 }
 
 /* Image styles */
@@ -776,6 +809,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+/************ EVENT FEATURE ************/
 /************ EVENT FEATURE ************/
 .event-feature {
   display: flex;
@@ -904,7 +938,7 @@ a:hover {
 
 .step-component {
   padding-bottom: 5%;
-  max-width: 1280px !important;
+  max-width: 1380px !important;
   margin: 0 auto !important;
 }
 
@@ -949,9 +983,6 @@ a:hover {
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
 }
-.step-image-right img {
-  border-radius: 20px 0 0 20px;
-}
 
 .step-image-left {
   width: 100%;
@@ -963,6 +994,11 @@ a:hover {
 }
 .step-image-left img {
   border-radius: 0 20px 20px 0;
+}
+
+.image-step-2,
+.image-step-4 {
+  border-radius: 20px 0 0 20px !important;
 }
 
 .step {
@@ -981,6 +1017,11 @@ a:hover {
 
 .step-container {
   padding: 0 2%;
+}
+
+.the-scoring {
+  background-color: var(--green) !important;
+  color: white !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1063,6 +1104,11 @@ a:hover {
 }
 
 /* ========== CONTACT US PAGE - Dazz ========*/
+.split-contact {
+  max-width: 1280px !important;
+  margin: 1rem auto !important;
+}
+
 .contact-form input[type=text],
 .contact-form input[type=email],
 .contact-form input[type=tel],
@@ -1076,6 +1122,10 @@ a:hover {
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid black;
+}
+
+.contact-form input[type=text], .contact-form input[type=email], .contact-form input[type=tel], .contact-form textarea {
+  border-left: 1px solid black !important;
 }
 
 .contact-form input[type=submit] {
@@ -1288,6 +1338,11 @@ figcaption {
   padding: 1rem;
   /** END .upcoming-events-container **/
 }
+.events-flex-container .breadcrumbs {
+  max-width: 1280px !important;
+  padding: 0 !important;
+  margin: 0 auto;
+}
 .events-flex-container .upcoming-events-container {
   display: flex;
   gap: 4rem;
@@ -1349,6 +1404,29 @@ figcaption {
 }
 
 /** END .events-flex-container **/
+.previous-news-and-events {
+  display: flex !important;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.previous-news-and-events a {
+  display: block;
+  width: 40%;
+}
+.previous-news-and-events .info-container {
+  width: 65%;
+}
+.previous-news-and-events .info-container a {
+  width: 100% !important;
+}
+.previous-news-and-events .info-container > ul > li a {
+  font-size: 1.5rem !important;
+}
+.previous-news-and-events h3 {
+  font-size: 2rem !important;
+}
+
 @media screen and (min-width: 745px) {
   .events-flex-container {
     /** END .upcoming-events-inner-container **/
@@ -1370,6 +1448,16 @@ figcaption {
   }
   .events-flex-container .upcoming-events-inner-container .container > article .upcoming-events {
     width: 45%;
+  }
+}
+@media screen and (min-width: 945px) {
+  .previous-news-and-events-lg {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .previous-news-and-events-lg .previous-news-and-events-container {
+    max-width: 45% !important;
   }
 }
 /* Mobile styles */
@@ -1445,6 +1533,12 @@ figcaption {
   margin-bottom: 2rem;
 }
 
+.product,
+.woocommerce .woocommerce-breadcrumb {
+  max-width: 1280px;
+  margin: 1rem auto;
+}
+
 .woocommerce table.shop_table_responsive tbody tr:first-child td:first-child, .woocommerce-page table.shop_table_responsive tbody tr:first-child td:first-child {
   font-size: 2rem;
 }
@@ -1468,7 +1562,7 @@ figcaption {
 }
 
 @media screen and (min-width: 1000px) {
-  .woocommerce {
+  .entry-content .woocommerce {
     display: flex;
     gap: 1rem;
     justify-content: space-between;

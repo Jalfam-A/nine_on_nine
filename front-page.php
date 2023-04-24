@@ -19,7 +19,7 @@ get_header();
     <div class="hero-banner">
         <!-- Hero Image -->
         <div class="hero-image">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/front-page/herobanner.jpg'); ?>" alt="Image of 2 people playing 9on9">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/front-page/homepage-hero-banner.jpg'); ?>" alt="Image of 2 people playing 9on9">
         </div>
 
         <!-- Hero Message -->
@@ -28,7 +28,7 @@ get_header();
             <div class="hero-text">
                 <h3 class="">A game for fun, movement, and skill!</h3>
                 <h2 class="">Games can't get more fun than this.</h1>
-                <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
+                <p class="">9ON9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
                     challenging
                     teams to reach 99 points by tossing bean pucks on the board.</p>
             </div>
@@ -48,8 +48,7 @@ get_header();
         <div class="whats-in-the-box-text">
             <h4 class="whats-in-the-box-heading">What's in the box?</h4>
             <h2 class="whats-in-the-box-subheading">Games can't get more fun than this.</h2>
-            <p class="whats-in-the-box-description">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
-                challenging teams to reach 99 points by tossing bean pucks on the board.</p>
+            <p class="whats-in-the-box-description">Each box comes with: 1 game board (2-pieces), 4 green bean pucks, 4 blue bean pucks, Game Instructions.</p>
         </div>
 
         <!-- Images -->
@@ -65,12 +64,36 @@ get_header();
         </div>
     </div>
 
+           <!-- Download the App Section -->
+           <div class="steps download-app">
+                <div class="step-component center-vertical">
+                    <!-- Step 1 - Image -->
+                    <div class="step-image step-image-left">
+                        <img class="mr-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-app-iphone.jpg' ?>" alt="">
+                    </div>
+
+                    <!-- Step 1 - Message -->
+                    <div class="step-message m-right">
+                        <h2 class="step-component-h2">Scoring app available on apple App store!</h2>
+                        <!-- <p class="">Download our scoring app!</p> -->
+                        
+                        <!-- Hero CTAs -->
+                        <div class="hero-cta mt-2">
+                            <a href="https://apps.apple.com/ca/app/90n9/id6447753042" class="hero-cta-buynow ">Download our scoring app!</a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+
 
     <!-- TESTIMONIALS - EDITABLE BY CLIENT-->
     <div class="testimonials">
         <!-- Intro Text -->
         <div class="testimonials-headings">
-            <h3 class="">What is everyone saying about the game?</h3>
             <h2 class="">Testimonials</h2>
         </div>
 
@@ -85,7 +108,7 @@ get_header();
         </div>
         <!-- Comment -->
         <div class="">
-            <p class="">The game 9 on 9 is so fun and the perfect amount of challenging!</p>
+            <p class="">The game 9ON9 is so fun and the perfect amount of challenging!</p>
         </div>
     </div>
 
@@ -98,7 +121,7 @@ get_header();
         </div>
         <!-- Comment -->
         <div class="">
-            <p class="">Our Family loves our 9 on-9 game.</p>
+            <p class="">Our Family loves our 9ON9 game.</p>
         </div>
     </div>
 
@@ -111,7 +134,7 @@ get_header();
         </div>
         <!-- Comment -->
         <div class="">
-            <p class="">I like 9 on 9 because I have to think and use strategy to win.</p>
+            <p class="">I like 9ON9 because I have to think and use strategy to win.</p>
         </div>
     </div>
 
@@ -124,7 +147,7 @@ get_header();
         </div>
         <!-- Comment -->
         <div class="">
-            <p class="">9 ON 9 was one of the best games we ve invested in for our summer property.</p>
+            <p class="">9ON9 was one of the best games we ve invested in for our summer property.</p>
         </div>
     </div>
     </div>
@@ -138,12 +161,12 @@ get_header();
         <div class="event-feature-info">
             <!-- Event Feature Message Details-->
             <div class="event-feature-message">
-                <h4 class="">Latest Update</h4>
-                <h2 class="">9on9 Tournament</h2>
-                <p class="">This game is beginner friendly and for everyone! Let us show you how to play this game so you can start playing!</p>
+                <h4 class="">Latest Updates</h4>
+                <h2 class="">9ON9 Events</h2>
+                <!-- <p class="">details on featured event</p> -->
                 <!-- Event Feature Message Button -->
-                <a href="http://jalfama.web.dmitcapstone.ca/upcoming-events/" class="button-styles">
-                    SEE EVENT DETAILS
+                <a href="<?php echo esc_url('/upcoming-events/ '); ?>" class="button-styles">
+                    View all upcoming events
                     <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/orange-right-arrow.png'); ?>" alt="Right Arrow" class="icon">
                 </a>
             </div>
@@ -151,7 +174,7 @@ get_header();
 
         <!-- Event Feature Image -->
         <div class="event-feature-image">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/css/img/front-page/latestevents.png' ); ?>" alt="Image Related to the Event">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/front-page/latestevents.png' ); ?>" alt="Image Related to the Event">
         </div>
     </div>
 
@@ -159,7 +182,6 @@ get_header();
     <div class="instagram-container">
         <!-- Intro Text -->
         <div class="instagram-intro">
-            <h4>Recent Instagram Posts</h4>
             <h2>Follow Us on Social Media!</h2>
         </div>
 
@@ -170,7 +192,6 @@ get_header();
     </div>
 
 </section>
-</body>
 
 <?php
 get_footer();

@@ -25,10 +25,20 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
 	flex: 1;
+
 }
 
+.socialmediaicons {
+
+	>div {
+		a {
+			>svg {
+				width: 2rem !important;
+			}
+		}
+	}
+}
 
 .footer-nav {
 	width: 100%;
@@ -69,6 +79,9 @@ footer {
 	padding: 5rem;
 }
 
+.custom-logo-link {
+	max-width: 20rem !important;
+}
 
 #secondary-menu {
     flex-direction: column;
