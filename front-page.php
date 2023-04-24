@@ -26,7 +26,7 @@ get_header();
         <div class="hero-message">
             <!-- Hero Text -->
             <div class="hero-text">
-                <h3 class="">A game for fun, movement, and skill!</h3>
+                <h4 class="">A game for fun, movement, and skill!</h4>
                 <h2 class="">Games can't get more fun than this.</h1>
                 <p class="">9ON9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
                     challenging
