@@ -766,7 +766,7 @@ a:hover {
 
 /* Image styles */
 .whats-in-the-box-image-title {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: bold;
   margin-bottom: 16px;
 }
@@ -832,6 +832,9 @@ a:hover {
   .testimonials-headings h4{
     font-weight: 500;
   }*/
+}
+.event-feature .event-feature-info .event-feature-message .latest-updates-text {
+  font-size: 2rem;
 }
 .event-feature .event-feature-info .event-feature-message .hero-text h2,
 .event-feature .event-feature-info .event-feature-message .testimonials-headings h2 {
