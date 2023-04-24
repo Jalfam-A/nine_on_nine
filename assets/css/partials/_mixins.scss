@@ -33,7 +33,7 @@
 
 /************* HEADER/FOOTER/NAVIGATION BAR ******************/
 
-@media (min-width: 768px) {
+@media (min-width: 846px) {
 	.site-branding {
 	  padding-right: 15px;
 	  padding-left: 15px;
@@ -42,6 +42,15 @@
 	.menu-toggle {
 	  display: none;
 	}
+
+	.buy-now-and-cart {
+		flex-direction: row !important;
+
+	}
+
+	.buy-now-and-cart {
+		flex-direction: row !important;
+	  }
   
 	.main-navigation {
 	  position: static;
@@ -62,8 +71,9 @@
 	
 	.footer-site-info {
 		flex-direction: row;
-		align-items: center;
-		
+		align-items: flex-start !important;
+		max-width: 1280px;
+		margin: 1rem auto;
 		.footer-socialmedia,
 		.footer-nav,
 		.get-in-touch {
@@ -78,8 +88,9 @@
 	
 	#secondary-menu {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		flex-direction: row;
+		font-size: 1rem;
 		gap: 5rem;
 	}
 }
@@ -117,6 +128,7 @@
 		width: 100%;
 	  }
 	}
+
   
 	/* Change the direction of the flexbox to column and increase the gap between the images in the whats-in-the-box section */
 	.whats-in-the-box-images {
@@ -173,7 +185,7 @@
 
 	/* Navigation */
 	.hero-cta-buynow-header {
-    	margin: 2rem 0 0 20rem;
+    	margin-top: 1rem;
 	} 
 
 	/**** TESTIMONIALS ****/

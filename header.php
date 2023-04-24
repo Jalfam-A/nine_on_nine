@@ -28,6 +28,8 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<h2 class="sr-only">Jalfam</h2>
+
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'nine_on_nine' ); ?></a>
@@ -59,6 +61,7 @@
 			<span class="icon-bar"></span>
 		</div>
 		<nav id="site-navigation" class="main-navigation">
+			<h2 class="sr-only">Main navigation</h2>
 			<div class="menu-and-button-container">
 				<?php
 				wp_nav_menu(

@@ -13,7 +13,7 @@
 <a href="<?php the_permalink(); ?>">
   <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     
-    <div id="previous-news-and-events">
+    <div class="previous-news-and-events" id="previous-news-and-events">
       
         <div class="image-container">
           <?php the_post_thumbnail( array(300, 300)); ?>

@@ -15,6 +15,11 @@
     }
 }
 
+.product, 
+.woocommerce .woocommerce-breadcrumb {
+    max-width: 1280px;
+    margin: 1rem auto;
+}
 
 
 //Change close button sizer to 3rem
@@ -47,11 +52,13 @@
 
 @media screen and (min-width: 1000px){
     
-    .woocommerce {
-        display: flex;
-        gap: 1rem;
-        justify-content: space-between;
-
+    .entry-content {
+        .woocommerce {
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+    
+        }
     }
     .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
         width: 100%;

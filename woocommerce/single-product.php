@@ -21,8 +21,8 @@ get_header('shop');
 
 ?>
 
-<main id="primary" class="site-main">
-  <div class="container">
+<main id="primary" class="site-main w-single-product">
+  <div class="container ">
     <?php
     while (have_posts()) :
       the_post();
