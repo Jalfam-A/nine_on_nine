@@ -9,6 +9,8 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 25px;
+	max-width: 1450px;
+	margin: 0 auto;
   }
   
   .site-branding-logo {
@@ -106,12 +108,13 @@
   .buy-now-and-cart {
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
 	gap: 2rem;
   }
 
-  .hero-cta-buynow a{
+  a.hero-cta-buynow {
 	text-align: center;
   }
 
@@ -121,3 +124,6 @@
 	margin-right: 3rem;
   }
   
+  .sr-only {
+	display: none;
+  }

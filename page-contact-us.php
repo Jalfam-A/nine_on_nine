@@ -43,7 +43,8 @@ get_header();
 
                     <!-- Contact Form Input -->
                     <div class="contact-form">
-                     <?php echo do_shortcode('[contact-form-7 id="204" title="Contact Form"]'); ?> 
+                    <?php echo do_shortcode('[contact-form-7 id="204" title="Contact Form"]');  ?>
+
                     </div>
                     <!-- End of Contact Form Input -->
 

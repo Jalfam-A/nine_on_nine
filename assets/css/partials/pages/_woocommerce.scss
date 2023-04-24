@@ -1,97 +1,74 @@
-// // Global WooCommerce Container
-// .woocommerce {
-//     padding: 2rem;
-//   }
-  
-//   // Product Page
-//   .woocommerce.single-product {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-  
-//   // Product Images
-//   .woocommerce div.product div.images {
-//     width: 100%;
-//     max-width: 45%;
-//     margin-right: 2rem;
-//   }
-  
-//   // Product Summary
-//   .woocommerce div.product div.summary {
-//     width: 100%;
-//     max-width: 45%;
-//   }
-  
-//   // Product Title
-//   .woocommerce div.product h1.product_title {
-//     font-size: 2.5rem;
-//     margin-bottom: 1rem;
-//     font-weight: 600;
-//     color: #333;
-//   }
-  
-//   // Product Price
-//   .woocommerce div.product p.price {
-//     font-size: 1.8rem;
-//     font-weight: bold;
-//     color: #5a5a5a;
-//     margin-bottom: 2rem;
-//   }
-  
-//   // Add to Cart Button
-//   .woocommerce div.product form.cart {
-//     display: flex;
-//     flex-direction: column;
-//     margin-bottom: 2rem;
-//   }
-  
-//   .woocommerce div.product form.cart .button {
-//     background-color: #333;
-//     color: #fff;
-//     border: none;
-//     padding: 1rem 2rem;
-//     cursor: pointer;
-//     margin-bottom: 1rem;
-//   }
-  
-//   .woocommerce div.product form.cart .button:hover {
-//     background-color: #555;
-//   }
-  
-//   // Product Tabs
-//   .woocommerce div.product .woocommerce-tabs {
-//     margin-top: 3rem;
-//     border-top: 1px solid #e5e5e5;
-//   }
-  
-//   .woocommerce div.product .woocommerce-tabs ul.tabs {
-//     display: flex;
-//     list-style: none;
-//     margin-top: 1rem;
-//     margin-bottom: 2rem;
-//   }
-  
-//   .woocommerce div.product .woocommerce-tabs ul.tabs li {
-//     margin-right: 1rem;
-//   }
-  
-//   .woocommerce div.product .woocommerce-tabs ul.tabs li a {
-//     font-size: 1.1rem;
-//     color: #333;
-//     text-decoration: none;
-//     font-weight: 600;
-//   }
-  
-//   // Responsive Design
-//   @media (max-width: 1024px) {
-//     .woocommerce div.product div.images,
-//     .woocommerce div.product div.summary {
-//       max-width: 100%;
-//     }
-  
-//     .woocommerce div.product div.images {
-//       margin-bottom: 2rem;
-//       margin-right: 0;
-//     }
-//   }
-  
+
+
+.site-main {
+    > article {
+        padding: 2rem;
+        max-width: 1280px;
+        margin: 0 auto;
+        .entry-header {
+            > h1 {
+                font-size: 5rem;
+                text-transform: uppercase;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.product, 
+.woocommerce .woocommerce-breadcrumb {
+    max-width: 1280px;
+    margin: 1rem auto;
+}
+
+
+//Change close button sizer to 3rem
+.woocommerce table.shop_table_responsive tbody tr:first-child td:first-child, .woocommerce-page table.shop_table_responsive tbody tr:first-child td:first-child {
+    font-size: 2rem;
+}
+
+//Change font-size of product info
+.woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td {
+    font-size: 1.5rem;
+}
+
+//change bg and color of buttons
+.woocommerce #content table.cart td.actions .button, .woocommerce table.cart td.actions .button, .woocommerce-page #content table.cart td.actions .button, .woocommerce-page table.cart td.actions .button {
+    background-color: var(--dark-orange);
+    color: white;
+    opacity: 1 !important;
+}
+
+// change opacity of coupon button
+.woocommerce #content table.cart td.actions .coupon, .woocommerce table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon, .woocommerce-page table.cart td.actions .coupon .button {
+    opacity: 0.9;
+}
+
+
+//proceed to checkout
+#add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
+    background-color: var(--green);
+}
+
+@media screen and (min-width: 1000px){
+    
+    .entry-content {
+        .woocommerce {
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+    
+        }
+    }
+    .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+        width: 100%;
+    }
+
+    .woocommerce table.shop_table {
+        margin-top: 7.6rem;
+    }
+
+    .woocommerce-cart-form {
+        width: 150% !important;
+    }
+}

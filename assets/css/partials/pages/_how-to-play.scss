@@ -13,6 +13,8 @@
 
 .step-component{
   padding-bottom: 5%;
+  max-width: 1380px !important;
+  margin: 0 auto !important;
 }
 
 .center-vertical{
@@ -48,20 +50,28 @@
   align-items: center; /* Center the image vertically */
 }
 
-.step-image-right img {
+.step-image-right {
   width: 100%;
-  height: 100%; /* Change from min-height to height */
+  height: 70%; 
   object-fit: cover;
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
 }
 
-.step-image-left img {
+.step-image-left {
   width: 100%;
-  height: 100%; /* Change from min-height to height */
+  height: 70%; 
   object-fit: cover;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  img {
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+.image-step-2,
+.image-step-4 {
+  border-radius: 20px 0 0 20px !important;
 }
 
 .step {
@@ -82,15 +92,23 @@
   padding: 0 2%;
 }
 
+.the-scoring {
+  background-color: var(--green) !important;
+  color: white !important;
+}
+
 @media only screen and (max-width: 767px) {
   /* Styles for screens smaller than 768px (e.g., mobile devices) */
   .step-component {
     flex-direction: column;
+    max-width: 1280px !important; // to limit size on desktops
+    margin: 0 auto;// to limit size on desktops
   }
-
+  
   .steps{
-    height: 100%;
+    height: auto;
     padding-bottom: 3rem;
+    
   }
 
   .step-image {
@@ -111,6 +129,7 @@
     max-width: 100%;
     height: 100%;
   }
+
 
   .buy-now{
     width: 85%;

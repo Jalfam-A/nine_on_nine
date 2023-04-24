@@ -1,131 +1,312 @@
 /* ========== UPCOMING-EVENT PAGE - Emmanoel =======*/
 
-.test-listing{
-    font-family: sans-serif;
-}
+// .test-listing{
+//     font-family: sans-serif;
+// }
+
+
 /*content-events.php*/
-#upcoming-events-container{
-  .upcoming-events{
-    padding-bottom: 5rem;
-  }
-  .events-thumbnail{
-    width: 70vw;
-  }
-  .upcoming-events-title{
-    margin-top: 2rem;
-  }
-  .upcoming-events-description{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-  .time-date-location-price{
-    display: flex;
-    margin-bottom: 3rem;
-  }
-  .location-price{
-    margin-left: 5rem;
-  }
-  span{
-    color: #FF7200;
-  }
-}
+// #upcoming-events-container{
+//   .upcoming-events{
+//     padding-bottom: 5rem;
+//   }
+//   .events-thumbnail{
+//     width: 70vw;
+//   }
+//   .upcoming-events-title{
+//     margin-top: 2rem;
+//   }
+//   .upcoming-events-description{
+//     margin-top: 2rem;
+//     margin-bottom: 2rem;
+//   }
+//   .time-date-location-price{
+//     display: flex;
+//     margin-bottom: 3rem;
+//   }
+//   .location-price{
+//     margin-left: 5rem;
+//   }
+//   span{
+//     color: #FF7200;
+//   }
+// }
 
-/*page-upcoming-events.php*/
-.events-flex-container{
-  .breadcrumbs{
-    margin-left: 0;
-  }
-}
-/*content-previous-events.php*/
-#previous-news-and-events{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  display: flex;
+
+
+// .upcoming-events-container {
+//   display: flex;
+// }
+
+
+
+// /*page-upcoming-events.php*/
+// .events-flex-container{
+//   .breadcrumbs{
+//     margin-left: 0;
+//   }
+// }
+// /*content-previous-events.php*/
+// #previous-news-and-events{
+//   padding-top: 2rem;
+//   padding-bottom: 2rem;
+//   display: flex;
   
-  .image-container{
-    width: 40vw;
-  }
-  .info-container{
-    width: 40vw;
-    margin-left: 2rem;
-    h3{
-      font-size: 2.5rem;
-    }
-  }
-}
+//   .image-container{
+//     width: 40vw;
+//   }
+//   .info-container{
+//     width: 40vw;
+//     margin-left: 2rem;
+//     h3{
+//       font-size: 2.5rem;
+//     }
+//   }
+// }
 
-.events-flex-container{
-  margin-left: 3rem;
-}
+// .events-flex-container{
+//   margin-left: 3rem;
+// }
 
-/*media query*/
-@media (min-width: 768px){
-  #upcoming-events-container{
-    margin: 0;
-    /*article{
-      display: flex;
-      width: 80vw;
-    }*/
-    .upcoming-events-link{
-      width: 500px;
-    }
-    .upcoming-events{
-      margin-left: 15rem;
-    }
-    .events-thumbnail img{
-      width: 30vw;
-    }
+// /*media query*/
+// @media (min-width: 768px){
+//   #upcoming-events-container{
+//     margin: 0;
+//     /*article{
+//       display: flex;
+//       width: 80vw;
+//     }*/
+//     .upcoming-events-link{
+//       width: 500px;
+//     }
+//     .upcoming-events{
+//       margin-left: 15rem;
+//     }
+//     .events-thumbnail img{
+//       width: 30vw;
+//     }
 
-  }
+//   }
 
-  .events-container h2:first-child,
-  .events-container h3:first-child{
-    margin-left: 2rem;
-  }
+//   .events-container h2:first-child,
+//   .events-container h3:first-child{
+//     margin-left: 2rem;
+//   }
 
-  .previous-news-and-events-lg{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
+//   .previous-news-and-events-lg{
+//     display:flex;
+//     flex-wrap: wrap;
+//     flex-direction: row;
+//   }
 
-  .previous-news-and-events-container{
-    width: 40vw;
-    margin-left: 25rem;
-  }
+//   .previous-news-and-events-container{
+//     width: 40vw;
+//     margin-left: 25rem;
+//   }
 
-  #previous-news-and-events{
-    .image-container{
-      width: 20vw;
-      margin-right: 2rem;
-    }
+//   #previous-news-and-events{
+//     .image-container{
+//       width: 20vw;
+//       margin-right: 2rem;
+//     }
 
-    .info-container{
-      h3{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        margin-left:0;
-      }
-    }
+//     .info-container{
+//       h3{
+//         padding-top: 2rem;
+//         padding-bottom: 2rem;
+//         margin-left:0;
+//       }
+//     }
 
-    .block-hover{
-      width: 50px;
-      height: 25vh;
-      background-color: #041E42;
-      margin-left: 2rem;
-    }
-  }
-  .events-flex-container{
+//     .block-hover{
+//       width: 50px;
+//       height: 25vh;
+//       background-color: #041E42;
+//       margin-left: 2rem;
+//     }
+//   }
+//   .events-flex-container{
+//     margin: 0 auto;
+//   }
+// }
+// @media (min-width: 1200px){
+//   #upcoming-events-container{
+//     article{
+//       display: flex;
+//       width: 80vw;
+//     }
+//   }
+// }
+
+  
+//********* UP-COMING EVENTS - DONALD *********//
+.events-flex-container {
+  overflow-x: hidden;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  .breadcrumbs {
+    max-width: 1280px !important;
+    padding: 0 !important;
     margin: 0 auto;
   }
-}
-@media (min-width: 1200px){
-  #upcoming-events-container{
-    article{
-      display: flex;
-      width: 80vw;
+
+  .upcoming-events-container {
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    justify-content: left;
+  
+    > h2 {
+        width: 100%;
+        font-size: 3.5rem;
+     }
+
+    .upcoming-events-inner-container {
+
+      .container {
+        max-width: 100% !important;
+
+        > article {
+          > a {
+            .events-thumbnail {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              justify-content: left;
+
+              width: 100%;
+              overflow: hidden;
+
+              img {
+                border-radius: 20px 0 20px 0;
+                width: 100%;
+                // height: 50%;
+              }
+  
+
+            }
+          }
+
+          .upcoming-events {
+
+            margin-bottom: 2rem;
+
+
+            .upcoming-events-title {
+              display: flex;
+              flex-direction: column;
+              justify-content: left;
+              gap: 0.5rem;
+              margin-bottom: 1rem;
+            }
+
+            .upcoming-events-description {
+              color: black;
+              margin-bottom: 1rem;
+            }
+
+            .time-date-location-price {
+                 display: flex;
+                 justify-content: space-between;
+                 margin-bottom: 1rem;
+
+                 max-width: 300px;
+            }
+
+            > a {
+              color: var(--dark-orange);
+              font-family: 'Open Sans', sans-serif;
+              font-weight: bold;
+              text-transform: uppercase;
+            }
+
+
+          } /** END .upcoming-events **/
+        } /** END article **/
+      } /** END .container **/
+    } /** END .upcoming-events-inner-container **/
+  } /** END .upcoming-events-container **/
+
+} /** END .events-flex-container **/
+
+.previous-news-and-events {
+  display: flex !important;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  
+  a {
+    display: block;
+    width: 40%;
+  }
+
+  .info-container {
+    width: 65%;
+
+    a {
+      width: 100% !important;
     }
+
+    > ul {
+
+      > li {
+        a {
+          font-size: 1.5rem !important;
+        }
+      }
+    }
+  }
+
+  h3 {
+    font-size: 2rem !important;
   }
 }
 
-  
+// .previous-news-and-events:hover {
+//   background-color: var(--dark-blue) !important;
+//   color: var(--green) !important;
+// }
+
+
+
+@media screen and (min-width: 745px){
+  .events-flex-container {
+    .upcoming-events-inner-container {
+
+      .container {
+        > article {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      
+
+          > a {
+            display: block;
+            width: 50%;
+          }
+
+          .upcoming-events {
+            width: 45%; 
+          }
+
+
+
+        } /** END article **/
+      } /** END .container **/
+    } /** END .upcoming-events-inner-container **/
+  }  
+}
+
+@media screen and (min-width: 945px) {
+    .previous-news-and-events-lg {
+      display: flex !important;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .previous-news-and-events-container {
+        max-width: 45% !important;
+      }
+    }
+}

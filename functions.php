@@ -153,7 +153,10 @@ function nine_on_nine_scripts() {
 	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@4&family=Open+Sans&display=swap'); // enqueues google fonts
 	wp_style_add_data( 'nine_on_nine-style', 'rtl', 'replace' );
 
+	// wp_enqueue_script( 'nine_on_nine-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	
 	wp_enqueue_script( 'nine_on_nine-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

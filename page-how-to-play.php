@@ -63,8 +63,6 @@ get_header();
                         alt="Chevron Right" class="icon"> <a href="#step2" class="step-container">Step 2</a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
                         alt="Chevron Right" class="icon"> <a href="#step3" class="step-container">Step 3</a>
-                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step4" class="step-container">Step 4</a>
                 </div>
                 
         
@@ -73,16 +71,16 @@ get_header();
         
                     <!-- Step 1 - Image -->
                     <div class="step-image step-image-left ml-2">
-                        <img class="mr-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-setup-1.jpg' ?>"
+                        <img class="mr-3 image-step-1" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-setup-1.jpg' ?>"
                             alt="An image of the 9on9 board on a deck in front of a lake.">
                     </div>
         
                     <!-- Step 1 - Message -->
                     <div class="step-message m-right">
                         <h4 class="">Step 1</h4>
-                        <h2 class="">Place the Board on level ground.</h2>
-                        <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
-                            challenging teams to reach 99 points by tossing bean pucks on the board.</p>
+                        <h2 class="">Place the board on level ground.</h2>
+                        <!-- <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
+                            challenging teams to reach 99 points by tossing bean pucks on the board.</p> -->
                     </div>
         
                 </div>
@@ -100,8 +98,6 @@ get_header();
                             alt="Chevron Right" class="icon bg-blue"> <a href="#step2" class="step-container bg-blue"><strong>Step 2</strong></a>
                         <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
                             alt="Chevron Right" class="icon bg-blue"> <a href="#step3" class="step-container bg-blue">Step 3</a>
-                        <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-blue"> <a href="#step4" class="step-container bg-blue">Step 4</a>
                     </div>
                 </div>
                 
@@ -117,7 +113,7 @@ get_header();
                 
                     <!-- Step 2 - Image -->
                     <div class="step-image step-image-right">
-                        <img class="ml-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-setup-2.jpg' ?>" alt="">
+                        <img class="ml-3 image-step-2" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-setup-2.jpg' ?>" alt="">
                     </div>
                 
                 </div>
@@ -138,62 +134,22 @@ get_header();
                         alt="Chevron Right" class="icon"> <a href="#step2" class="step-container">Step 2</a>
                     <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
                         alt="Chevron Right" class="icon"> <a href="#step3" class="step-container"><strong>Step 3</strong></a>
-                    <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron.png' ?>"
-                        alt="Chevron Right" class="icon"> <a href="#step4" class="step-container">Step 4</a>
                 </div>
 
                 <div class="step-component center-vertical">
                     <!-- Step 3 - Image -->
                     <div class="step-image step-image-left">
-                        <img class="mr-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-setup-3.jpg' ?>" alt="" >
+                        <img class="mr-3 image-step-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-setup-3.jpg' ?>" alt="" >
                     </div>
 
                     <!-- Step 3 - Message -->
                     <div class="step-message m-right">
                         <h4 class="">Step 3</h4>
                         <h2 class="">Determine who shoots first.</h2>
-                        <p class="">1 to 4 players each team. Select a colour for each team.</p>
+                        <!-- <p class="">1 to 4 players each team. Select a colour for each team.</p> -->
                     </div>
                 </div>
 
-
-            </div>
-
-
-
-
-            <!-- Setup - Step 4 -->
-            <div class="bg-green steps" id="step4">
-
-                <!-- STEPS breadcrumbs -->
-                <div class="steps-breadcrumb">
-                    <div class="px-1 py-3 my-3">
-                        <a href="#step1" class="step-container bg-green">Step 1</a>
-                        <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-green"> <a href="#step2" class="step-container bg-green">Step 2</a>
-                        <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-green"> <a href="#step3" class="step-container bg-green">Step 3</a>
-                        <img src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/icons/chevron-white.png' ?>"
-                            alt="Chevron Right" class="icon bg-green"> <a href="#step4" class="step-container bg-green"><strong>Step 4</strong></a>
-                    </div>
-                </div>
-
-
-                <div class="step-component center-vertical">
-                    <!-- Step 4 - Message -->
-                    <div class="step-message m-left">
-                        <h4 class="">Step 4</h4>
-                        <h2 class="">Create 2 teams. Each team gets 4 bean pucks.</h2>
-                        <p class="">1 to 4 players each team. Select a colour for each team.</p>
-                    </div>
-                    
-                    <!-- Step 4 - Image -->
-                    <div class="step-image step-image-right">
-                        <img class="ml-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-step-4.jpg' ?>" alt="">
-                    </div>
-                </div>
-
-                
 
             </div>
 
@@ -206,7 +162,7 @@ get_header();
 
         <!-- SCORING STEPS -->
         <div class="" id="scoring">
-            <div class="whats-in-the-box-text my-3">
+            <div class="whats-in-the-box-text my-3 the-scoring">
                 <h3 class="whats-in-the-box-heading">The Scoring</h3>
             </div>
 
@@ -225,7 +181,7 @@ get_header();
                 <div class="step-component center-vertical">
                     <!-- Step 1 - Image -->
                     <div class="step-image step-image-left">
-                        <img class="mr-3" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-scoring-1.jpeg' ?>" alt="">
+                        <img class="mr-3 image-step-1" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-scoring-1.jpeg' ?>" alt="">
                     </div>
 
                     <!-- Step 1 - Message -->
@@ -266,7 +222,7 @@ get_header();
 
                     <!-- Step 2 - Image -->
                     <div class="step-image step-image-right">
-                        <img class="ml-3" class="right-img" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-scoring-2.jpg' ?>" alt="" >
+                        <img class="ml-3 image-step-2" class="right-img" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/how-to-play/how-to-play-scoring-2.jpg' ?>" alt="" >
                     </div>
 
                 </div>
@@ -313,7 +269,7 @@ get_header();
                         
                         <!-- Hero CTAs -->
                         <div class="hero-cta mt-2">
-                            <a href="#" class="hero-cta-buynow ">Download App</a>
+                            <a href="https://apps.apple.com/ca/app/90n9/id6447753042" class="hero-cta-buynow ">Download App</a>
                         </div>
                     </div>
 
@@ -324,28 +280,30 @@ get_header();
 
 
         <!-- Buy Now CTA -->
-        <div class="step-component bg-blue" id="pointzones">
-
-            <!-- Hero Message -->
-            <div class="cta-hero-message">
-                <!-- Hero Text -->
-                <div class="">
-                    <h4 class="">A game for fun, movement, and skill!</h4>
-                    <h2 class="">Games can't get more fun than this.</h2>
-                    <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
-                        challenging
-                        teams to reach 99 points by tossing bean pucks on the board.</p>
+        <div class="bg-blue" id="pointzones">
+            <div class="step-component">
+                <!-- Hero Message -->
+                <div class="cta-hero-message">
+                    <!-- Hero Text -->
+                    <div class="">
+                        <h4 class="">A game for fun, movement, and skill!</h4>
+                        <h2 class="">Games can't get more fun than this.</h2>
+                        <p class="">9on9 is a dynamic game for 1-4 players per team, suitable for indoor or outdoor play,
+                            challenging
+                            teams to reach 99 points by tossing bean pucks on the board.</p>
+                    </div>
+    
+                    <!-- Hero CTAs -->
+                    <div class="hero-cta mt-2">
+                        <a href="<?php echo get_permalink( get_product_id_by_slug( '9on9-boardgame' ) ); ?>" class="hero-cta-buynow ">BUY NOW</a>
+                    </div>
+                </div>
+    
+                <!-- CTA Image -->
+                <div class="step-image step-image-left step-image-right">
+                    <img class="buy-now" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/homepage-hero-banner.jpg' ?>" alt="" class="">
                 </div>
 
-                <!-- Hero CTAs -->
-                <div class="hero-cta mt-2">
-                    <a href="<?php echo get_permalink( get_product_id_by_slug( '9on9-boardgame' ) ); ?>" class="hero-cta-buynow ">BUY NOW</a>
-                </div>
-            </div>
-
-            <!-- CTA Image -->
-            <div class="step-image step-image-left step-image-right">
-                <img class="buy-now" src="<?php echo esc_url(get_template_directory_uri()) . '/assets/img/front-page/herobanner.jpg' ?>" alt="" class="">
             </div>
         </div>
 
