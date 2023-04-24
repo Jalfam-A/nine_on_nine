@@ -48,7 +48,7 @@ get_header();
         <div class="whats-in-the-box-text">
             <!--<h4 class="whats-in-the-box-heading">--><h4 class="">What's in the box?</h4>
             <!--<h2 class="whats-in-the-box-subheading">--><h2 class="">Games can't get more fun than this.</h2>
-            <p class="whats-in-the-box-description">Each box comes with: 1 game board (2-pieces), 4 green bean pucks, 4 blue bean pucks, Game Instructions.</p>
+            <p class="whats-in-the-box-description">Each box comes with: 1 game board (2-pieces), 4 green bean pucks, 4 blue bean pucks, and Game Instructions.</p>
         </div>
 
         <!-- Images -->
