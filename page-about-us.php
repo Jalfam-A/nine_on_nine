@@ -23,7 +23,7 @@ get_header();
             <a href="" class="">About Us</a>
         </div>
         <div class="about-us-upper-section">
-            <div class="pandemic-change-world-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/about-us/worldisclose.jpg' ); ?>" alt="an image of sign that say the world is temporarily closed" class="pandemic-change-world-image-file"/></div>
+            <div class="pandemic-change-world-image"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/about-us/jalfam-team-cropped.png' ); ?>" alt="an image of sign that say the world is temporarily closed" class="pandemic-change-world-image-file"/></div>
         
         <!--start of jalfam-text-->
         <div class="jalfam-text">
