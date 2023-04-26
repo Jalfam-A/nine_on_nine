@@ -33,8 +33,7 @@ get_header();
             
             
             <div class="about-us-paragraph">
-            <p>At JALFAM Games Inc., we recognized that Covid-19 had a significant impact on peoples mental and physical wellbeing. 
-            We wanted to create something that could bring joy, movement, and a sense of community to people s lives. Thats why we developed 9ON9, 
+            <p> At JALFAM we wanted to create something that could bring joy, movement, and a sense of community to people s lives. Thats why we developed 9ON9, 
             a game that promotes fun, activity, and skill-building.</p>
             
             <p>Our goal at JALFAM Games Inc. is to create games that not only provide entertainment but also promote healthy 
@@ -46,8 +45,18 @@ get_header();
                 <h3>Meet the Team</h3>
             </div>
             <div class="meet-the-team-image">
-                <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/jalfam-team-cropped.png' ); ?>" alt="an image showing the people behind JALFAM" class="meet-the-team-image-file">
-                <figcaption>JALFAM - John: left, Annette: center, and Leann: right.</figcaption>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/john.jpg' ); ?>" alt="an image showing the people behind JALFAM - John" class="meet-the-team-image-file">
+                    <figcaption>John</figcaption>
+                </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/annette.jpg' ); ?>" alt="an image showing the people behind JALFAM - Annette" class="meet-the-team-image-file">
+                    <figcaption>Annette</figcaption>
+                </div>
+                <div>
+                    <img src="<?php echo esc_url(get_template_directory_uri() .'/assets/img/about-us/leann.jpg' ); ?>" alt="an image showing the people behind JALFAM - Leann" class="meet-the-team-image-file">
+                <figcaption>Leann</figcaption>
+                </div>
             </div>
             
     
