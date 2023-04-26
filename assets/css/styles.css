@@ -1170,16 +1170,24 @@ a:hover {
   margin-bottom: 2.5rem;
 }
 
+.meet-the-team-image {
+  text-align: center;
+}
+
 .meet-the-team-image img {
   max-height: 100%;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
+.meet-the-team-image div img {
+  max-height: 25rem;
+  margin-bottom: 2rem;
+}
+
 figcaption {
-  text-align: center;
   font-size: 1.5rem;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
 }
 
 .about-us-upper-section {
@@ -1252,6 +1260,13 @@ figcaption {
   .pandemic-change-world-image img {
     align-items: center;
     margin: 0 auto;
+  }
+  .meet-the-team-image {
+    display: flex;
+    margin-left: 5%;
+  }
+  .meet-the-team-image div {
+    margin-left: 1rem;
   }
   /*
   .check-out-events-content{

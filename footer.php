@@ -40,6 +40,7 @@
 				<a class="get-in-touch-title"  href="http://jalfama.web.dmitcapstone.ca/contact-us/"><p>Get In Touch With Us</p></a>
 				<a class="get-in-touch-contact" href="mailto:info@jalfamgamesinc.com">info@jalfamgamesinc.com</a>
 				<a class="get-in-touch-contact" href="tel:2042308771">(204)-230-8771</a>
+				<a class="get-in-touch-buy" href="<?php echo get_permalink( get_product_id_by_slug( '9on9-boardgame' ) ); ?>">Buy Now</a>
 
 			</div>
 
